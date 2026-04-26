@@ -1,0 +1,48 @@
+{
+  "brand": {
+    "name": "Demonopol",
+    "tagline": "Tokenization-as-a-Service"
+  },
+  "nav": {
+    "services": "Services",
+    "diagnostic": "Diagnostic",
+    "insights": "Insights",
+    "about": "About",
+    "backToDemonopol": "demonopol.com",
+    "ctaStart": "Start Self-Check"
+  },
+  "home": {
+    "eyebrow": "Demonopol — Tokenization-as-a-Service",
+    "headline": "Global liquidity for private real estate.",
+    "subhead": "Worldwide structuring, distribution, and a transparent advisory process — without seven-figure quotes.",
+    "ctaPrimary": "Start the Self-Check",
+    "ctaSecondary": "Book a Diagnostic",
+    "status": "Currently in build · Full launch shortly"
+  },
+  "footer": {
+    "brand": "Demonopol — Tokenization-as-a-Service",
+    "description": "Global liquidity for private real estate. Advisory and execution from a worldwide team, presented transparently.",
+    "navHeading": "Site",
+    "contactHeading": "Contact",
+    "legal": "Terms · Privacy · Risk",
+    "nav": {
+      "services": "Services",
+      "diagnostic": "Diagnostic",
+      "start": "Self-Check",
+      "insights": "Insights",
+      "about": "About"
+    }
+  },
+  "locale": {
+    "label": "Language"
+  },
+  "theme": {
+    "toLight": "Switch to light theme",
+    "toDark": "Switch to dark theme"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page you tried to reach is not here. It may have moved, or it may not exist yet on this site.",
+    "cta": "Back to home"
+  }
+}

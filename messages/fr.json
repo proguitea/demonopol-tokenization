@@ -1,0 +1,48 @@
+{
+  "brand": {
+    "name": "Demonopol",
+    "tagline": "[[FR: Tokenization-as-a-Service]]"
+  },
+  "nav": {
+    "services": "[[FR: Services]]",
+    "diagnostic": "[[FR: Diagnostic]]",
+    "insights": "[[FR: Insights]]",
+    "about": "[[FR: About]]",
+    "backToDemonopol": "demonopol.com",
+    "ctaStart": "[[FR: Start Self-Check]]"
+  },
+  "home": {
+    "eyebrow": "[[FR: Demonopol — Tokenization-as-a-Service]]",
+    "headline": "[[FR: Global liquidity for private real estate.]]",
+    "subhead": "[[FR: Worldwide structuring, distribution, and a transparent advisory process — without seven-figure quotes.]]",
+    "ctaPrimary": "[[FR: Start the Self-Check]]",
+    "ctaSecondary": "[[FR: Book a Diagnostic]]",
+    "status": "[[FR: Currently in build · Full launch shortly]]"
+  },
+  "footer": {
+    "brand": "[[FR: Demonopol — Tokenization-as-a-Service]]",
+    "description": "[[FR: Global liquidity for private real estate. Advisory and execution from a worldwide team, presented transparently.]]",
+    "navHeading": "[[FR: Site]]",
+    "contactHeading": "[[FR: Contact]]",
+    "legal": "[[FR: Terms · Privacy · Risk]]",
+    "nav": {
+      "services": "[[FR: Services]]",
+      "diagnostic": "[[FR: Diagnostic]]",
+      "start": "[[FR: Self-Check]]",
+      "insights": "[[FR: Insights]]",
+      "about": "[[FR: About]]"
+    }
+  },
+  "locale": {
+    "label": "[[FR: Language]]"
+  },
+  "theme": {
+    "toLight": "[[FR: Switch to light theme]]",
+    "toDark": "[[FR: Switch to dark theme]]"
+  },
+  "notFound": {
+    "title": "[[FR: Page not found]]",
+    "body": "[[FR: The page you tried to reach is not here. It may have moved, or it may not exist yet on this site.]]",
+    "cta": "[[FR: Back to home]]"
+  }
+}

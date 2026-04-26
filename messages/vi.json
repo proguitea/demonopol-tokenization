@@ -1,0 +1,48 @@
+{
+  "brand": {
+    "name": "Demonopol",
+    "tagline": "[[VI: Tokenization-as-a-Service]]"
+  },
+  "nav": {
+    "services": "[[VI: Services]]",
+    "diagnostic": "[[VI: Diagnostic]]",
+    "insights": "[[VI: Insights]]",
+    "about": "[[VI: About]]",
+    "backToDemonopol": "demonopol.com",
+    "ctaStart": "[[VI: Start Self-Check]]"
+  },
+  "home": {
+    "eyebrow": "[[VI: Demonopol — Tokenization-as-a-Service]]",
+    "headline": "[[VI: Global liquidity for private real estate.]]",
+    "subhead": "[[VI: Worldwide structuring, distribution, and a transparent advisory process — without seven-figure quotes.]]",
+    "ctaPrimary": "[[VI: Start the Self-Check]]",
+    "ctaSecondary": "[[VI: Book a Diagnostic]]",
+    "status": "[[VI: Currently in build · Full launch shortly]]"
+  },
+  "footer": {
+    "brand": "[[VI: Demonopol — Tokenization-as-a-Service]]",
+    "description": "[[VI: Global liquidity for private real estate. Advisory and execution from a worldwide team, presented transparently.]]",
+    "navHeading": "[[VI: Site]]",
+    "contactHeading": "[[VI: Contact]]",
+    "legal": "[[VI: Terms · Privacy · Risk]]",
+    "nav": {
+      "services": "[[VI: Services]]",
+      "diagnostic": "[[VI: Diagnostic]]",
+      "start": "[[VI: Self-Check]]",
+      "insights": "[[VI: Insights]]",
+      "about": "[[VI: About]]"
+    }
+  },
+  "locale": {
+    "label": "[[VI: Language]]"
+  },
+  "theme": {
+    "toLight": "[[VI: Switch to light theme]]",
+    "toDark": "[[VI: Switch to dark theme]]"
+  },
+  "notFound": {
+    "title": "[[VI: Page not found]]",
+    "body": "[[VI: The page you tried to reach is not here. It may have moved, or it may not exist yet on this site.]]",
+    "cta": "[[VI: Back to home]]"
+  }
+}

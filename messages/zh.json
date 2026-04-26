@@ -1,0 +1,48 @@
+{
+  "brand": {
+    "name": "Demonopol",
+    "tagline": "[[ZH: Tokenization-as-a-Service]]"
+  },
+  "nav": {
+    "services": "[[ZH: Services]]",
+    "diagnostic": "[[ZH: Diagnostic]]",
+    "insights": "[[ZH: Insights]]",
+    "about": "[[ZH: About]]",
+    "backToDemonopol": "demonopol.com",
+    "ctaStart": "[[ZH: Start Self-Check]]"
+  },
+  "home": {
+    "eyebrow": "[[ZH: Demonopol — Tokenization-as-a-Service]]",
+    "headline": "[[ZH: Global liquidity for private real estate.]]",
+    "subhead": "[[ZH: Worldwide structuring, distribution, and a transparent advisory process — without seven-figure quotes.]]",
+    "ctaPrimary": "[[ZH: Start the Self-Check]]",
+    "ctaSecondary": "[[ZH: Book a Diagnostic]]",
+    "status": "[[ZH: Currently in build · Full launch shortly]]"
+  },
+  "footer": {
+    "brand": "[[ZH: Demonopol — Tokenization-as-a-Service]]",
+    "description": "[[ZH: Global liquidity for private real estate. Advisory and execution from a worldwide team, presented transparently.]]",
+    "navHeading": "[[ZH: Site]]",
+    "contactHeading": "[[ZH: Contact]]",
+    "legal": "[[ZH: Terms · Privacy · Risk]]",
+    "nav": {
+      "services": "[[ZH: Services]]",
+      "diagnostic": "[[ZH: Diagnostic]]",
+      "start": "[[ZH: Self-Check]]",
+      "insights": "[[ZH: Insights]]",
+      "about": "[[ZH: About]]"
+    }
+  },
+  "locale": {
+    "label": "[[ZH: Language]]"
+  },
+  "theme": {
+    "toLight": "[[ZH: Switch to light theme]]",
+    "toDark": "[[ZH: Switch to dark theme]]"
+  },
+  "notFound": {
+    "title": "[[ZH: Page not found]]",
+    "body": "[[ZH: The page you tried to reach is not here. It may have moved, or it may not exist yet on this site.]]",
+    "cta": "[[ZH: Back to home]]"
+  }
+}

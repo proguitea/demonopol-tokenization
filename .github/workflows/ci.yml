@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify:
+    name: Lint, typecheck, build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Build
+        run: pnpm build
+        env:
+          NEXT_TELEMETRY_DISABLED: "1"
+
+      - name: Forbidden-language guard (no crypto vocab in built output)
+        # Per Q-005 — the public site must not ship words from the crypto stack.
+        run: |
+          set -e
+          patterns=(
+            'blockchain'
+            '\$MONO'
+            'Sui Network'
+            'on-chain'
+            'smart contract'
+            ' DAO'
+            'DeFi'
+          )
+          for pattern in "${patterns[@]}"; do
+            if grep -RIE -- "$pattern" .next/server .next/static 2>/dev/null | grep -v 'node_modules'; then
+              echo "::error::Forbidden term found in build output: $pattern"
+              exit 1
+            fi
+          done
