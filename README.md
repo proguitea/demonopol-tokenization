@@ -23,14 +23,10 @@ pages land in Weeks 2–6.
 - **Styling** — Tailwind CSS 3 with shadcn-compatible CSS variables
 - **i18n** — `next-intl`, EN canonical, scaffolded for VI / ES / FR / TH / ZH
 - **Theme** — `next-themes` light (default) / dark toggle
-- **Forms (Week 2)** — react-hook-form + zod
-- **CMS (Week 5)** — Sanity (multilingual)
-- **DB (Week 2)** — Postgres via Supabase
-- **Email (Week 2)** — Resend
+- **Forms** — react-hook-form + zod, server actions
+- **Lead handling** — form-to-email via Resend (no DB in V1)
 - **Booking (Week 4)** — Cal.com
 - **Payments (Week 4)** — Stripe (primary), Wise USD (manual)
-- **Analytics & errors** — Vercel runtime logs + Web Analytics (V1).
-  Plausible / Sentry deferred until volume justifies the spend.
 - **Hosting** — Vercel + Cloudflare
 
 ## Getting started

@@ -234,6 +234,34 @@ addresses.
 
 ---
 
+### Q-019 · V1-essential cut
+**Status:** ✅ Resolved (2026-04-27)
+**Decision:** Drop the heavy infrastructure layer from V1 and ship a
+working sales site faster. Specifically:
+
+- **Drop Postgres / Drizzle / Supabase.** Replace with form-to-email via
+  Resend. The founder triages from inbox until volume justifies a DB.
+- **Drop Anthropic auto-report PDF.** Replace with the inline
+  outcome-aware confirmation page already shipped on `/start/submitted`.
+- **Drop magic-link resume.** localStorage save/restore is enough for a
+  ~5-minute form.
+- **Drop Cloudflare Turnstile.** Honeypot + disposable-email blocklist is
+  enough at V1 volume.
+- **Drop Upstash rate limit.** Vercel handles DDoS at the edge.
+- **Drop Slack webhook.** Founder reads email.
+- **Drop Sanity CMS** for Insights. Author articles as MDX in-repo for V1.
+
+The lead-scoring + auto-rejection libraries remain — they drive the email
+subject line and the outcome shown to the visitor.
+
+**Re-enable trigger:** any one of: > 100 leads/month sustained, second
+operator on intake, copywriter wants WYSIWYG editor, or auditor demands
+structured persistence.
+**Decided by:** Founder (2026-04-27, in response to agent's overbuild
+flag).
+
+---
+
 ### Q-018 · Trust line wording
 **Status:** ✅ Resolved (2026-04-26, superseded by Q-012)
 **Decision:** No quantified trust claim, on the operating side or on
@@ -263,3 +291,4 @@ is made, not by what it claims.
 | Q-012 | 2026-04-26 | No numerical trust claims; trust through site quality | Founder |
 | Q-017 | 2026-04-26 | i18n: EN V1, VN+ES+FR V1.1, TH+ZH V1.2 | Agent + Founder |
 | Q-018 | 2026-04-26 | Advisor cards = name + prior firm + region + LinkedIn; no figures | Founder |
+| Q-019 | 2026-04-27 | V1-essential cut: drop DB/Anthropic/Turnstile/Upstash/Slack/Sanity; form-to-email via Resend | Founder |
