@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
-import { ArrowRight, Check, ShieldCheck, FileText, Clock } from "lucide-react";
+import { Check, ShieldCheck, FileText, Clock } from "lucide-react";
 
+import { PayButton } from "@/components/diagnostic/PayButton";
 import { Link } from "@/i18n/navigation";
+import { isStripeConfigured } from "@/lib/stripe/server";
 
 export const metadata: Metadata = {
   title: "Diagnostic",
@@ -58,6 +60,7 @@ export default async function DiagnosticPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const stripeConfigured = isStripeConfigured();
 
   return (
     <>
@@ -74,19 +77,19 @@ export default async function DiagnosticPage({
             assessment of whether — and how — your asset can be tokenized.
             You walk away with a document, not a verbal &ldquo;maybe.&rdquo;
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-start">
+            <PayButton stripeConfigured={stripeConfigured} variant="primary" />
             <Link
               href="/start"
-              className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+              className="inline-flex items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-sm font-medium transition-colors hover:border-primary/40"
             >
-              Start with the Self-Check
-              <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
+              Try the free Self-Check first
             </Link>
-            <span className="inline-flex items-center text-xs text-muted-foreground">
-              The Self-Check is required before booking. It&apos;s free and
-              takes ~5 minutes.
-            </span>
           </div>
+          <p className="mt-4 max-w-xl text-xs text-muted-foreground">
+            Stripe Checkout. Receipt issued by Demonopol LLC. The 15-minute
+            money-back guarantee lives on the call, not in the fine print.
+          </p>
         </div>
       </section>
 
@@ -216,21 +219,16 @@ export default async function DiagnosticPage({
               Ready
             </p>
             <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight md:text-3xl">
-              Five minutes of structured intake. Then we book the call.
+              Pay, book, get a written go / no-go.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              The Self-Check is the gate — for both of us. It surfaces the
-              rare cases that aren&apos;t a fit before you pay, and gives the
-              advisory team the structured context the Diagnostic builds on.
+              Checkout takes one minute. After payment you&apos;ll be sent
+              straight to the booking link to choose a slot in the next 7–10
+              days. Money-back guarantee is unconditional in the first
+              fifteen minutes of the call.
             </p>
-            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-              <Link
-                href="/start"
-                className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
-              >
-                Start the Self-Check
-                <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
-              </Link>
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-start">
+              <PayButton stripeConfigured={stripeConfigured} variant="primary" />
               <Link
                 href="/services"
                 className="inline-flex items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-sm font-medium transition-colors hover:border-primary/40"
