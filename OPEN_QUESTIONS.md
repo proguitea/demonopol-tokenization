@@ -235,21 +235,28 @@ addresses.
 ---
 
 ### Q-020 · Canonical brand assets
-**Status:** 🟧 Soft-blocking
-**Owner:** Founder
-**Question:** The lockup the founder shared on 2026-04-27 is a PNG
-preview, not a versioned brand asset. The agent recreated the mark
-inline in `src/components/layout/Logo.tsx` as an approximation so
-something brand-coherent ships immediately, but it is not a 1:1 of the
-canonical mark. The favicon at `src/app/icon.svg` is a simplified 32px
-recreation.
-**Default:** Ship the recreation now. Replace as soon as canonical SVG
-(or vector PDF) is dropped into `public/brand/` — single commit to swap
-the inline SVG for an `<Image>` referencing the file.
-**Sub-decision (closed):** The "The future of decentralized Real Estate"
-tagline is **not** used on the TaaS site. Per Q-005 the audience hears
-no crypto-tribe vocabulary; the tagline lives on demonopol.com main.
-**Blocks:** brand fidelity, but does not block launch.
+**Status:** ✅ Resolved (2026-04-27)
+**Decision:** Founder supplied two WebP lockups (dark + white). Both
+include the "decentralized Real Estate" tagline at the bottom. Files
+live at:
+- `public/brand/demonopol-logo-dark.webp` (light-theme header)
+- `public/brand/demonopol-logo-white.webp` (dark-theme header)
+
+Per Q-005 the tagline is **not** shown on the TaaS site. We crop it
+visually at display time via `aspect-[4.5/1] overflow-hidden` so the
+tagline portion is rendered outside the visible window. The source
+assets are unmodified — when a tagline-free variant lands, we drop it
+in and remove the crop.
+
+The favicon at `src/app/icon.svg` remains a simplified 32px recreation
+(the full lockup is too detailed for tab-size rendering).
+
+**Open follow-ups (low priority):**
+- Q-020a: a tagline-free SVG lockup would let us remove the CSS crop
+  and serve a smaller asset. No urgency — current setup is fine.
+- Q-020b: a horizontally-tighter "icon-only" mark variant would let us
+  keep the mark visible on very small viewports where the full lockup
+  doesn't fit.
 
 ---
 
@@ -311,4 +318,4 @@ is made, not by what it claims.
 | Q-017 | 2026-04-26 | i18n: EN V1, VN+ES+FR V1.1, TH+ZH V1.2 | Agent + Founder |
 | Q-018 | 2026-04-26 | Advisor cards = name + prior firm + region + LinkedIn; no figures | Founder |
 | Q-019 | 2026-04-27 | V1-essential cut: drop DB/Anthropic/Turnstile/Upstash/Slack/Sanity; form-to-email via Resend | Founder |
-| Q-020 | 2026-04-27 | Logo: recreated inline as approximation; tagline omitted (Q-005); canonical SVG pending | Agent + Founder |
+| Q-020 | 2026-04-27 | Canonical lockup WebPs in public/brand/; tagline cropped at display per Q-005 | Founder |
