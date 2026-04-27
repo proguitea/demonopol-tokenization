@@ -6,7 +6,6 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
-import { Plausible } from "@/components/analytics/Plausible";
 import { Providers } from "@/components/providers/Providers";
 import { routing, type Locale } from "@/i18n/routing";
 import "../globals.css";
@@ -122,7 +121,6 @@ export default async function LocaleLayout({
             </div>
           </NextIntlClientProvider>
         </Providers>
-        <Plausible />
       </body>
     </html>
   );

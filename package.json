@@ -17,7 +17,6 @@
   },
   "packageManager": "pnpm@10.33.2",
   "dependencies": {
-    "@sentry/nextjs": "^8.47.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.469.0",
     "next": "^15.1.3",

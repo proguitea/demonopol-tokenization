@@ -13,9 +13,9 @@ B2B website for the Demonopol tokenization service. Sister site to
 ## Status
 
 🚧 **Sprint Week 1 — Foundations.** Empty production-grade shell at
-`tokenize.demonopol.com`: design tokens, type system, i18n scaffolding,
-layout shell, theme toggle, Plausible + Sentry wired. Business pages land
-in Weeks 2–6.
+`tokenize.demonopol.com`: design tokens, type system, i18n scaffolding
+(EN canonical + non-EN fallback), layout shell, theme toggle. Business
+pages land in Weeks 2–6.
 
 ## Stack
 
@@ -29,8 +29,8 @@ in Weeks 2–6.
 - **Email (Week 2)** — Resend
 - **Booking (Week 4)** — Cal.com
 - **Payments (Week 4)** — Stripe (primary), Wise USD (manual)
-- **Analytics** — Plausible (cookie-free)
-- **Errors** — Sentry
+- **Analytics & errors** — Vercel runtime logs + Web Analytics (V1).
+  Plausible / Sentry deferred until volume justifies the spend.
 - **Hosting** — Vercel + Cloudflare
 
 ## Getting started
@@ -67,20 +67,17 @@ Useful scripts:
 │   │   ├── layout.tsx                 # root pass-through
 │   │   └── not-found.tsx              # global fallback
 │   ├── components/
-│   │   ├── analytics/Plausible.tsx
 │   │   ├── layout/                    # Header, Footer, Logo, ThemeToggle, LocaleSwitcher
 │   │   └── providers/Providers.tsx
 │   ├── i18n/                          # routing + request config + nav helpers
 │   ├── lib/utils.ts
-│   ├── instrumentation.ts             # Sentry register
 │   └── middleware.ts                  # next-intl locale routing
 ├── messages/                          # en.json populated; others use [[LANG: …]]
 │   ├── en.json
 │   └── vi.json | es.json | fr.json | th.json | zh.json
-├── sentry.{client,server,edge}.config.ts
 ├── tailwind.config.ts
 ├── postcss.config.mjs
-├── next.config.mjs                    # next-intl + Sentry plugin wrap
+├── next.config.mjs                    # next-intl plugin wrap
 ├── tsconfig.json
 ├── .env.example
 ├── Demonopol_TaaS_Master_Prompt_V2.docx
@@ -113,8 +110,9 @@ At the end of each sprint:
   `[[LANG: english source]]` placeholders until a native copywriter
   delivers (e.g. `[[VI: Book a Diagnostic]]`). Brackets are findable via
   grep and ICU-safe.
-- Do not add tracking that requires consent without wiring the consent
-  banner. Plausible is cookie-free; default to that.
+- Do not add tracking that requires a consent banner. If product
+  analytics return, default to a cookie-free option (Plausible / Vercel
+  Web Analytics).
 - Do not hardcode secrets. Everything goes through `.env.local` or
   Vercel env vars.
 

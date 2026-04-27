@@ -29,9 +29,11 @@ applied. No business logic yet.
 - Theme toggle (light default, dark variant per Q-018 decision; the dark
   variant retains Part G tokens `#0E1110` / `#F0EDE8` so we don't lose them).
 - Vercel project, custom domain `tokenize.demonopol.com`.
-- Cloudflare DNS + Cloudflare Turnstile site key.
-- Plausible analytics (cookie-free).
-- Sentry error tracking.
+- Cloudflare DNS + Cloudflare Turnstile site key (Turnstile lands in Week 2).
+- ~~Plausible analytics~~ — **deferred (paid).** Vercel runtime logs +
+  Web Analytics carry V1.
+- ~~Sentry error tracking~~ — **deferred (paid).** Vercel runtime logs
+  carry V1.
 - CI: GitHub Actions running `lint`, `typecheck`, `build` on PR.
 
 ### Design tokens (light-premium)
@@ -57,8 +59,8 @@ applied. No business logic yet.
 - [ ] Total JS < 50KB gzipped at this stage (well under the 150KB launch budget).
 - [ ] Fonts load with `font-display: swap`; no FOUT.
 - [ ] Theme toggle persists across reloads.
-- [ ] Plausible event "page_view" firing.
-- [ ] Sentry capturing a deliberate test error.
+- [ ] ~~Plausible event "page_view" firing.~~ — deferred.
+- [ ] ~~Sentry capturing a deliberate test error.~~ — deferred.
 - [ ] CI green on a representative PR.
 
 ---

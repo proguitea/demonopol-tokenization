@@ -34,10 +34,15 @@ specifies which env vars it produces. Pair with `env.example.txt`.
 
 ## Week 3 dependencies (marketing + analytics)
 
+> **Plausible and Sentry are deferred** (founder direction, 2026-04-27).
+> V1 relies on Vercel runtime logs for errors and Vercel Web Analytics
+> (free tier) for traffic. Re-enable the rows below if/when volume or
+> debugging needs justify the spend.
+
 | Service | Owner | Plan | Env vars produced | Notes |
 |---------|-------|------|-------------------|-------|
-| **Plausible** | Founder | Cloud paid (lowest tier) | `NEXT_PUBLIC_PLAUSIBLE_DOMAIN`, `NEXT_PUBLIC_PLAUSIBLE_SCRIPT_URL` | Cookie-free. No consent banner needed. |
-| **Sentry** | Founder | Developer (free) | `SENTRY_DSN`, `NEXT_PUBLIC_SENTRY_DSN`, `SENTRY_ORG`, `SENTRY_PROJECT`, `SENTRY_AUTH_TOKEN` | Source-map upload via auth token. |
+| ~~Plausible~~ | _deferred_ | — | — | Re-evaluate post-launch. |
+| ~~Sentry~~ | _deferred_ | — | — | Re-evaluate post-launch. |
 
 ---
 
