@@ -47,6 +47,12 @@ const config: Config = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
+        // Demonopol brand palette — used only on the logo lockup, not
+        // on UI surfaces. UI surfaces use the light-premium tokens
+        // above.
+        "brand-navy": "#0E1B3D",
+        "brand-blue": "#3F6CE5",
+        "brand-yellow": "#F0C420",
       },
       fontFamily: {
         sans: ["var(--font-body)", "system-ui", "sans-serif"],

@@ -234,6 +234,25 @@ addresses.
 
 ---
 
+### Q-020 · Canonical brand assets
+**Status:** 🟧 Soft-blocking
+**Owner:** Founder
+**Question:** The lockup the founder shared on 2026-04-27 is a PNG
+preview, not a versioned brand asset. The agent recreated the mark
+inline in `src/components/layout/Logo.tsx` as an approximation so
+something brand-coherent ships immediately, but it is not a 1:1 of the
+canonical mark. The favicon at `src/app/icon.svg` is a simplified 32px
+recreation.
+**Default:** Ship the recreation now. Replace as soon as canonical SVG
+(or vector PDF) is dropped into `public/brand/` — single commit to swap
+the inline SVG for an `<Image>` referencing the file.
+**Sub-decision (closed):** The "The future of decentralized Real Estate"
+tagline is **not** used on the TaaS site. Per Q-005 the audience hears
+no crypto-tribe vocabulary; the tagline lives on demonopol.com main.
+**Blocks:** brand fidelity, but does not block launch.
+
+---
+
 ### Q-019 · V1-essential cut
 **Status:** ✅ Resolved (2026-04-27)
 **Decision:** Drop the heavy infrastructure layer from V1 and ship a
@@ -292,3 +311,4 @@ is made, not by what it claims.
 | Q-017 | 2026-04-26 | i18n: EN V1, VN+ES+FR V1.1, TH+ZH V1.2 | Agent + Founder |
 | Q-018 | 2026-04-26 | Advisor cards = name + prior firm + region + LinkedIn; no figures | Founder |
 | Q-019 | 2026-04-27 | V1-essential cut: drop DB/Anthropic/Turnstile/Upstash/Slack/Sanity; form-to-email via Resend | Founder |
+| Q-020 | 2026-04-27 | Logo: recreated inline as approximation; tagline omitted (Q-005); canonical SVG pending | Agent + Founder |
