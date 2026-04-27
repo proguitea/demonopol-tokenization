@@ -1,6 +1,8 @@
 import { setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
 
+import { Link } from "@/i18n/navigation";
+
 export default async function HomePage({
   params,
 }: {
@@ -28,19 +30,18 @@ function HomeContent() {
             {t("subhead")}
           </p>
           <div className="flex flex-col gap-3 pt-4 sm:flex-row">
-            <button
-              type="button"
-              disabled
-              aria-disabled="true"
-              className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 font-medium text-primary-foreground opacity-60"
+            <Link
+              href="/start"
+              className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 font-medium text-primary-foreground transition-opacity hover:opacity-90"
             >
               {t("ctaPrimary")}
-            </button>
+            </Link>
             <button
               type="button"
               disabled
               aria-disabled="true"
               className="inline-flex items-center justify-center rounded-md border border-border bg-elevated px-6 py-3 font-medium text-foreground opacity-60"
+              title="Available in Week 4"
             >
               {t("ctaSecondary")}
             </button>
