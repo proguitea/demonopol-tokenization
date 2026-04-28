@@ -9,12 +9,14 @@ import {
   DiagnosticServiceSchema,
 } from "@/components/seo/StructuredData";
 import { Link } from "@/i18n/navigation";
+import { localeAlternates } from "@/lib/seo/alternates";
 import { isStripeConfigured } from "@/lib/stripe/server";
 
 export const metadata: Metadata = {
   title: "Diagnostic",
   description:
     "$400 for a written go / no-go on tokenizing your real-estate asset. 60–90 min working session, 6–8 page report, 15-minute money-back guarantee.",
+  alternates: localeAlternates("/diagnostic"),
   openGraph: {
     title: "Diagnostic — Demonopol",
     description:

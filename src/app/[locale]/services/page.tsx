@@ -7,12 +7,14 @@ import {
   ServiceListSchema,
 } from "@/components/seo/StructuredData";
 import { Link } from "@/i18n/navigation";
+import { localeAlternates } from "@/lib/seo/alternates";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Services",
   description:
     "Five tiers, from a free Self-Check to a fully-mandated transaction. Pricing published. Scope published. Most owners stop after the $400 Diagnostic.",
+  alternates: localeAlternates("/services"),
   openGraph: {
     title: "Services — Demonopol",
     description:

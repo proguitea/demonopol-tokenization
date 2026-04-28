@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 
+import { localeAlternates } from "@/lib/seo/alternates";
+
 export const metadata: Metadata = {
   title: "Legal",
   description:
     "Terms of Service, Privacy Policy, and Risk Disclosure for Demonopol LLC. Plain-English placeholders today, counsel-reviewed binding text before the first paid Diagnostic.",
+  alternates: localeAlternates("/legal"),
   openGraph: {
     title: "Legal — Demonopol",
     description:

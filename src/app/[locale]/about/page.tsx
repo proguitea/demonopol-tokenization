@@ -4,11 +4,13 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 
 import { BreadcrumbsSchema } from "@/components/seo/StructuredData";
 import { Link } from "@/i18n/navigation";
+import { localeAlternates } from "@/lib/seo/alternates";
 
 export const metadata: Metadata = {
   title: "About",
   description:
     "An advisory team drawn from international real-estate practice, named on the page. Operating from Demonopol LLC. Serving private real-estate owners worldwide.",
+  alternates: localeAlternates("/about"),
   openGraph: {
     title: "About — Demonopol",
     description:

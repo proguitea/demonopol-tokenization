@@ -3,11 +3,13 @@ import { setRequestLocale } from "next-intl/server";
 import { ArrowRight, Mail } from "lucide-react";
 
 import { Link } from "@/i18n/navigation";
+import { localeAlternates } from "@/lib/seo/alternates";
 
 export const metadata: Metadata = {
   title: "Insights",
   description:
     "Working notes on global liquidity for private real estate — by asset class, by jurisdiction, and on the structuring decisions that quietly decide whether a deal closes.",
+  alternates: localeAlternates("/insights"),
   openGraph: {
     title: "Insights — Demonopol",
     description:
