@@ -3,6 +3,11 @@ import { setRequestLocale } from "next-intl/server";
 import { Check, ShieldCheck, FileText, Clock } from "lucide-react";
 
 import { PayButton } from "@/components/diagnostic/PayButton";
+import {
+  BreadcrumbsSchema,
+  DiagnosticFaqSchema,
+  DiagnosticServiceSchema,
+} from "@/components/seo/StructuredData";
 import { Link } from "@/i18n/navigation";
 import { isStripeConfigured } from "@/lib/stripe/server";
 
@@ -41,7 +46,7 @@ const FAQS: Array<{ q: string; a: string }> = [
   },
   {
     q: "Do I have to do the Self-Check first?",
-    a: "Yes. The Self-Check is free and gives both sides the structured intake the Diagnostic builds on. It also lets us flag the rare cases that aren't a fit before you pay.",
+    a: "No, but it helps. The Self-Check is free and gives both sides the structured intake the Diagnostic builds on. If your asset is borderline, doing it first saves a back-and-forth on the call. If you already know what you want, paying directly is fine.",
   },
   {
     q: "Who runs the call?",
@@ -64,6 +69,14 @@ export default async function DiagnosticPage({
 
   return (
     <>
+      <DiagnosticServiceSchema />
+      <DiagnosticFaqSchema faqs={FAQS} />
+      <BreadcrumbsSchema
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Diagnostic", href: "/diagnostic" },
+        ]}
+      />
       <section className="border-b border-border/60">
         <div className="container max-w-4xl py-20 md:py-28">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">

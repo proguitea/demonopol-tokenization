@@ -1,48 +1,48 @@
 {
   "brand": {
     "name": "Demonopol",
-    "tagline": "[[VI: Tokenization-as-a-Service]]"
+    "tagline": "Tokenization-as-a-Service"
   },
   "nav": {
-    "services": "[[VI: Services]]",
-    "diagnostic": "[[VI: Diagnostic]]",
-    "insights": "[[VI: Insights]]",
-    "about": "[[VI: About]]",
+    "services": "Dịch vụ",
+    "diagnostic": "Đánh giá",
+    "insights": "Bài phân tích",
+    "about": "Giới thiệu",
     "backToDemonopol": "demonopol.com",
-    "ctaStart": "[[VI: Start Self-Check]]"
+    "ctaStart": "Bắt đầu Tự đánh giá"
   },
   "home": {
-    "eyebrow": "[[VI: Demonopol — Tokenization-as-a-Service]]",
-    "headline": "[[VI: Global liquidity for private real estate.]]",
-    "subhead": "[[VI: Worldwide structuring, distribution, and a transparent advisory process — without seven-figure quotes.]]",
-    "ctaPrimary": "[[VI: Start the Self-Check]]",
-    "ctaSecondary": "[[VI: Book a Diagnostic]]",
-    "status": "[[VI: Currently in build · Full launch shortly]]"
+    "eyebrow": "Demonopol — Tokenization-as-a-Service",
+    "headline": "Thanh khoản toàn cầu cho bất động sản tư nhân.",
+    "subhead": "Cấu trúc, phân phối toàn cầu và quy trình tư vấn minh bạch — không cần báo giá hàng triệu đô.",
+    "ctaPrimary": "Bắt đầu Tự đánh giá",
+    "ctaSecondary": "Đặt lịch Đánh giá",
+    "status": "Đang xây dựng · Sắp ra mắt chính thức"
   },
   "footer": {
-    "brand": "[[VI: Demonopol — Tokenization-as-a-Service]]",
-    "description": "[[VI: Global liquidity for private real estate. Advisory and execution from a worldwide team, presented transparently.]]",
-    "navHeading": "[[VI: Site]]",
-    "contactHeading": "[[VI: Contact]]",
-    "legal": "[[VI: Terms · Privacy · Risk]]",
+    "brand": "Demonopol — Tokenization-as-a-Service",
+    "description": "Thanh khoản toàn cầu cho bất động sản tư nhân. Tư vấn và triển khai từ đội ngũ quốc tế, hoàn toàn minh bạch.",
+    "navHeading": "Trang web",
+    "contactHeading": "Liên hệ",
+    "legal": "Điều khoản · Quyền riêng tư · Rủi ro",
     "nav": {
-      "services": "[[VI: Services]]",
-      "diagnostic": "[[VI: Diagnostic]]",
-      "start": "[[VI: Self-Check]]",
-      "insights": "[[VI: Insights]]",
-      "about": "[[VI: About]]"
+      "services": "Dịch vụ",
+      "diagnostic": "Đánh giá",
+      "start": "Tự đánh giá",
+      "insights": "Bài phân tích",
+      "about": "Giới thiệu"
     }
   },
   "locale": {
-    "label": "[[VI: Language]]"
+    "label": "Ngôn ngữ"
   },
   "theme": {
-    "toLight": "[[VI: Switch to light theme]]",
-    "toDark": "[[VI: Switch to dark theme]]"
+    "toLight": "Chuyển sang giao diện sáng",
+    "toDark": "Chuyển sang giao diện tối"
   },
   "notFound": {
-    "title": "[[VI: Page not found]]",
-    "body": "[[VI: The page you tried to reach is not here. It may have moved, or it may not exist yet on this site.]]",
-    "cta": "[[VI: Back to home]]"
+    "title": "Không tìm thấy trang",
+    "body": "Trang bạn đang tìm không có ở đây. Có thể trang đã được chuyển hoặc chưa tồn tại trên trang này.",
+    "cta": "Về trang chủ"
   }
 }

@@ -223,14 +223,29 @@ addresses.
 ---
 
 ### Q-017 · i18n locale rollout cadence
-**Status:** ✅ Resolved (2026-04-26)
-**Decision:**
-- **V1 launch** — EN canonical only, all locale routes scaffolded with
-  `{{LANG: english source}}` placeholders so they're findable.
-- **V1.1** (post-launch, ~30 days) — VN, ES, FR populated when native
-  copywriters deliver.
-- **V1.2** — TH, ZH (HK) populated.
-- All locales use `next-intl` with `/{locale}/...` URL structure.
+**Status:** 🟧 Soft-blocking (updated 2026-04-27)
+**Update (2026-04-27):** Founder asked the agent to populate FR / VI /
+TH translations as a starting point. The agent did so for the global
+UI keys (header, footer, nav, theme, 404, locale switcher, home hero
+strings). These are **agent-quality** translations, not native, and
+need a native-speaker pass before any paid marketing pushes traffic to
+the localised routes. ES and ZH remain placeholder-only.
+**Page-body copy** (the long blocks of text inside /services, /about,
+/diagnostic, /insights, /legal) is **not** in `messages/*.json` — it's
+inlined in EN inside the page components. Localising that body copy is
+a separate, larger pass that requires either: (a) extracting all body
+strings to message files, or (b) duplicating the page components per
+locale. Deferred until a native copywriter is engaged.
+
+**Plan:**
+- **V1 launch** — UI keys translated to FR / VI / TH (agent quality).
+  Body copy in EN with non-EN routes inheriting via the placeholder-
+  fallback merge.
+- **V1.1** — native pass on FR / VI / TH UI keys; body copy extraction
+  begins for the highest-trafficked locale.
+- **V1.2** — ES, ZH UI keys translated.
+
+All locales use `next-intl` with `/{locale}/...` URL structure.
 
 ---
 
@@ -315,7 +330,7 @@ is made, not by what it claims.
 | Q-010 | 2026-04-26 | Dedicated TaaS newsletter + new Demonopol-main list | Founder |
 | Q-011 | 2026-04-26 | Named advisors strip with Luc Villeneuve and Costa | Agent + Founder |
 | Q-012 | 2026-04-26 | No numerical trust claims; trust through site quality | Founder |
-| Q-017 | 2026-04-26 | i18n: EN V1, VN+ES+FR V1.1, TH+ZH V1.2 | Agent + Founder |
+| Q-017 | 2026-04-27 | i18n: agent-quality FR/VI/TH UI keys shipped V1; native pass + body-copy extraction deferred | Agent + Founder |
 | Q-018 | 2026-04-26 | Advisor cards = name + prior firm + region + LinkedIn; no figures | Founder |
 | Q-019 | 2026-04-27 | V1-essential cut: drop DB/Anthropic/Turnstile/Upstash/Slack/Sanity; form-to-email via Resend | Founder |
 | Q-020 | 2026-04-27 | Canonical lockup WebPs in public/brand/; tagline cropped at display per Q-005 | Founder |

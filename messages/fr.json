@@ -1,48 +1,48 @@
 {
   "brand": {
     "name": "Demonopol",
-    "tagline": "[[FR: Tokenization-as-a-Service]]"
+    "tagline": "Tokenization-as-a-Service"
   },
   "nav": {
-    "services": "[[FR: Services]]",
-    "diagnostic": "[[FR: Diagnostic]]",
-    "insights": "[[FR: Insights]]",
-    "about": "[[FR: About]]",
+    "services": "Services",
+    "diagnostic": "Diagnostic",
+    "insights": "Analyses",
+    "about": "À propos",
     "backToDemonopol": "demonopol.com",
-    "ctaStart": "[[FR: Start Self-Check]]"
+    "ctaStart": "Lancer l'auto-évaluation"
   },
   "home": {
-    "eyebrow": "[[FR: Demonopol — Tokenization-as-a-Service]]",
-    "headline": "[[FR: Global liquidity for private real estate.]]",
-    "subhead": "[[FR: Worldwide structuring, distribution, and a transparent advisory process — without seven-figure quotes.]]",
-    "ctaPrimary": "[[FR: Start the Self-Check]]",
-    "ctaSecondary": "[[FR: Book a Diagnostic]]",
-    "status": "[[FR: Currently in build · Full launch shortly]]"
+    "eyebrow": "Demonopol — Tokenization-as-a-Service",
+    "headline": "Liquidité mondiale pour l'immobilier privé.",
+    "subhead": "Structuration et distribution à l'international, avec un processus de conseil transparent — sans devis à six chiffres.",
+    "ctaPrimary": "Lancer l'auto-évaluation",
+    "ctaSecondary": "Réserver un Diagnostic",
+    "status": "En cours de développement · Lancement imminent"
   },
   "footer": {
-    "brand": "[[FR: Demonopol — Tokenization-as-a-Service]]",
-    "description": "[[FR: Global liquidity for private real estate. Advisory and execution from a worldwide team, presented transparently.]]",
-    "navHeading": "[[FR: Site]]",
-    "contactHeading": "[[FR: Contact]]",
-    "legal": "[[FR: Terms · Privacy · Risk]]",
+    "brand": "Demonopol — Tokenization-as-a-Service",
+    "description": "Liquidité mondiale pour l'immobilier privé. Conseil et exécution par une équipe internationale, en toute transparence.",
+    "navHeading": "Site",
+    "contactHeading": "Contact",
+    "legal": "Conditions · Confidentialité · Risques",
     "nav": {
-      "services": "[[FR: Services]]",
-      "diagnostic": "[[FR: Diagnostic]]",
-      "start": "[[FR: Self-Check]]",
-      "insights": "[[FR: Insights]]",
-      "about": "[[FR: About]]"
+      "services": "Services",
+      "diagnostic": "Diagnostic",
+      "start": "Auto-évaluation",
+      "insights": "Analyses",
+      "about": "À propos"
     }
   },
   "locale": {
-    "label": "[[FR: Language]]"
+    "label": "Langue"
   },
   "theme": {
-    "toLight": "[[FR: Switch to light theme]]",
-    "toDark": "[[FR: Switch to dark theme]]"
+    "toLight": "Passer au thème clair",
+    "toDark": "Passer au thème sombre"
   },
   "notFound": {
-    "title": "[[FR: Page not found]]",
-    "body": "[[FR: The page you tried to reach is not here. It may have moved, or it may not exist yet on this site.]]",
-    "cta": "[[FR: Back to home]]"
+    "title": "Page introuvable",
+    "body": "La page que vous cherchez n'est pas ici. Elle a peut-être été déplacée, ou n'existe pas encore sur ce site.",
+    "cta": "Retour à l'accueil"
   }
 }

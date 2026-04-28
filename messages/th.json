@@ -1,48 +1,48 @@
 {
   "brand": {
     "name": "Demonopol",
-    "tagline": "[[TH: Tokenization-as-a-Service]]"
+    "tagline": "Tokenization-as-a-Service"
   },
   "nav": {
-    "services": "[[TH: Services]]",
-    "diagnostic": "[[TH: Diagnostic]]",
-    "insights": "[[TH: Insights]]",
-    "about": "[[TH: About]]",
+    "services": "บริการ",
+    "diagnostic": "การวิเคราะห์",
+    "insights": "บทวิเคราะห์",
+    "about": "เกี่ยวกับเรา",
     "backToDemonopol": "demonopol.com",
-    "ctaStart": "[[TH: Start Self-Check]]"
+    "ctaStart": "เริ่มประเมินตนเอง"
   },
   "home": {
-    "eyebrow": "[[TH: Demonopol — Tokenization-as-a-Service]]",
-    "headline": "[[TH: Global liquidity for private real estate.]]",
-    "subhead": "[[TH: Worldwide structuring, distribution, and a transparent advisory process — without seven-figure quotes.]]",
-    "ctaPrimary": "[[TH: Start the Self-Check]]",
-    "ctaSecondary": "[[TH: Book a Diagnostic]]",
-    "status": "[[TH: Currently in build · Full launch shortly]]"
+    "eyebrow": "Demonopol — Tokenization-as-a-Service",
+    "headline": "สภาพคล่องระดับโลกสำหรับอสังหาริมทรัพย์ส่วนบุคคล",
+    "subhead": "การจัดโครงสร้างและการกระจายระดับโลก พร้อมกระบวนการให้คำปรึกษาที่โปร่งใส — โดยไม่มีค่าใช้จ่ายหลักล้าน",
+    "ctaPrimary": "เริ่มประเมินตนเอง",
+    "ctaSecondary": "จองการวิเคราะห์",
+    "status": "อยู่ระหว่างการพัฒนา · เปิดตัวเร็วๆ นี้"
   },
   "footer": {
-    "brand": "[[TH: Demonopol — Tokenization-as-a-Service]]",
-    "description": "[[TH: Global liquidity for private real estate. Advisory and execution from a worldwide team, presented transparently.]]",
-    "navHeading": "[[TH: Site]]",
-    "contactHeading": "[[TH: Contact]]",
-    "legal": "[[TH: Terms · Privacy · Risk]]",
+    "brand": "Demonopol — Tokenization-as-a-Service",
+    "description": "สภาพคล่องระดับโลกสำหรับอสังหาริมทรัพย์ส่วนบุคคล การให้คำปรึกษาและการดำเนินการโดยทีมงานระดับโลกอย่างโปร่งใส",
+    "navHeading": "เว็บไซต์",
+    "contactHeading": "ติดต่อ",
+    "legal": "เงื่อนไข · ความเป็นส่วนตัว · ความเสี่ยง",
     "nav": {
-      "services": "[[TH: Services]]",
-      "diagnostic": "[[TH: Diagnostic]]",
-      "start": "[[TH: Self-Check]]",
-      "insights": "[[TH: Insights]]",
-      "about": "[[TH: About]]"
+      "services": "บริการ",
+      "diagnostic": "การวิเคราะห์",
+      "start": "ประเมินตนเอง",
+      "insights": "บทวิเคราะห์",
+      "about": "เกี่ยวกับเรา"
     }
   },
   "locale": {
-    "label": "[[TH: Language]]"
+    "label": "ภาษา"
   },
   "theme": {
-    "toLight": "[[TH: Switch to light theme]]",
-    "toDark": "[[TH: Switch to dark theme]]"
+    "toLight": "เปลี่ยนเป็นธีมสว่าง",
+    "toDark": "เปลี่ยนเป็นธีมมืด"
   },
   "notFound": {
-    "title": "[[TH: Page not found]]",
-    "body": "[[TH: The page you tried to reach is not here. It may have moved, or it may not exist yet on this site.]]",
-    "cta": "[[TH: Back to home]]"
+    "title": "ไม่พบหน้าที่ค้นหา",
+    "body": "ไม่พบหน้าที่คุณต้องการ อาจถูกย้ายหรือยังไม่มีในไซต์นี้",
+    "cta": "กลับสู่หน้าหลัก"
   }
 }

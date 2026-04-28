@@ -7,6 +7,10 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { Providers } from "@/components/providers/Providers";
+import {
+  OrganizationSchema,
+  WebsiteSchema,
+} from "@/components/seo/StructuredData";
 import { routing, type Locale } from "@/i18n/routing";
 import "../globals.css";
 
@@ -104,6 +108,8 @@ export default async function LocaleLayout({
       className={`${inter.variable} ${plexSans.variable} ${plexMono.variable}`}
     >
       <body className="min-h-screen bg-background text-foreground antialiased">
+        <OrganizationSchema />
+        <WebsiteSchema />
         <Providers>
           <NextIntlClientProvider messages={messages} locale={locale}>
             <a
