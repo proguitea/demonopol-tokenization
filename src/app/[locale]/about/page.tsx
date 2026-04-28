@@ -2,12 +2,18 @@ import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 
+import { BreadcrumbsSchema } from "@/components/seo/StructuredData";
 import { Link } from "@/i18n/navigation";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "An advisory team drawn from international real-estate practice, applying a newer liquidity rail with the same discipline.",
+    "An advisory team drawn from international real-estate practice, named on the page. Operating from Demonopol LLC. Serving private real-estate owners worldwide.",
+  openGraph: {
+    title: "About — Demonopol",
+    description:
+      "Operating side stays corporate; advisors are named with their prior firms. International real-estate practice applied to a newer liquidity rail.",
+  },
 };
 
 type Advisor = {
@@ -44,6 +50,12 @@ export default async function AboutPage({
 
   return (
     <>
+      <BreadcrumbsSchema
+        items={[
+          { name: "Home", href: "/" },
+          { name: "About", href: "/about" },
+        ]}
+      />
       <section className="border-b border-border/60">
         <div className="container max-w-3xl py-20 md:py-28">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">

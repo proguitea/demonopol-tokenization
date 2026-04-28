@@ -4,7 +4,12 @@ import { setRequestLocale } from "next-intl/server";
 export const metadata: Metadata = {
   title: "Legal",
   description:
-    "Terms of Service, Privacy Policy, and Risk Disclosure for Demonopol LLC's Tokenization-as-a-Service.",
+    "Terms of Service, Privacy Policy, and Risk Disclosure for Demonopol LLC. Plain-English placeholders today, counsel-reviewed binding text before the first paid Diagnostic.",
+  openGraph: {
+    title: "Legal — Demonopol",
+    description:
+      "Three documents, one page: Terms of Service, Privacy Policy, Risk Disclosure. Honest about what's still pending counsel review.",
+  },
 };
 
 export default async function LegalPage({

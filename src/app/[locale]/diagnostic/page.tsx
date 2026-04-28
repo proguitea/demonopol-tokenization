@@ -14,7 +14,12 @@ import { isStripeConfigured } from "@/lib/stripe/server";
 export const metadata: Metadata = {
   title: "Diagnostic",
   description:
-    "$400. A 60–90 minute working session and a 6–8 page written assessment of whether — and how — your asset can be tokenized.",
+    "$400 for a written go / no-go on tokenizing your real-estate asset. 60–90 min working session, 6–8 page report, 15-minute money-back guarantee.",
+  openGraph: {
+    title: "Diagnostic — Demonopol",
+    description:
+      "Pay $400. Book a 60–90 min call. Get a 6–8 page written go / no-go on whether your asset can be tokenized — and how.",
+  },
 };
 
 const REPORT_SECTIONS = [

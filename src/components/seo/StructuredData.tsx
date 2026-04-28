@@ -119,6 +119,35 @@ export function DiagnosticFaqSchema({
   });
 }
 
+export function ServiceListSchema({
+  items,
+}: {
+  items: ReadonlyArray<{ name: string; description: string; price: string }>;
+}) {
+  return ldScript({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": `${SITE_URL}/services#tiers`,
+    name: "Demonopol service tiers",
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "Service",
+        name: item.name,
+        description: item.description,
+        provider: { "@id": `${SITE_URL}#organization` },
+        offers: {
+          "@type": "Offer",
+          price: item.price,
+          priceCurrency: item.price.startsWith("$") ? "USD" : undefined,
+          availability: "https://schema.org/InStock",
+        },
+      },
+    })),
+  });
+}
+
 export function BreadcrumbsSchema({
   items,
 }: {

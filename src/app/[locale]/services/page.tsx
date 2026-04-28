@@ -2,13 +2,22 @@ import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { ArrowRight, Check, Minus } from "lucide-react";
 
+import {
+  BreadcrumbsSchema,
+  ServiceListSchema,
+} from "@/components/seo/StructuredData";
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Five priced steps from a free Self-Check to a fully-mandated tokenization. Transparent scope and price at every tier.",
+    "Five tiers, from a free Self-Check to a fully-mandated transaction. Pricing published. Scope published. Most owners stop after the $400 Diagnostic.",
+  openGraph: {
+    title: "Services — Demonopol",
+    description:
+      "Five priced tiers for tokenizing private real estate. Free Self-Check, $400 Diagnostic, scoped Mandate and Express engagements.",
+  },
 };
 
 type Tier = {
@@ -152,6 +161,19 @@ export default async function ServicesPage({
 
   return (
     <>
+      <ServiceListSchema
+        items={TIERS.map((t) => ({
+          name: t.name,
+          description: t.oneLine,
+          price: t.price,
+        }))}
+      />
+      <BreadcrumbsSchema
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Services", href: "/services" },
+        ]}
+      />
       <section className="border-b border-border/60">
         <div className="container max-w-4xl py-20 md:py-28">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">

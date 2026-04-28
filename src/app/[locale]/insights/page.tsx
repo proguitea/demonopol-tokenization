@@ -7,7 +7,12 @@ import { Link } from "@/i18n/navigation";
 export const metadata: Metadata = {
   title: "Insights",
   description:
-    "Working notes on global liquidity for private real estate. Asset classes, jurisdictions, and the structuring decisions behind real transactions.",
+    "Working notes on global liquidity for private real estate — by asset class, by jurisdiction, and on the structuring decisions that quietly decide whether a deal closes.",
+  openGraph: {
+    title: "Insights — Demonopol",
+    description:
+      "What we've learned doing the work. No roundups, no hot takes. By asset class, jurisdiction, and structuring decision.",
+  },
 };
 
 type ArticlePreview = {
