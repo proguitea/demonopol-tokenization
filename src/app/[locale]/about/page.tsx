@@ -177,6 +177,7 @@ export default async function AboutPage({
               >
                 {t("ecosystem.cta")}
                 <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
+                <span className="sr-only"> (opens in new tab)</span>
               </a>
             </div>
             <div className="rounded-xl border border-border bg-elevated p-8">
@@ -279,6 +280,7 @@ function AdvisorCard({
           >
             {linkedinLabel}
             <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
+            <span className="sr-only"> (opens in new tab)</span>
           </a>
         ) : (
           <span className="font-mono text-xs uppercase tracking-wide text-muted-foreground">

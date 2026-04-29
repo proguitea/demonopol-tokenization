@@ -121,7 +121,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="text-foreground/80 hover:text-foreground"
               >
-                demonopol.com ↗
+                demonopol.com ↗<span className="sr-only"> (opens in new tab)</span>
               </a>
             </li>
           </ul>

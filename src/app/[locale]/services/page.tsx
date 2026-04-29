@@ -161,7 +161,7 @@ export default async function ServicesPage({
                   />
                 ))}
                 <tr className="border-b border-border/50">
-                  <td className="px-4 py-3 font-medium">{t("comparison.rows.price")}</td>
+                  <th scope="row" className="px-4 py-3 text-left font-medium">{t("comparison.rows.price")}</th>
                   {TIER_META.map((meta) => (
                     <td key={meta.key} className="px-4 py-3 font-mono text-xs">
                       {meta.tbd ?? t(`tiers.${meta.key}.price`)}
@@ -243,9 +243,9 @@ function TierCard({
       )}
     >
       <header className="space-y-3">
-        <p className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">
+        <h3 className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">
           {name}
-        </p>
+        </h3>
         <div className="flex items-baseline gap-2">
           <span className="font-display text-3xl font-semibold tracking-tight">
             {price}
@@ -311,7 +311,7 @@ function TierCard({
 function ComparisonRow({ label, values }: { label: string; values: boolean[] }) {
   return (
     <tr className="border-b border-border/50">
-      <td className="px-4 py-3 font-medium">{label}</td>
+      <th scope="row" className="px-4 py-3 text-left font-medium">{label}</th>
       {values.map((v, i) => (
         <td key={i} className="px-4 py-3">
           {v ? (

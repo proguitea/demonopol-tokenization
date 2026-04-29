@@ -175,7 +175,7 @@ export default async function DiagnosticPage({
               >
                 <summary className="flex cursor-pointer items-start justify-between gap-4 text-sm font-medium">
                   <span>{faq.q}</span>
-                  <span className="font-mono text-muted-foreground transition-transform group-open:rotate-45">
+                  <span className="font-mono text-muted-foreground transition-transform group-open:rotate-45" aria-hidden="true">
                     +
                   </span>
                 </summary>
