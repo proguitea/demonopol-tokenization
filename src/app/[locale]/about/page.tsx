@@ -76,6 +76,20 @@ export default async function AboutPage({
       </section>
 
       <section className="border-b border-border/60 bg-muted/40">
+        <div className="container max-w-3xl py-16 md:py-20">
+          <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
+            {t("origin.eyebrow")}
+          </p>
+          <h2 className="mt-3 max-w-2xl text-balance font-display text-2xl font-semibold tracking-tight md:text-3xl">
+            {t("origin.headline")}
+          </h2>
+          <p className="mt-5 text-pretty text-base text-muted-foreground md:text-lg">
+            {t("origin.body")}
+          </p>
+        </div>
+      </section>
+
+      <section className="border-b border-border/60">
         <div className="container max-w-5xl py-16 md:py-20">
           <div className="grid gap-12 md:grid-cols-[1fr_2fr]">
             <div>

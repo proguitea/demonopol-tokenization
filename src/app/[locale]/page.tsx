@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
+
+import { localeAlternates } from "@/lib/seo/alternates";
+
+export const metadata: Metadata = {
+  alternates: localeAlternates("/"),
+};
 import {
   ArrowRight,
   ArrowUpRight,

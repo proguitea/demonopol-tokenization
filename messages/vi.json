@@ -127,6 +127,19 @@
       "start": "Tự đánh giá",
       "insights": "Bài phân tích",
       "about": "Giới thiệu"
+    },
+    "newsletter": {
+      "eyebrow": "Cập nhật thông tin",
+      "body": "Tối đa hai email mỗi tháng. Phân tích về thanh khoản bất động sản toàn cầu — theo loại tài sản, theo thẩm quyền.",
+      "cta": "Đăng ký qua email",
+      "subject": "Newsletter%20signup"
+    },
+    "reach": {
+      "heading": "Thị trường",
+      "markets": [
+        "Tây Ban Nha", "Ma Rốc", "Thái Lan", "Hồng Kông",
+        "Thuỵ Sĩ", "Việt Nam", "Hoa Kỳ", "Toàn cầu"
+      ]
     }
   },
   "locale": {
@@ -351,6 +364,11 @@
     "eyebrow": "Giới thiệu",
     "headline": "Thực tiễn bất động sản quốc tế, áp dụng vào cơ chế mới hơn.",
     "subhead": "Demonopol được vận hành bởi đội ngũ cố vấn từ lĩnh vực môi giới bất động sản quốc tế. Tokenization là cơ chế mới hơn — chúng tôi tiếp cận với kỷ luật tương tự áp dụng cho giao dịch bất động sản tư nhân: có tài liệu, hiểu rõ thẩm quyền, trung thực về bản chất và giới hạn.",
+    "origin": {
+      "eyebrow": "Lý do chúng tôi tồn tại",
+      "headline": "Lớp tư vấn cho tokenization vốn không minh bạch. Chúng tôi xây dựng nó để trở nên rõ ràng.",
+      "body": "Demonopol được thành lập với niềm tin rằng cơ chế để tokenize bất động sản tư nhân đã tồn tại — nhưng quá trình tư vấn để quyết định liệu, bằng cách nào và với chi phí nào một tài sản cụ thể đáng theo đuổi đã liên tục bị che khuất bởi các báo giá pháp lý theo yêu cầu và các cuộc gọi đánh giá khả thi mơ hồ. TaaS là câu trả lời của chúng tôi: một quy trình có giá, có phạm vi, bằng văn bản cho bạn biết bạn đang mua gì trước khi mua."
+    },
     "howBuilt": {
       "eyebrow": "Cấu trúc của chúng tôi",
       "headline": "Phía vận hành. Phía cố vấn.",
@@ -413,6 +431,13 @@
       "body": "Tối đa hai email mỗi tháng. Không có quảng cáo, không có tóm tắt tái chế — cùng nội dung đăng tải ở đây. Gửi email đến tokenize@demonopol.com với tiêu đề \"Newsletter signup\" và chúng tôi sẽ thêm bạn vào danh sách. (Form đăng ký đúng nghĩa sẽ có khi bài đầu tiên xuất bản.)",
       "signupSubject": "Newsletter%20signup",
       "cta": "Hoặc bắt đầu Tự đánh giá"
+    },
+    "filters": {
+      "all": "Tất cả",
+      "primer": "Primer",
+      "jurisdiction": "Thẩm quyền",
+      "assetClass": "Loại tài sản",
+      "risk": "Rủi ro"
     },
     "articleStatus": {
       "drafting": "Đang biên soạn",

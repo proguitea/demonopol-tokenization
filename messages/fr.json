@@ -127,6 +127,19 @@
       "start": "Auto-évaluation",
       "insights": "Analyses",
       "about": "À propos"
+    },
+    "newsletter": {
+      "eyebrow": "Restez informé",
+      "body": "Deux e-mails par mois maximum. Analyses sur la liquidité immobilière mondiale — par classe d'actifs, par juridiction.",
+      "cta": "S'abonner par e-mail",
+      "subject": "Newsletter%20signup"
+    },
+    "reach": {
+      "heading": "Marchés",
+      "markets": [
+        "Espagne", "Maroc", "Thaïlande", "Hong Kong",
+        "Suisse", "Viêt Nam", "États-Unis", "Mondial"
+      ]
     }
   },
   "locale": {
@@ -351,6 +364,11 @@
     "eyebrow": "À propos",
     "headline": "Pratique immobilière internationale, appliquée à un nouveau mécanisme.",
     "subhead": "Demonopol est opéré par une équipe de conseil issue du courtage immobilier international. La tokenisation est un mécanisme récent — nous l'abordons avec la même rigueur que nous appliquons aux transactions immobilières privées : documenté, conscient des juridictions, honnête sur ce que c'est et ce que ce n'est pas.",
+    "origin": {
+      "eyebrow": "Pourquoi nous existons",
+      "headline": "La couche de conseil pour la tokenisation a été opaque. Nous l'avons construite pour être lisible.",
+      "body": "Demonopol a été fondé sur la conviction que la machinerie permettant de tokeniser l'immobilier privé existe déjà — mais que le processus de conseil pour décider si, comment et à quel coût un actif spécifique mérite d'être poursuivi a été constamment obscurci par des devis juridiques sur mesure et des appels de faisabilité vagues. TaaS est notre réponse : un processus tarifé, cadré et écrit qui vous dit ce que vous achetez avant que vous l'achetiez."
+    },
     "howBuilt": {
       "eyebrow": "Notre structure",
       "headline": "Côté opérationnel. Côté conseil.",
@@ -413,6 +431,13 @@
       "body": "Deux e-mails par mois au maximum. Pas de promotion, pas de résumés recyclés — la même rédaction que celle publiée ici. Envoyez un e-mail à tokenize@demonopol.com avec l'objet « Newsletter signup » et nous vous ajouterons à la liste. (Un vrai formulaire d'inscription arrive dès la publication du premier article.)",
       "signupSubject": "Newsletter%20signup",
       "cta": "Ou lancer l'auto-évaluation"
+    },
+    "filters": {
+      "all": "Tout",
+      "primer": "Primer",
+      "jurisdiction": "Juridiction",
+      "assetClass": "Classe d'actifs",
+      "risk": "Risques"
     },
     "articleStatus": {
       "drafting": "En rédaction",

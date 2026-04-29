@@ -127,6 +127,19 @@
       "start": "Self-Check",
       "insights": "Insights",
       "about": "About"
+    },
+    "newsletter": {
+      "eyebrow": "Stay informed",
+      "body": "Two emails a month. Insights on global real-estate liquidity — by asset class, by jurisdiction.",
+      "cta": "Subscribe by email",
+      "subject": "Newsletter%20signup"
+    },
+    "reach": {
+      "heading": "Markets",
+      "markets": [
+        "Spain", "Morocco", "Thailand", "Hong Kong",
+        "Switzerland", "Vietnam", "United States", "Worldwide"
+      ]
     }
   },
   "locale": {
@@ -351,6 +364,11 @@
     "eyebrow": "About",
     "headline": "International real-estate practice, applied to a newer rail.",
     "subhead": "Demonopol is operated by an advisory team drawn from international real-estate brokering. Tokenization is a newer mechanism — we treat it with the same discipline we apply to private real-estate transactions: documented, jurisdictionally aware, honest about what it is and what it isn't.",
+    "origin": {
+      "eyebrow": "Why we exist",
+      "headline": "The advisory layer for tokenization has been opaque. We built it to be legible.",
+      "body": "Demonopol was formed on the conviction that the machinery for tokenizing private real estate already exists — but the advisory process for deciding whether, how, and at what cost a specific asset is worth pursuing has been consistently obscured behind bespoke legal quotes and vague feasibility calls. TaaS is our answer: a priced, scoped, written process that tells you what you are buying before you buy it."
+    },
     "howBuilt": {
       "eyebrow": "How we're built",
       "headline": "Operating side. Advisory side.",
@@ -413,6 +431,13 @@
       "body": "Two emails a month at most. No promotion, no recycled summaries — the same writing that ships here. Email tokenize@demonopol.com with the subject line \"Newsletter signup\" and we'll add you to the list. (A proper signup form lands once the first article publishes.)",
       "signupSubject": "Newsletter%20signup",
       "cta": "Or start the Self-Check"
+    },
+    "filters": {
+      "all": "All",
+      "primer": "Primer",
+      "jurisdiction": "Jurisdiction",
+      "assetClass": "Asset class",
+      "risk": "Risk"
     },
     "articleStatus": {
       "drafting": "Drafting",

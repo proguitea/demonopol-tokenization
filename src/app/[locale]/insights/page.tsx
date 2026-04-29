@@ -100,6 +100,36 @@ export default async function InsightsPage({
               {t("queue.timing")}
             </p>
           </div>
+
+          {/* Visual filter chips — V1: display only, no interactive filtering */}
+          <div
+            className="mt-6 flex flex-wrap gap-2"
+            role="group"
+            aria-label="Filter by category"
+          >
+            {(
+              [
+                ["all", t("filters.all")],
+                ["primer", t("filters.primer")],
+                ["jurisdiction", t("filters.jurisdiction")],
+                ["assetClass", t("filters.assetClass")],
+                ["risk", t("filters.risk")],
+              ] as [string, string][]
+            ).map(([key, label]) => (
+              <span
+                key={key}
+                aria-current={key === "all" ? "true" : undefined}
+                className={
+                  key === "all"
+                    ? "rounded-full border border-primary bg-primary/10 px-3 py-1 font-mono text-[10px] uppercase tracking-wide text-primary"
+                    : "rounded-full border border-border bg-background px-3 py-1 font-mono text-[10px] uppercase tracking-wide text-muted-foreground"
+                }
+              >
+                {label}
+              </span>
+            ))}
+          </div>
+
           <div className="mt-8 grid gap-5 md:grid-cols-2">
             {ARTICLE_META.map((article) => (
               <ArticleCard
