@@ -141,10 +141,11 @@ In rough priority order. None of these are blocking launch on their own.
 10. **Footer polish** — current footer is functional but plain. Could
     add a small newsletter capture (mailto-based for V1) and a
     jurisdiction-reach chip rail.
-11. **Translation depth** — extract page-body strings (long blocks
-    inside /services, /about, /diagnostic, /insights, /legal) into
-    message files so non-EN locales can be fully translated. Today the
-    body copy is inlined English everywhere.
+11. ~~**Translation depth**~~ — **DONE (2026-04-29, commit f3d32b0).**
+    All page-body strings extracted into message files. FR is full quality.
+    VI/TH are agent-quality, flagged for native review (Q-017). The
+    `i18n/request.ts` `Messages` type was extended to support `string[]`
+    values (needed for tier includes/excludes, FAQ items, etc.).
 12. **Per-route OG image variants** — different headlines per page (e.g.
     "$400 Diagnostic" on /diagnostic, "Five priced tiers" on /services).
     The base [`opengraph-image.tsx`](./src/app/opengraph-image.tsx) can
