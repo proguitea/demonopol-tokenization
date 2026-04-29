@@ -17,7 +17,103 @@
     "subhead": "Structuration et distribution à l'international, avec un processus de conseil transparent — sans devis à six chiffres.",
     "ctaPrimary": "Lancer l'auto-évaluation",
     "ctaSecondary": "Réserver un Diagnostic",
-    "status": "En cours de développement · Lancement imminent"
+    "status": "En cours de développement · Lancement imminent",
+    "statusBar": "Auto-évaluation gratuite · Diagnostic à 400 $ · Remboursement en 15 min",
+    "services": {
+      "eyebrow": "Services",
+      "headline": "Cinq étapes tarifées. La plupart des propriétaires n'en ont besoin que des deux premières.",
+      "seeAll": "Voir les cinq étapes",
+      "cards": {
+        "selfCheck": {
+          "eyebrow": "Gratuit",
+          "title": "Auto-évaluation",
+          "body": "Un questionnaire structuré de 5 minutes. Nous vous revenons avec une évaluation écrite d'adéquation et la prochaine étape recommandée.",
+          "cta": "Lancer l'auto-évaluation"
+        },
+        "diagnostic": {
+          "eyebrow": "400 $ · unique",
+          "title": "Diagnostic",
+          "body": "Session de travail de 60 à 90 minutes et un avis écrit de faisabilité de 6 à 8 pages. Remboursable dans les 15 premières minutes.",
+          "cta": "Voir le contenu"
+        },
+        "mandate": {
+          "eyebrow": "Sur devis",
+          "title": "Mandat & Express",
+          "body": "Structuration complète, routage juridictionnel et distribution aux investisseurs qualifiés. Cadrage après le Diagnostic.",
+          "cta": "Comparer les cinq niveaux"
+        }
+      }
+    },
+    "howItWorks": {
+      "eyebrow": "Comment ça fonctionne",
+      "headline": "Quatre étapes. Rien ne se passe sans votre décision.",
+      "subhead": "Chaque étape est un produit autonome avec son propre livrable. La plupart des propriétaires s'arrêtent à la deuxième étape, évaluation écrite en main.",
+      "steps": {
+        "selfCheck": {
+          "label": "Auto-évaluation",
+          "body": "Cinq minutes. Gratuit. Recueil structuré sur l'actif, la propriété, la juridiction et vos objectifs."
+        },
+        "diagnostic": {
+          "label": "Diagnostic",
+          "body": "400 $. Une session de travail et un rapport écrit — faisabilité, options de structuration, routage juridictionnel, coût indicatif."
+        },
+        "structuring": {
+          "label": "Structuration",
+          "body": "Engagement de mandat : routage vers un partenaire juridique, mise en conformité, documentation prête pour les investisseurs. Cadré par actif."
+        },
+        "distribution": {
+          "label": "Distribution",
+          "body": "Distribution à un pool d'investisseurs ciblé. Portée mondiale, avec une expertise dans sept juridictions partenaires."
+        }
+      }
+    },
+    "trust": {
+      "moneyBack": {
+        "eyebrow": "Garantie de remboursement",
+        "title": "15 minutes, sans question.",
+        "body": "Si l'appel de Diagnostic n'apporte pas de clarté utile, nous remboursons les 400 $ intégralement. La garantie s'applique lors de l'appel, pas dans les petits caractères."
+      },
+      "written": {
+        "eyebrow": "Livrable écrit",
+        "title": "6 à 8 pages. Même structure à chaque fois.",
+        "body": "Faisabilité, options de structuration, routage juridictionnel, calendrier, coût indicatif, adéquation avec le pool d'investisseurs. Un document que vous pouvez remettre à votre conseil."
+      },
+      "advisory": {
+        "eyebrow": "Équipe de conseil",
+        "title": "Issue de la pratique immobilière internationale.",
+        "body": "Conseillers nommés avec leurs cabinets précédents vérifiables sur LinkedIn — Luc Villeneuve (ex-Century 21) et Costa (ex-Group1Vest). Le mécanisme de tokenisation est récent ; la rigueur opérationnelle ne l'est pas.",
+        "cta": "Rencontrer l'équipe"
+      }
+    },
+    "insights": {
+      "eyebrow": "Analyses",
+      "headline": "Notes de travail issues de la pratique.",
+      "seeAll": "Tout voir",
+      "previews": {
+        "first": {
+          "tag": "Primer · Mai 2026",
+          "title": "Liquidité pour l'immobilier privé sans vendre",
+          "one": "Ce que les propriétaires entendent vraiment par tokenisation, et les trois choses qui changent quand on cesse de l'aborder comme une vente."
+        },
+        "second": {
+          "tag": "Risques · Juin 2026",
+          "title": "Fractionnement immobilier : avantages réels, risques réels",
+          "one": "La liste que personne ne publie. Ce qui tourne vraiment mal, ce qui est surestimé, et comment lire les clauses type."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Première étape",
+      "headline": "Cinq minutes. Sans carte bancaire. Évaluation écrite en main.",
+      "body": "L'auto-évaluation est le début de la conversation. Que la réponse soit « oui, voici comment » ou « pas encore, voici ce qui changerait cela » — vous repartez avec quelque chose d'écrit.",
+      "start": "Lancer l'auto-évaluation",
+      "compare": "Comparer les cinq niveaux",
+      "features": {
+        "intake": "Recueil structuré gratuit",
+        "outcome": "Évaluation écrite de l'issue",
+        "next": "Prochaine étape recommandée"
+      }
+    }
   },
   "footer": {
     "brand": "Demonopol — Tokenization-as-a-Service",
@@ -44,5 +140,359 @@
     "title": "Page introuvable",
     "body": "La page que vous cherchez n'est pas ici. Elle a peut-être été déplacée, ou n'existe pas encore sur ce site.",
     "cta": "Retour à l'accueil"
+  },
+  "services": {
+    "eyebrow": "Services",
+    "headline": "Cinq étapes tarifées. Transparentes à chaque niveau.",
+    "subhead": "Nous proposons l'ensemble de l'échelle, mais la plupart des propriétaires n'ont besoin que des deux premiers échelons pour prendre une décision. Tarification publiée. Périmètre publié. Ce que vous n'obtenez pas est aussi publié.",
+    "cta": "Commencer par l'auto-évaluation",
+    "tierCard": {
+      "for": "Pour"
+    },
+    "comparison": {
+      "headline": "Comparaison des niveaux",
+      "subhead": "Chaque niveau est un produit autonome. Vous n'avez pas à acheter le suivant — la plupart des propriétaires s'arrêtent après le Diagnostic.",
+      "header": "Ce que vous obtenez",
+      "rows": {
+        "written": "Évaluation écrite",
+        "live": "Session de travail en direct",
+        "pricing": "Tarification indicative",
+        "marketing": "Supports marketing",
+        "legal": "Routage vers un partenaire juridique",
+        "distribution": "Distribution aux investisseurs",
+        "moneyBack": "Garantie de remboursement",
+        "price": "Tarif"
+      }
+    },
+    "honestPath": {
+      "eyebrow": "La voie honnête",
+      "headline": "Commencez gratuitement. Décidez avec une évaluation écrite en main.",
+      "body": "L'auto-évaluation ne coûte rien. Si nous pouvons vous aider, le Diagnostic vous donne un avis écrit de faisabilité pour 400 $ — remboursable dans les 15 premières minutes si l'appel n'apporte pas de clarté utile. Tout ce qui suit est une décision délibérée, jamais le chemin par défaut.",
+      "start": "Lancer l'auto-évaluation",
+      "whoWeAre": "Qui sommes-nous"
+    },
+    "tiers": {
+      "selfCheck": {
+        "name": "Auto-évaluation",
+        "price": "Gratuit",
+        "oneLine": "Un questionnaire structuré de 5 minutes. Nous vous revenons avec une évaluation écrite d'adéquation.",
+        "forWhom": "Propriétaires souhaitant déterminer si la tokenisation est une option sérieuse pour leur actif.",
+        "includes": [
+          "Questionnaire structuré de dix questions",
+          "Évaluation écrite d'adéquation sous 1 à 2 jours ouvrés",
+          "Fourchette de prix indicative pour le Diagnostic complet",
+          "Prochaine étape recommandée"
+        ],
+        "excludes": [
+          "Pas de recommandation juridique, fiscale ou financière",
+          "Pas de structuration, pas de mise en relation, pas de mise en marché"
+        ],
+        "ctaLabel": "Lancer l'auto-évaluation"
+      },
+      "diagnostic": {
+        "name": "Diagnostic",
+        "price": "400 $",
+        "priceCadence": "paiement unique",
+        "oneLine": "Un appel de 60 à 90 minutes avec nos experts et une évaluation écrite de 6 à 8 pages pour savoir si — et comment — votre actif peut être tokenisé.",
+        "forWhom": "Propriétaires prêts à investir une fraction des honoraires juridiques (5 000 $–50 000 $ ailleurs) pour obtenir un avis clair et écrit.",
+        "includes": [
+          "Session de travail de 60 à 90 min avec l'équipe de conseil",
+          "Diagnostic écrit de 6 à 8 pages — options de structure, routage juridictionnel, calendrier et coût indicatifs",
+          "Check-list pré-appel (présentation, acte, finances, évaluations antérieures)",
+          "Suivi écrit avec les prochaines étapes recommandées",
+          "Garantie de remboursement de 15 minutes si l'appel n'apporte pas de clarté utile"
+        ],
+        "excludes": [
+          "Pas d'avis juridique (nous orientons vers un partenaire juridictionnel si nécessaire)",
+          "Pas d'exécution ni de mise en marché — c'est le rôle du Mandat"
+        ],
+        "ctaLabel": "Réserver un Diagnostic"
+      },
+      "promotion": {
+        "name": "Boost Promotion",
+        "price": "200 $",
+        "priceCadence": "paiement unique, post-Diagnostic",
+        "oneLine": "Un complément marketing pour les propriétaires qui souhaitent que leur actif tokenisé atteigne le bon public.",
+        "forWhom": "Propriétaires ayant effectué le Diagnostic et souhaitant toucher des investisseurs qualifiés.",
+        "includes": [
+          "Texte de présentation — rédigé pour l'actif, pas sur un modèle générique",
+          "Un article publié sur le canal de publication Demonopol",
+          "Une annonce auprès de la communauté Demonopol",
+          "Un emplacement dans la newsletter",
+          "Une tentative de pitch presse auprès d'une publication sectorielle"
+        ],
+        "excludes": [
+          "Pas de dépenses publicitaires payantes",
+          "Pas de push KOL (différé — voir stratégie presse)",
+          "Pas de couverture garantie"
+        ],
+        "ctaLabel": "Disponible après le Diagnostic"
+      },
+      "mandate": {
+        "name": "Mandat",
+        "price": "Sur devis",
+        "priceCadence": "cadré par actif",
+        "oneLine": "Structuration et exécution complètes : routage juridique, conformité, distribution aux investisseurs qualifiés.",
+        "forWhom": "Propriétaires ayant obtenu un feu vert du Diagnostic et prêts à passer à l'exécution.",
+        "includes": [
+          "Sélection de la juridiction et routage vers un partenaire juridique",
+          "Structuration et mise en conformité (KYC/AML)",
+          "Documentation prête pour les investisseurs",
+          "Distribution au pool d'investisseurs concerné",
+          "Gestion de projet jusqu'à la clôture"
+        ],
+        "excludes": [
+          "Pas un produit à tarif fixe — cadré après le Diagnostic",
+          "Pas de garanties sur le placement ou la découverte de prix"
+        ],
+        "ctaLabel": "À discuter après le Diagnostic"
+      },
+      "express": {
+        "name": "Express",
+        "priceCadence": "fast-track",
+        "oneLine": "Un Mandat condensé pour les propriétaires ayant une échéance ferme et un dossier de documentation en ordre.",
+        "forWhom": "Propriétaires avec un deal déjà structuré — pression de clôture, délai juridictionnel ou cercle d'investisseurs prêt à s'engager.",
+        "includes": [
+          "Même périmètre que le Mandat, calendrier compressé",
+          "Accès prioritaire à l'équipe de conseil",
+          "Suivi quotidien pendant la fenêtre active"
+        ],
+        "excludes": [
+          "Pas un moyen de contourner le Diagnostic — la faisabilité reste conditionnelle",
+          "Capacité limitée — pas toujours disponible"
+        ],
+        "ctaLabel": "À discuter après le Diagnostic"
+      }
+    }
+  },
+  "diagnostic": {
+    "eyebrow": "Diagnostic",
+    "headline": "400 $. Une session de travail. Un avis écrit de faisabilité.",
+    "subhead": "Un appel de 60 à 90 minutes avec notre équipe de conseil et une évaluation écrite de 6 à 8 pages pour savoir si — et comment — votre actif peut être tokenisé. Vous repartez avec un document, pas un vague « peut-être ».",
+    "selfCheckFirst": "Essayez d'abord l'auto-évaluation gratuite",
+    "stripeNote": "Paiement via Stripe Checkout. Reçu émis par Demonopol LLC. La garantie de remboursement de 15 minutes s'applique lors de l'appel, pas dans les petits caractères.",
+    "tiles": {
+      "moneyBack": {
+        "eyebrow": "Garantie de remboursement",
+        "title": "15 minutes. Sans question.",
+        "body": "Si l'appel n'apporte pas de clarté, nous y mettons fin et remboursons les 400 $ intégralement. La garantie s'applique lors de l'appel, pas dans les petits caractères."
+      },
+      "written": {
+        "eyebrow": "Livrable écrit",
+        "title": "Évaluation de 6 à 8 pages.",
+        "body": "Pas une transcription. Pas des diapositives. Un document que vous pouvez montrer à votre conseil, vos co-propriétaires ou votre contact en relations investisseurs."
+      },
+      "timeline": {
+        "eyebrow": "Calendrier",
+        "title": "Rapport sous une semaine.",
+        "body": "Appel dans les 7 à 10 jours suivant le paiement, évaluation écrite dans les 5 jours ouvrés suivant l'appel."
+      }
+    },
+    "report": {
+      "eyebrow": "Ce que vous obtenez",
+      "headline": "À l'intérieur du diagnostic écrit",
+      "subhead": "Huit sections. Même structure pour chaque actif, afin de pouvoir comparer section par section un rapport sur une villa espagnole à un rapport sur un bureau à Bangkok.",
+      "sections": [
+        "Résumé de l'actif — ce que nous avons reçu et vérifié",
+        "Verdict de faisabilité — feu vert, feu vert conditionnel ou refus, avec le raisonnement",
+        "Options de structuration — les conteneurs juridiques réalistes pour votre actif",
+        "Routage juridictionnel — où effectuer le travail et pourquoi",
+        "Calendrier indicatif — phases, obstacles, points de décision",
+        "Coût indicatif — juridique, structuration, distribution",
+        "Adéquation avec le pool d'investisseurs — qui souscrirait plausiblement et à quel ticket",
+        "Prochaines étapes recommandées — ce que nous ferions ensuite et ce que vous pouvez faire sans nous"
+      ]
+    },
+    "checklist": {
+      "eyebrow": "Avant l'appel",
+      "headline": "Check-list pré-appel",
+      "subhead": "Apportez ce que vous avez. Les éléments manquants n'annulent pas l'appel — ils définissent ce que nous pouvons vérifier et le niveau de confiance du verdict.",
+      "items": [
+        "Présentation ou résumé de l'actif (tout format)",
+        "Acte de propriété ou document équivalent",
+        "Finances les plus récentes ou état locatif, si l'actif génère des revenus",
+        "Évaluation antérieure ou opinion récente de valeur d'un courtier, si disponible"
+      ]
+    },
+    "faq": {
+      "eyebrow": "Questions fréquentes",
+      "headline": "Réponses honnêtes",
+      "items": [
+        {
+          "q": "Et si vous concluez que mon actif n'est pas adapté ?",
+          "a": "Vous recevez la même évaluation écrite — expliquant clairement le refus et ce qui changerait le verdict. Les 400 $ achètent de la clarté, pas un résultat."
+        },
+        {
+          "q": "Comment fonctionne la garantie de remboursement ?",
+          "a": "Si, quinze minutes après le début de l'appel, vous ne pensez pas que la session apportera une clarté utile, nous mettons fin à l'appel et remboursons les 400 $ intégralement. Sans paperasse, sans friction."
+        },
+        {
+          "q": "Dois-je d'abord faire l'auto-évaluation ?",
+          "a": "Non, mais c'est utile. L'auto-évaluation est gratuite et fournit aux deux parties le recueil structuré sur lequel s'appuie le Diagnostic. Si votre actif est en limite, le faire en premier évite des allers-retours lors de l'appel. Si vous savez déjà ce que vous voulez, payer directement est tout à fait approprié."
+        },
+        {
+          "q": "Qui dirige l'appel ?",
+          "a": "Des membres de notre équipe de conseil et un analyste de l'équipe opérationnelle. Nous ne mettons pas les noms des opérateurs individuels sur la page d'accueil car le travail est collectif — mais vous rencontrerez les personnes lors de l'appel."
+        },
+        {
+          "q": "Le Diagnostic est-il un conseil juridique ?",
+          "a": "Non. C'est une évaluation commerciale et de structuration. Lorsqu'un avis juridique spécifique à une juridiction est nécessaire, nous vous orientons vers un partenaire sur le marché concerné — c'est un engagement distinct."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Prêt",
+      "headline": "Payez, réservez, obtenez un avis écrit de faisabilité.",
+      "body": "Le paiement prend une minute. Après le paiement, vous serez directement redirigé vers le lien de réservation pour choisir un créneau dans les 7 à 10 prochains jours. La garantie de remboursement est inconditionnelle dans les quinze premières minutes de l'appel.",
+      "compare": "Comparer les cinq niveaux"
+    }
+  },
+  "about": {
+    "eyebrow": "À propos",
+    "headline": "Pratique immobilière internationale, appliquée à un nouveau mécanisme.",
+    "subhead": "Demonopol est opéré par une équipe de conseil issue du courtage immobilier international. La tokenisation est un mécanisme récent — nous l'abordons avec la même rigueur que nous appliquons aux transactions immobilières privées : documenté, conscient des juridictions, honnête sur ce que c'est et ce que ce n'est pas.",
+    "howBuilt": {
+      "eyebrow": "Notre structure",
+      "headline": "Côté opérationnel. Côté conseil.",
+      "operating": "L'équipe opérationnelle — les personnes qui répondent à votre e-mail, dirigent votre appel de Diagnostic et structurent votre transaction — s'exprime d'une seule voix corporate. Nous ne mettons pas les noms des opérateurs individuels sur la page d'accueil car le travail est collectif et la relation est avec le cabinet.",
+      "advisory": "Le côté conseil est nommé. Les conseillers ci-dessous apportent leurs références et leur jugement, et vous pouvez vérifier leurs parcours sur LinkedIn. Ils sont consultés sur la structure, la juridiction et les décisions où l'expérience immobilière internationale fait la différence."
+    },
+    "advisors": {
+      "eyebrow": "Conseillers",
+      "headline": "Issus de la pratique immobilière internationale.",
+      "subhead": "Vérifiables sur LinkedIn. Pas de métriques agrégées, pas de volume de transactions. La crédibilité est dans les noms et les cabinets.",
+      "priorFirm": "Cabinet précédent",
+      "linkedin": "LinkedIn"
+    },
+    "reach": {
+      "eyebrow": "Portée",
+      "headline": "Mondial, avec une expertise sur sept marchés.",
+      "subhead": "Nous acceptons des actifs du monde entier. Là où nous avons des relations avec des partenaires juridiques locaux, nous traitons plus rapidement.",
+      "markets": [
+        "Espagne (luxe)",
+        "Maroc",
+        "Thaïlande",
+        "Hong Kong",
+        "Suisse",
+        "Viêt Nam",
+        "États-Unis",
+        "Autre — selon la juridiction"
+      ]
+    },
+    "ecosystem": {
+      "eyebrow": "Écosystème",
+      "headline": "Site partenaire",
+      "body": "Le travail plus large de Demonopol se trouve sur demonopol.com. Ce site est le point d'entrée Tokenization-as-a-Service pour les émetteurs et les propriétaires.",
+      "cta": "Visiter demonopol.com"
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "headline": "Comment nous joindre",
+      "general": "Général & recueil",
+      "legalPayments": "Juridique & paiements",
+      "entity": "Entité opérationnelle"
+    },
+    "cta": {
+      "eyebrow": "Première étape",
+      "headline": "L'auto-évaluation est gratuite, structurée et rapide.",
+      "body": "Cinq minutes. Sans carte bancaire. Nous vous revenons avec une évaluation écrite et la prochaine étape recommandée.",
+      "start": "Lancer l'auto-évaluation"
+    }
+  },
+  "insights": {
+    "eyebrow": "Analyses",
+    "headline": "Notes de travail sur la liquidité mondiale de l'immobilier privé.",
+    "subhead": "Nous publions ce que nous avons appris en faisant le travail — par classe d'actifs, par juridiction, et sur les décisions de structuration qui déterminent discrètement si une transaction se conclut. Pas de prises de position, pas de synthèses.",
+    "queue": {
+      "headline": "En attente de publication",
+      "timing": "Première vague en mai–juin"
+    },
+    "newsletter": {
+      "eyebrow": "Newsletter",
+      "headline": "Recevez chaque article Insights dans votre boîte mail.",
+      "body": "Deux e-mails par mois au maximum. Pas de promotion, pas de résumés recyclés — la même rédaction que celle publiée ici. Envoyez un e-mail à tokenize@demonopol.com avec l'objet « Newsletter signup » et nous vous ajouterons à la liste. (Un vrai formulaire d'inscription arrive dès la publication du premier article.)",
+      "signupSubject": "Newsletter%20signup",
+      "cta": "Ou lancer l'auto-évaluation"
+    },
+    "articleStatus": {
+      "drafting": "En rédaction",
+      "scheduled": "Programmé",
+      "published": "Publié"
+    },
+    "articles": {
+      "liquidityWithoutSelling": {
+        "title": "Liquidité pour l'immobilier privé sans vendre : primer 2026",
+        "oneLine": "Ce que les propriétaires entendent vraiment par tokenisation, et les trois choses qui changent quand on cesse de l'aborder comme une vente."
+      },
+      "whatStructuringCosts": {
+        "title": "Le coût réel de la structuration de l'immobilier privé pour des investisseurs mondiaux",
+        "oneLine": "Des chiffres clairs. D'où vient la fourchette de 5 000 $–50 000 $ d'honoraires juridiques, et ce que vous pouvez faire pour moins avec un Diagnostic en main."
+      },
+      "spainLuxuryFractional": {
+        "title": "Le marché immobilier de luxe en Espagne : voies juridiques pour la propriété étrangère fractionnée",
+        "oneLine": "Ce qui est réellement autorisé, ce qui ne l'est qu'en théorie, et les structures qui résistent au droit de Madrid."
+      },
+      "realBenefitsRealRisks": {
+        "title": "Fractionnement immobilier : avantages réels, risques réels",
+        "oneLine": "La liste que personne ne publie. Ce qui tourne vraiment mal, ce qui est surestimé, et comment lire les clauses type."
+      }
+    }
+  },
+  "legal": {
+    "eyebrow": "Mentions légales",
+    "headline": "Conditions, confidentialité et divulgation des risques.",
+    "intro": "Trois documents. Nous les publions sur la même page pour que vous puissiez les lire ensemble. Chaque section ci-dessous est un espace réservé pendant que les conseils juridiques finalisent le texte contractuel — les versions définitives seront en ligne avant le premier Diagnostic payant.",
+    "placeholder": "Espace réservé pré-lancement",
+    "nav": {
+      "terms": "Conditions d'utilisation",
+      "privacy": "Confidentialité",
+      "risk": "Divulgation des risques"
+    },
+    "contact": "Questions sur l'un des trois documents :",
+    "terms": {
+      "section": "Section 1",
+      "headline": "Conditions d'utilisation",
+      "note": "Texte revu par des juristes en attente. Les points ci-dessous résument notre intention afin que vous sachiez à quoi vous attendre lors de la publication de la version contractuelle.",
+      "bullets": [
+        "L'entité opérationnelle est Demonopol LLC, enregistrée à Saint-Vincent-et-les-Grenadines (N° de société 4008 LLC).",
+        "L'auto-évaluation est fournie gratuitement, sans obligation d'aucune part.",
+        "Le Diagnostic est un service ponctuel à tarif fixe (400 USD) couvert par une garantie de remboursement de 15 minutes.",
+        "Les engagements de Mandat et Express sont cadrés par actif dans le cadre d'un accord écrit distinct.",
+        "Nous ne sommes pas un cabinet juridique, un courtier-négociant ou un conseiller en investissement agréé dans quelque juridiction que ce soit.",
+        "La tokenisation, lorsqu'elle est poursuivie, est exécutée par des partenaires indépendants et reste soumise aux lois de la juridiction concernée."
+      ]
+    },
+    "privacy": {
+      "section": "Section 2",
+      "headline": "Politique de confidentialité",
+      "note": "Texte revu par des juristes en attente. Les points ci-dessous résument notre traitement prévu des données personnelles.",
+      "bullets": [
+        "Nous collectons uniquement les informations que vous fournissez via l'auto-évaluation, le recueil du Diagnostic et la correspondance directe.",
+        "Métadonnées de soumission : horodatage, IP hachée (unidirectionnelle, avec sel — nous ne pouvons pas retrouver votre IP), chaîne user-agent et URL de référence.",
+        "Nous ne vendons pas de données. Nous ne partageons pas de données avec des tiers, à l'exception des outils opérationnels nécessaires au fonctionnement du service (e-mail, paiements, planification).",
+        "Nous n'utilisons pas de scripts de suivi basés sur des cookies ni de publicité tierce.",
+        "Vous pouvez demander la suppression de vos données à tout moment en envoyant un e-mail à legal@demonopol.com — nous y répondons dans les dix jours ouvrés.",
+        "Les données sont traitées dans l'Union européenne (Vercel, notre fournisseur d'e-mail). Les transferts transfrontaliers n'ont lieu que si nécessaire au fonctionnement du service."
+      ]
+    },
+    "risk": {
+      "section": "Section 3",
+      "headline": "Divulgation des risques",
+      "note": "La tokenisation de l'immobilier privé est un mécanisme récent. Nous le disons ouvertement. Les points ci-dessous sont les risques que nous soulevons dans chaque Diagnostic — le texte contractuel sera au moins aussi honnête.",
+      "bullets": [
+        "Risque réglementaire — le traitement juridique de l'immobilier tokenisé évolue selon les juridictions. Ce qui est autorisé aujourd'hui peut ne pas l'être demain, et inversement.",
+        "Risque de liquidité — les marchés secondaires pour les intérêts fractionnés dans l'immobilier sont limités et souvent spécifiques à une plateforme. La liquidité est améliorée par rapport à une vente en pleine propriété, sans être garantie.",
+        "Risque opérationnel — l'exécution dépend de prestataires tiers en matière juridique, de garde et de distribution. Nous les nommons dans votre Diagnostic afin que vous puissiez effectuer votre propre diligence.",
+        "Risque de valorisation — l'évaluation de l'immobilier privé est subjective. La tokenisation ne produit pas de prix de marché continu comme les actions cotées.",
+        "Risque fiscal — le traitement diffère selon la juridiction, la classe d'actifs et le type d'investisseur. Nous vous orientons vers un partenaire fiscal — nous ne fournissons pas d'avis fiscaux.",
+        "Risque de concentration — le fractionnement répartit la propriété mais ne diversifie pas l'actif sous-jacent. Les risques de l'actif restent les risques de l'actif.",
+        "Nous ne promettons pas de résultats. Nous promettons un processus, des livrables écrits et une lecture honnête de la faisabilité."
+      ]
+    }
+  },
+  "start": {
+    "eyebrow": "Auto-évaluation",
+    "headline": "Évaluation gratuite de votre actif.",
+    "subhead": "Environ cinq minutes. Sans carte bancaire. Soumettez et nous vous revenons avec une évaluation écrite d'adéquation, une fourchette de prix indicative pour le Diagnostic complet et la prochaine étape immédiate. Votre brouillon est sauvegardé localement au fur et à mesure."
   }
 }

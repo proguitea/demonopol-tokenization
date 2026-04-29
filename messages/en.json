@@ -17,7 +17,103 @@
     "subhead": "Worldwide structuring, distribution, and a transparent advisory process — without seven-figure quotes.",
     "ctaPrimary": "Start the Self-Check",
     "ctaSecondary": "Book a Diagnostic",
-    "status": "Currently in build · Full launch shortly"
+    "status": "Currently in build · Full launch shortly",
+    "statusBar": "Free Self-Check · $400 Diagnostic · 15-min money-back guarantee",
+    "services": {
+      "eyebrow": "Services",
+      "headline": "Five priced steps. Most owners need only the first two.",
+      "seeAll": "See all five",
+      "cards": {
+        "selfCheck": {
+          "eyebrow": "Free",
+          "title": "Self-Check",
+          "body": "A 5-minute structured questionnaire. We come back with a written fit assessment and the recommended next step.",
+          "cta": "Start the Self-Check"
+        },
+        "diagnostic": {
+          "eyebrow": "$400 · one-time",
+          "title": "Diagnostic",
+          "body": "60–90 minute working session and a 6–8 page written go / no-go. Refundable in the first 15 minutes.",
+          "cta": "See what's inside"
+        },
+        "mandate": {
+          "eyebrow": "Custom",
+          "title": "Mandate & Express",
+          "body": "Full structuring, jurisdictional routing, and distribution to qualified investors. Scoped after the Diagnostic.",
+          "cta": "Compare all five tiers"
+        }
+      }
+    },
+    "howItWorks": {
+      "eyebrow": "How it works",
+      "headline": "Four steps. Nothing happens unless you decide it should.",
+      "subhead": "Each step is its own product, with its own deliverable. Most owners stop at step two with a written assessment in hand.",
+      "steps": {
+        "selfCheck": {
+          "label": "Self-Check",
+          "body": "Five minutes. Free. Structured intake on the asset, ownership, jurisdiction, and what you're trying to achieve."
+        },
+        "diagnostic": {
+          "label": "Diagnostic",
+          "body": "$400. A working session and a written report — feasibility, structuring options, jurisdiction routing, indicative cost."
+        },
+        "structuring": {
+          "label": "Structuring",
+          "body": "Mandate engagement: legal partner routing, compliance setup, investor-ready documentation. Scoped per asset."
+        },
+        "distribution": {
+          "label": "Distribution",
+          "body": "Distribution to a relevant investor pool. Worldwide reach, with depth in seven legal-partner jurisdictions."
+        }
+      }
+    },
+    "trust": {
+      "moneyBack": {
+        "eyebrow": "Money-back guarantee",
+        "title": "15 minutes in, no questions asked.",
+        "body": "If the Diagnostic call isn't delivering useful clarity, we refund the $400 in full. The guarantee lives on the call, not in the fine print."
+      },
+      "written": {
+        "eyebrow": "Written deliverable",
+        "title": "6–8 pages. Same structure every time.",
+        "body": "Feasibility, structuring options, jurisdiction routing, timeline, indicative cost, investor-pool fit. A document you can hand to your counsel."
+      },
+      "advisory": {
+        "eyebrow": "Advisory bench",
+        "title": "Drawn from international real-estate practice.",
+        "body": "Named advisors with prior firms verifiable on LinkedIn — Luc Villeneuve (ex-Century 21) and Costa (ex-Group1Vest). The tokenization rail is newer; the operating discipline isn't.",
+        "cta": "Meet the team"
+      }
+    },
+    "insights": {
+      "eyebrow": "Insights",
+      "headline": "Working notes from the practice.",
+      "seeAll": "See all",
+      "previews": {
+        "first": {
+          "tag": "Primer · May 2026",
+          "title": "Liquidity for private real estate without selling",
+          "one": "What owners actually mean when they ask about tokenization, and the three things that change once you stop framing it as a sale."
+        },
+        "second": {
+          "tag": "Risk · June 2026",
+          "title": "Real-estate fractionalization: real benefits, real risks",
+          "one": "The list nobody publishes. What actually goes wrong, what's overstated, and how to read the boilerplate."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "First step",
+      "headline": "Five minutes. No credit card. Written assessment in your hand.",
+      "body": "The Self-Check is the start of the conversation. Whether the answer is \"yes, here's how\" or \"not yet, here's what would change it\" — you walk away with something written.",
+      "start": "Start the Self-Check",
+      "compare": "Compare all five tiers",
+      "features": {
+        "intake": "Free, structured intake",
+        "outcome": "Written outcome assessment",
+        "next": "Recommended next step"
+      }
+    }
   },
   "footer": {
     "brand": "Demonopol — Tokenization-as-a-Service",
@@ -44,5 +140,359 @@
     "title": "Page not found",
     "body": "The page you tried to reach is not here. It may have moved, or it may not exist yet on this site.",
     "cta": "Back to home"
+  },
+  "services": {
+    "eyebrow": "Services",
+    "headline": "Five priced steps. Transparent at every tier.",
+    "subhead": "We sell the whole ladder, but most owners only need the first two rungs to make a decision. Pricing is published. Scope is published. What you don't get is also published.",
+    "cta": "Start with the Self-Check",
+    "tierCard": {
+      "for": "For"
+    },
+    "comparison": {
+      "headline": "How the tiers compare",
+      "subhead": "Each tier is a self-contained product. You don't need to buy the next one — most owners stop after the Diagnostic.",
+      "header": "What you get",
+      "rows": {
+        "written": "Written assessment",
+        "live": "Live working session",
+        "pricing": "Indicative pricing",
+        "marketing": "Marketing assets",
+        "legal": "Legal partner routing",
+        "distribution": "Distribution to investors",
+        "moneyBack": "Money-back guarantee",
+        "price": "Price"
+      }
+    },
+    "honestPath": {
+      "eyebrow": "The honest path",
+      "headline": "Start free. Decide with a written assessment in your hand.",
+      "body": "The Self-Check costs nothing. If we can help, the Diagnostic gives you a written go / no-go for $400 — refundable in the first 15 minutes if the call doesn't deliver useful clarity. Anything beyond that is a deliberate decision, never the default.",
+      "start": "Start the Self-Check",
+      "whoWeAre": "Who we are"
+    },
+    "tiers": {
+      "selfCheck": {
+        "name": "Self-Check",
+        "price": "Free",
+        "oneLine": "A 5-minute structured questionnaire. We come back with a written fit assessment.",
+        "forWhom": "Owners trying to figure out whether tokenization is a serious option for their asset.",
+        "includes": [
+          "Ten-question structured intake",
+          "Written fit assessment within 1–2 business days",
+          "Indicative price band for the full Diagnostic",
+          "Recommended next step"
+        ],
+        "excludes": [
+          "No legal, tax, or financial recommendation",
+          "No structuring, no introductions, no listing"
+        ],
+        "ctaLabel": "Start the Self-Check"
+      },
+      "diagnostic": {
+        "name": "Diagnostic",
+        "price": "$400",
+        "priceCadence": "one-time",
+        "oneLine": "A 60–90 minute call with our experts and a 6–8 page written assessment of whether — and how — your asset can be tokenized.",
+        "forWhom": "Owners ready to spend a small fraction of legal fees ($5K–$50K elsewhere) to get a clear, written go / no-go.",
+        "includes": [
+          "60–90 min working session with the advisory team",
+          "6–8 page written diagnostic — structure options, jurisdiction routing, indicative timeline and cost",
+          "Pre-call checklist (deck, deed, financials, prior valuations)",
+          "Written follow-up with recommended next steps",
+          "15-minute money-back guarantee if the call doesn't deliver useful clarity"
+        ],
+        "excludes": [
+          "No legal opinion (we route to a jurisdictional partner if needed)",
+          "No execution or listing — that's the Mandate"
+        ],
+        "ctaLabel": "Book a Diagnostic"
+      },
+      "promotion": {
+        "name": "Promotion Boost",
+        "price": "$200",
+        "priceCadence": "one-time, post-Diagnostic",
+        "oneLine": "A marketing add-on for owners who want their tokenized asset to land cleanly with the right audience.",
+        "forWhom": "Owners who've done the Diagnostic and want help reaching qualified investors.",
+        "includes": [
+          "Listing copy — written for the asset, not against a template",
+          "One published article on the Demonopol publishing channel",
+          "One announcement to the Demonopol community",
+          "One newsletter slot",
+          "One press-pitch attempt to a sector publication"
+        ],
+        "excludes": [
+          "No paid ad spend",
+          "No KOL push (deferred — see press strategy)",
+          "No guaranteed coverage"
+        ],
+        "ctaLabel": "Available after Diagnostic"
+      },
+      "mandate": {
+        "name": "Mandate",
+        "price": "Custom",
+        "priceCadence": "scoped per asset",
+        "oneLine": "Full structuring and execution: legal routing, compliance, distribution to qualified investors.",
+        "forWhom": "Owners with a clear go from the Diagnostic, ready to execute.",
+        "includes": [
+          "Jurisdiction selection and legal partner routing",
+          "Structuring and compliance setup (KYC/AML)",
+          "Investor-ready documentation",
+          "Distribution to the relevant investor pool",
+          "Project management through close"
+        ],
+        "excludes": [
+          "Not a fixed-fee product — scoped after the Diagnostic",
+          "No guarantees on placement or price discovery"
+        ],
+        "ctaLabel": "Discuss after Diagnostic"
+      },
+      "express": {
+        "name": "Express",
+        "priceCadence": "fast-track",
+        "oneLine": "A condensed Mandate for owners with a hard deadline and a clean documentation pack.",
+        "forWhom": "Owners with a deal already shaped — closing pressure, jurisdictional clock, or an investor circle ready to commit.",
+        "includes": [
+          "Same Mandate scope, compressed timeline",
+          "Priority access to the advisory team",
+          "Daily status during the active window"
+        ],
+        "excludes": [
+          "Not a way to skip the Diagnostic — feasibility is still gated",
+          "Capacity-limited — not always available"
+        ],
+        "ctaLabel": "Discuss after Diagnostic"
+      }
+    }
+  },
+  "diagnostic": {
+    "eyebrow": "Diagnostic",
+    "headline": "$400. One working session. A written go / no-go.",
+    "subhead": "A 60–90 minute call with our advisory team and a 6–8 page written assessment of whether — and how — your asset can be tokenized. You walk away with a document, not a verbal \"maybe.\"",
+    "selfCheckFirst": "Try the free Self-Check first",
+    "stripeNote": "Stripe Checkout. Receipt issued by Demonopol LLC. The 15-minute money-back guarantee lives on the call, not in the fine print.",
+    "tiles": {
+      "moneyBack": {
+        "eyebrow": "Money-back guarantee",
+        "title": "15 minutes in. No questions asked.",
+        "body": "If the call isn't delivering clarity, we end it and refund the full $400. The guarantee lives on the call, not in the fine print."
+      },
+      "written": {
+        "eyebrow": "Written deliverable",
+        "title": "6–8 page assessment.",
+        "body": "Not a transcript. Not slides. A document you can show to your counsel, your co-owners, or your investor relations contact."
+      },
+      "timeline": {
+        "eyebrow": "Timeline",
+        "title": "Report inside one week.",
+        "body": "Call within 7–10 days of payment, written assessment within 5 business days of the call."
+      }
+    },
+    "report": {
+      "eyebrow": "What you get",
+      "headline": "Inside the written diagnostic",
+      "subhead": "Eight sections. Same structure for every asset, so you can compare a Spanish villa report to a Bangkok office report section-by-section.",
+      "sections": [
+        "Asset summary — what we received and what we verified",
+        "Feasibility verdict — go, conditional go, or no-go, with the reasoning",
+        "Structuring options — the realistic legal containers for your asset",
+        "Jurisdiction routing — where to do the work and why",
+        "Indicative timeline — phases, blockers, decision points",
+        "Indicative cost — legal, structuring, distribution",
+        "Investor-pool fit — who would plausibly subscribe and at what ticket",
+        "Recommended next steps — what we'd do next and what you can do without us"
+      ]
+    },
+    "checklist": {
+      "eyebrow": "Before the call",
+      "headline": "Pre-call checklist",
+      "subhead": "Bring what you have. Missing pieces don't cancel the call — they shape what we can verify and how confident the verdict is.",
+      "items": [
+        "Asset deck or summary (any format)",
+        "Title deed or equivalent ownership document",
+        "Most recent financials or rent-roll, if income-producing",
+        "Prior valuation or recent broker opinion of value, if you have one"
+      ]
+    },
+    "faq": {
+      "eyebrow": "Frequently asked",
+      "headline": "Honest answers",
+      "items": [
+        {
+          "q": "What if you decide my asset isn't a fit?",
+          "a": "You get the same written assessment — clearly explaining the no-go and what would change the verdict. The $400 buys clarity, not an outcome."
+        },
+        {
+          "q": "How does the money-back guarantee work?",
+          "a": "If, fifteen minutes into the call, you don't believe the session will deliver useful clarity, we end the call and refund the $400 in full. No paperwork, no friction."
+        },
+        {
+          "q": "Do I have to do the Self-Check first?",
+          "a": "No, but it helps. The Self-Check is free and gives both sides the structured intake the Diagnostic builds on. If your asset is borderline, doing it first saves a back-and-forth on the call. If you already know what you want, paying directly is fine."
+        },
+        {
+          "q": "Who runs the call?",
+          "a": "Members of our advisory team and an analyst from the operating side. We don't put individual operator names on the front page because the work is collective — but you'll meet the people on the call."
+        },
+        {
+          "q": "Is the Diagnostic legal advice?",
+          "a": "No. It's a structured commercial and structuring assessment. When a jurisdiction-specific legal opinion is needed, we route you to a partner in the relevant market — that's a separate engagement."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Ready",
+      "headline": "Pay, book, get a written go / no-go.",
+      "body": "Checkout takes one minute. After payment you'll be sent straight to the booking link to choose a slot in the next 7–10 days. Money-back guarantee is unconditional in the first fifteen minutes of the call.",
+      "compare": "Compare all five tiers"
+    }
+  },
+  "about": {
+    "eyebrow": "About",
+    "headline": "International real-estate practice, applied to a newer rail.",
+    "subhead": "Demonopol is operated by an advisory team drawn from international real-estate brokering. Tokenization is a newer mechanism — we treat it with the same discipline we apply to private real-estate transactions: documented, jurisdictionally aware, honest about what it is and what it isn't.",
+    "howBuilt": {
+      "eyebrow": "How we're built",
+      "headline": "Operating side. Advisory side.",
+      "operating": "The operating team — the people who answer your email, run your Diagnostic call, and structure your transaction — speaks in a single corporate voice. We don't put individual operator names on the front page because the work is collective and the relationship is with the firm.",
+      "advisory": "The advisory side is named. The advisors below lend their credentials and judgment, and you can verify their track records on LinkedIn. They're consulted on structure, jurisdiction, and the kinds of decisions where international real-estate experience is the difference."
+    },
+    "advisors": {
+      "eyebrow": "Advisors",
+      "headline": "Drawn from international real-estate practice.",
+      "subhead": "Verifiable on LinkedIn. No aggregate metrics, no transaction volume. The credibility is in the names and the firms.",
+      "priorFirm": "Prior firm",
+      "linkedin": "LinkedIn"
+    },
+    "reach": {
+      "eyebrow": "Reach",
+      "headline": "Worldwide, with depth in seven markets.",
+      "subhead": "We accept assets worldwide. Where we have local legal-partner relationships, we route faster.",
+      "markets": [
+        "Spain (luxury)",
+        "Morocco",
+        "Thailand",
+        "Hong Kong",
+        "Switzerland",
+        "Vietnam",
+        "United States",
+        "Other — by jurisdiction"
+      ]
+    },
+    "ecosystem": {
+      "eyebrow": "Ecosystem",
+      "headline": "Sister site",
+      "body": "Demonopol's broader work runs at demonopol.com. This site is the Tokenization-as-a-Service entry point for issuers and owners.",
+      "cta": "Visit demonopol.com"
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "headline": "How to reach us",
+      "general": "General & intake",
+      "legalPayments": "Legal & payments",
+      "entity": "Operating entity"
+    },
+    "cta": {
+      "eyebrow": "First step",
+      "headline": "The Self-Check is free, structured, and fast.",
+      "body": "Five minutes. No credit card. We come back with a written assessment and the recommended next step.",
+      "start": "Start the Self-Check"
+    }
+  },
+  "insights": {
+    "eyebrow": "Insights",
+    "headline": "Working notes on global liquidity for private real estate.",
+    "subhead": "We publish what we've learned doing the work — by asset class, by jurisdiction, and on the structuring decisions that quietly decide whether a deal closes. No hot takes, no roundups.",
+    "queue": {
+      "headline": "In the queue",
+      "timing": "First wave drops in May–June"
+    },
+    "newsletter": {
+      "eyebrow": "Newsletter",
+      "headline": "Get each Insights piece in your inbox.",
+      "body": "Two emails a month at most. No promotion, no recycled summaries — the same writing that ships here. Email tokenize@demonopol.com with the subject line \"Newsletter signup\" and we'll add you to the list. (A proper signup form lands once the first article publishes.)",
+      "signupSubject": "Newsletter%20signup",
+      "cta": "Or start the Self-Check"
+    },
+    "articleStatus": {
+      "drafting": "Drafting",
+      "scheduled": "Scheduled",
+      "published": "Published"
+    },
+    "articles": {
+      "liquidityWithoutSelling": {
+        "title": "Liquidity for private real estate without selling: a 2026 primer",
+        "oneLine": "What owners actually mean when they ask about tokenization, and the three things that change once you stop framing it as a sale."
+      },
+      "whatStructuringCosts": {
+        "title": "What structuring private real estate for global investors actually costs",
+        "oneLine": "Plain numbers. Where the $5K–$50K legal-fee figure comes from, and what you can do for less than that with a Diagnostic in hand."
+      },
+      "spainLuxuryFractional": {
+        "title": "Spain's luxury real-estate landscape: legal pathways for fractional foreign ownership",
+        "oneLine": "What's actually permitted, what's only theoretically permitted, and the structures we see surviving the bar in Madrid."
+      },
+      "realBenefitsRealRisks": {
+        "title": "Real-estate fractionalization: real benefits, real risks",
+        "oneLine": "The list nobody publishes. What actually goes wrong, what's overstated, and how to read the boilerplate."
+      }
+    }
+  },
+  "legal": {
+    "eyebrow": "Legal",
+    "headline": "Terms, privacy, and risk disclosure.",
+    "intro": "Three documents. We publish them on the same page so you can read them together. Each section below is a placeholder while counsel finalises the binding text — the live versions land before the first paid Diagnostic.",
+    "placeholder": "Pre-launch placeholder",
+    "nav": {
+      "terms": "Terms of Service",
+      "privacy": "Privacy",
+      "risk": "Risk Disclosure"
+    },
+    "contact": "Questions on any of the three documents:",
+    "terms": {
+      "section": "Section 1",
+      "headline": "Terms of Service",
+      "note": "Counsel-reviewed text pending. The points below summarise our intent so you know what to expect when the binding version publishes.",
+      "bullets": [
+        "Operating entity is Demonopol LLC, registered in St. Vincent and the Grenadines (Co. No. 4008 LLC).",
+        "Self-Check is provided free of charge with no obligation on either side.",
+        "The Diagnostic is a fixed-fee one-time service ($400 USD) covered by a 15-minute money-back guarantee.",
+        "Mandate and Express engagements are scoped per asset under a separate written agreement.",
+        "We are not a law firm, broker-dealer, or registered investment advisor in any jurisdiction.",
+        "Tokenization, where pursued, is executed through arms-length partners and remains subject to the laws of the relevant jurisdiction."
+      ]
+    },
+    "privacy": {
+      "section": "Section 2",
+      "headline": "Privacy Policy",
+      "note": "Counsel-reviewed text pending. The points below summarise our intended handling of personal data.",
+      "bullets": [
+        "We collect only the information you provide through the Self-Check, the Diagnostic intake, and direct correspondence.",
+        "Submission metadata: timestamp, hashed IP (one-way, with a salt — we cannot reverse it to your IP), user-agent string, and referring URL.",
+        "We do not sell data. We do not share data with third parties except the operational tools needed to run the service (email, payments, scheduling).",
+        "We do not run cookie-based tracking or third-party advertising scripts.",
+        "You can ask us to delete your record at any time by emailing legal@demonopol.com — we comply within ten business days.",
+        "Data is processed in the European Union (Vercel, our email provider). Cross-border transfers occur only as required to run the service."
+      ]
+    },
+    "risk": {
+      "section": "Section 3",
+      "headline": "Risk Disclosure",
+      "note": "Tokenizing private real estate is a newer mechanism. We say so out loud. The points below are the risks we surface in every Diagnostic — the binding text below will be at least this honest.",
+      "bullets": [
+        "Regulatory risk — the legal treatment of tokenized real estate is evolving across jurisdictions. What's permitted today may not be tomorrow, and vice versa.",
+        "Liquidity risk — secondary markets for fractional real-estate interests are thin and often venue-specific. Liquidity is improved versus a sole-owner sale, not guaranteed.",
+        "Operational risk — execution depends on third-party legal, custody, and distribution providers. We name them in your Diagnostic so you can do your own diligence.",
+        "Valuation risk — pricing private real estate is judgmental. Tokenization does not produce a continuous market price the way listed equities do.",
+        "Tax risk — treatment differs by jurisdiction, asset class, and investor type. We route to a tax partner — we do not provide tax opinions ourselves.",
+        "Concentration risk — fractionalization spreads ownership but does not diversify the underlying asset. The asset's risks remain the asset's risks.",
+        "We do not promise outcomes. We promise process, written deliverables, and an honest read of feasibility."
+      ]
+    }
+  },
+  "start": {
+    "eyebrow": "Self-Check",
+    "headline": "Free assessment of your asset.",
+    "subhead": "About five minutes. No credit card. Submit and we'll come back with a written assessment of fit, an indicative price band for the full Diagnostic, and the immediate next step. Your draft is saved locally as you go."
   }
 }

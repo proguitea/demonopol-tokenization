@@ -28,20 +28,18 @@ function HomeContent() {
   return (
     <>
       <Hero t={t} />
-      <ServiceLadder />
-      <HowItWorks />
-      <TrustStrip />
-      <InsightsTeaser />
-      <FinalCta />
+      <ServiceLadder t={t} />
+      <HowItWorks t={t} />
+      <TrustStrip t={t} />
+      <InsightsTeaser t={t} />
+      <FinalCta t={t} />
     </>
   );
 }
 
-function Hero({
-  t,
-}: {
-  t: ReturnType<typeof useTranslations<"home">>;
-}) {
+type HomeT = ReturnType<typeof useTranslations<"home">>;
+
+function Hero({ t }: { t: HomeT }) {
   return (
     <section className="relative overflow-hidden border-b border-border/60">
       <div className="container py-24 md:py-32 lg:py-40">
@@ -71,7 +69,7 @@ function Hero({
             </Link>
           </div>
           <p className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">
-            Free Self-Check · $400 Diagnostic · 15-min money-back guarantee
+            {t("statusBar")}
           </p>
         </div>
       </div>
@@ -79,29 +77,20 @@ function Hero({
   );
 }
 
-function ServiceLadder() {
+function ServiceLadder({ t }: { t: HomeT }) {
   const cards = [
     {
-      eyebrow: "Free",
-      title: "Self-Check",
-      body: "A 5-minute structured questionnaire. We come back with a written fit assessment and the recommended next step.",
-      cta: "Start the Self-Check",
+      key: "selfCheck" as const,
       href: "/start" as const,
       emphasis: false,
     },
     {
-      eyebrow: "$400 · one-time",
-      title: "Diagnostic",
-      body: "60–90 minute working session and a 6–8 page written go / no-go. Refundable in the first 15 minutes.",
-      cta: "See what's inside",
+      key: "diagnostic" as const,
       href: "/diagnostic" as const,
       emphasis: true,
     },
     {
-      eyebrow: "Custom",
-      title: "Mandate & Express",
-      body: "Full structuring, jurisdictional routing, and distribution to qualified investors. Scoped after the Diagnostic.",
-      cta: "Compare all five tiers",
+      key: "mandate" as const,
       href: "/services" as const,
       emphasis: false,
     },
@@ -113,17 +102,17 @@ function ServiceLadder() {
         <div className="flex items-end justify-between gap-6">
           <div>
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-              Services
+              {t("services.eyebrow")}
             </p>
             <h2 className="mt-3 max-w-2xl text-balance font-display text-3xl font-semibold tracking-tight md:text-4xl">
-              Five priced steps. Most owners need only the first two.
+              {t("services.headline")}
             </h2>
           </div>
           <Link
             href="/services"
             className="hidden shrink-0 items-center gap-1 text-sm font-medium text-primary hover:underline md:inline-flex"
           >
-            See all five
+            {t("services.seeAll")}
             <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
           </Link>
         </div>
@@ -131,20 +120,20 @@ function ServiceLadder() {
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {cards.map((card) => (
             <article
-              key={card.title}
+              key={card.key}
               className={`flex h-full flex-col rounded-xl border bg-elevated p-6 transition-colors ${
-                card.emphasis
-                  ? "border-primary/40 shadow-sm"
-                  : "border-border"
+                card.emphasis ? "border-primary/40 shadow-sm" : "border-border"
               }`}
             >
               <p className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">
-                {card.eyebrow}
+                {t(`services.cards.${card.key}.eyebrow`)}
               </p>
               <h3 className="mt-3 font-display text-xl font-semibold tracking-tight">
-                {card.title}
+                {t(`services.cards.${card.key}.title`)}
               </h3>
-              <p className="mt-3 text-sm text-muted-foreground">{card.body}</p>
+              <p className="mt-3 text-sm text-muted-foreground">
+                {t(`services.cards.${card.key}.body`)}
+              </p>
               <div className="mt-auto pt-6">
                 <Link
                   href={card.href}
@@ -154,7 +143,7 @@ function ServiceLadder() {
                       : "border border-border bg-background hover:border-primary/40"
                   }`}
                 >
-                  {card.cta}
+                  {t(`services.cards.${card.key}.cta`)}
                 </Link>
               </div>
             </article>
@@ -165,63 +154,45 @@ function ServiceLadder() {
   );
 }
 
-function HowItWorks() {
+function HowItWorks({ t }: { t: HomeT }) {
   const steps = [
-    {
-      icon: ClipboardCheck,
-      label: "Self-Check",
-      body: "Five minutes. Free. Structured intake on the asset, ownership, jurisdiction, and what you're trying to achieve.",
-    },
-    {
-      icon: FileText,
-      label: "Diagnostic",
-      body: "$400. A working session and a written report — feasibility, structuring options, jurisdiction routing, indicative cost.",
-    },
-    {
-      icon: ShieldCheck,
-      label: "Structuring",
-      body: "Mandate engagement: legal partner routing, compliance setup, investor-ready documentation. Scoped per asset.",
-    },
-    {
-      icon: Globe2,
-      label: "Distribution",
-      body: "Distribution to a relevant investor pool. Worldwide reach, with depth in seven legal-partner jurisdictions.",
-    },
+    { key: "selfCheck" as const, icon: ClipboardCheck },
+    { key: "diagnostic" as const, icon: FileText },
+    { key: "structuring" as const, icon: ShieldCheck },
+    { key: "distribution" as const, icon: Globe2 },
   ];
 
   return (
     <section className="border-b border-border/60">
       <div className="container max-w-6xl py-20 md:py-24">
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-          How it works
+          {t("howItWorks.eyebrow")}
         </p>
         <h2 className="mt-3 max-w-2xl text-balance font-display text-3xl font-semibold tracking-tight md:text-4xl">
-          Four steps. Nothing happens unless you decide it should.
+          {t("howItWorks.headline")}
         </h2>
         <p className="mt-3 max-w-2xl text-muted-foreground">
-          Each step is its own product, with its own deliverable. Most owners
-          stop at step two with a written assessment in hand.
+          {t("howItWorks.subhead")}
         </p>
 
         <ol className="mt-12 grid gap-5 md:grid-cols-4">
           {steps.map((step, i) => (
             <li
-              key={step.label}
+              key={step.key}
               className="rounded-xl border border-border bg-elevated p-6"
             >
               <div className="flex items-center gap-3">
                 <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-muted font-mono text-xs">
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <step.icon
-                  className="h-5 w-5 text-primary"
-                  aria-hidden="true"
-                />
+                <step.icon className="h-5 w-5 text-primary" aria-hidden="true" />
               </div>
               <h3 className="mt-4 font-display text-lg font-semibold tracking-tight">
-                {step.label}
+                {t(`howItWorks.steps.${step.key}.label`)}
               </h3>
-              <p className="mt-2 text-sm text-muted-foreground">{step.body}</p>
+              <p className="mt-2 text-sm text-muted-foreground">
+                {t(`howItWorks.steps.${step.key}.body`)}
+              </p>
             </li>
           ))}
         </ol>
@@ -230,72 +201,62 @@ function HowItWorks() {
   );
 }
 
-function TrustStrip() {
+function TrustStrip({ t }: { t: HomeT }) {
+  const markets = [
+    "Spain", "Morocco", "Thailand", "Hong Kong",
+    "Switzerland", "Vietnam", "United States", "Worldwide",
+  ];
+
   return (
     <section className="border-b border-border/60 bg-muted/40">
       <div className="container max-w-6xl py-20 md:py-24">
         <div className="grid gap-8 md:grid-cols-3">
           <div className="rounded-xl border border-border bg-background p-6">
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
-              Money-back guarantee
+              {t("trust.moneyBack.eyebrow")}
             </p>
             <h3 className="mt-3 font-display text-lg font-semibold tracking-tight">
-              15 minutes in, no questions asked.
+              {t("trust.moneyBack.title")}
             </h3>
             <p className="mt-2 text-sm text-muted-foreground">
-              If the Diagnostic call isn&apos;t delivering useful clarity, we
-              refund the $400 in full. The guarantee lives on the call, not in
-              the fine print.
+              {t("trust.moneyBack.body")}
             </p>
           </div>
 
           <div className="rounded-xl border border-border bg-background p-6">
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
-              Written deliverable
+              {t("trust.written.eyebrow")}
             </p>
             <h3 className="mt-3 font-display text-lg font-semibold tracking-tight">
-              6–8 pages. Same structure every time.
+              {t("trust.written.title")}
             </h3>
             <p className="mt-2 text-sm text-muted-foreground">
-              Feasibility, structuring options, jurisdiction routing,
-              timeline, indicative cost, investor-pool fit. A document you can
-              hand to your counsel.
+              {t("trust.written.body")}
             </p>
           </div>
 
           <div className="rounded-xl border border-border bg-background p-6">
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
-              Advisory bench
+              {t("trust.advisory.eyebrow")}
             </p>
             <h3 className="mt-3 font-display text-lg font-semibold tracking-tight">
-              Drawn from international real-estate practice.
+              {t("trust.advisory.title")}
             </h3>
             <p className="mt-2 text-sm text-muted-foreground">
-              Named advisors with prior firms verifiable on LinkedIn — Luc
-              Villeneuve (ex-Century 21) and Costa (ex-Group1Vest). The
-              tokenization rail is newer; the operating discipline isn&apos;t.
+              {t("trust.advisory.body")}
             </p>
             <Link
               href="/about"
               className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
             >
-              Meet the team
+              {t("trust.advisory.cta")}
               <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
             </Link>
           </div>
         </div>
 
         <div className="mt-10 flex flex-wrap gap-2">
-          {[
-            "Spain",
-            "Morocco",
-            "Thailand",
-            "Hong Kong",
-            "Switzerland",
-            "Vietnam",
-            "United States",
-            "Worldwide",
-          ].map((label) => (
+          {markets.map((label) => (
             <span
               key={label}
               className="rounded-full border border-border bg-background px-3 py-1 font-mono text-[10px] uppercase tracking-wide text-muted-foreground"
@@ -309,19 +270,8 @@ function TrustStrip() {
   );
 }
 
-function InsightsTeaser() {
-  const previews = [
-    {
-      tag: "Primer · May 2026",
-      title: "Liquidity for private real estate without selling",
-      one: "What owners actually mean when they ask about tokenization, and the three things that change once you stop framing it as a sale.",
-    },
-    {
-      tag: "Risk · June 2026",
-      title: "Real-estate fractionalization: real benefits, real risks",
-      one: "The list nobody publishes. What actually goes wrong, what's overstated, and how to read the boilerplate.",
-    },
-  ];
+function InsightsTeaser({ t }: { t: HomeT }) {
+  const previews = ["first", "second"] as const;
 
   return (
     <section className="border-b border-border/60">
@@ -329,34 +279,36 @@ function InsightsTeaser() {
         <div className="flex items-end justify-between gap-6">
           <div>
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-              Insights
+              {t("insights.eyebrow")}
             </p>
             <h2 className="mt-3 max-w-2xl text-balance font-display text-3xl font-semibold tracking-tight md:text-4xl">
-              Working notes from the practice.
+              {t("insights.headline")}
             </h2>
           </div>
           <Link
             href="/insights"
             className="hidden shrink-0 items-center gap-1 text-sm font-medium text-primary hover:underline md:inline-flex"
           >
-            See all
+            {t("insights.seeAll")}
             <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
           </Link>
         </div>
 
         <div className="mt-8 grid gap-5 md:grid-cols-2">
-          {previews.map((p) => (
+          {previews.map((key) => (
             <article
-              key={p.title}
+              key={key}
               className="rounded-xl border border-border bg-elevated p-6"
             >
               <p className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">
-                {p.tag}
+                {t(`insights.previews.${key}.tag`)}
               </p>
               <h3 className="mt-3 font-display text-lg font-semibold tracking-tight">
-                {p.title}
+                {t(`insights.previews.${key}.title`)}
               </h3>
-              <p className="mt-2 text-sm text-muted-foreground">{p.one}</p>
+              <p className="mt-2 text-sm text-muted-foreground">
+                {t(`insights.previews.${key}.one`)}
+              </p>
             </article>
           ))}
         </div>
@@ -365,46 +317,42 @@ function InsightsTeaser() {
   );
 }
 
-function FinalCta() {
+function FinalCta({ t }: { t: HomeT }) {
+  const features = ["intake", "outcome", "next"] as const;
+
   return (
     <section>
       <div className="container max-w-4xl py-20 md:py-28">
         <div className="rounded-2xl border border-border bg-elevated p-8 md:p-14">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            First step
+            {t("cta.eyebrow")}
           </p>
           <h2 className="mt-3 text-balance font-display text-3xl font-semibold tracking-tight md:text-5xl">
-            Five minutes. No credit card. Written assessment in your hand.
+            {t("cta.headline")}
           </h2>
           <p className="mt-4 max-w-2xl text-muted-foreground">
-            The Self-Check is the start of the conversation. Whether the answer
-            is &ldquo;yes, here&apos;s how&rdquo; or &ldquo;not yet, here&apos;s what would change
-            it&rdquo; — you walk away with something written.
+            {t("cta.body")}
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
               href="/start"
               className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 font-medium text-primary-foreground transition-opacity hover:opacity-90"
             >
-              Start the Self-Check
+              {t("cta.start")}
               <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
             </Link>
             <Link
               href="/services"
               className="inline-flex items-center justify-center rounded-md border border-border bg-background px-6 py-3 font-medium transition-colors hover:border-primary/40"
             >
-              Compare all five tiers
+              {t("cta.compare")}
             </Link>
           </div>
           <ul className="mt-8 grid gap-2 text-sm sm:grid-cols-3">
-            {[
-              "Free, structured intake",
-              "Written outcome assessment",
-              "Recommended next step",
-            ].map((item) => (
-              <li key={item} className="flex items-center gap-2">
+            {features.map((key) => (
+              <li key={key} className="flex items-center gap-2">
                 <Check className="h-4 w-4 text-primary" aria-hidden="true" />
-                <span>{item}</span>
+                <span>{t(`cta.features.${key}`)}</span>
               </li>
             ))}
           </ul>

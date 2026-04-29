@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowRight, Check, Minus } from "lucide-react";
 
 import {
@@ -22,135 +22,22 @@ export const metadata: Metadata = {
   },
 };
 
-type Tier = {
-  key: string;
-  name: string;
-  price: string;
-  priceCadence?: string;
-  oneLine: string;
-  forWhom: string;
-  includes: string[];
-  excludes: string[];
-  ctaLabel: string;
+// Non-string tier metadata — display strings come from translations
+type TierMeta = {
+  key: "selfCheck" | "diagnostic" | "promotion" | "mandate" | "express";
   ctaHref: "/start" | "/diagnostic" | "/about";
   ctaDisabled?: boolean;
   emphasis?: boolean;
+  /** Price shown as TBD placeholder (express only) */
+  tbd?: string;
 };
 
-const TIERS: Tier[] = [
-  {
-    key: "self_check",
-    name: "Self-Check",
-    price: "Free",
-    oneLine: "A 5-minute structured questionnaire. We come back with a written fit assessment.",
-    forWhom: "Owners trying to figure out whether tokenization is a serious option for their asset.",
-    includes: [
-      "Ten-question structured intake",
-      "Written fit assessment within 1–2 business days",
-      "Indicative price band for the full Diagnostic",
-      "Recommended next step",
-    ],
-    excludes: [
-      "No legal, tax, or financial recommendation",
-      "No structuring, no introductions, no listing",
-    ],
-    ctaLabel: "Start the Self-Check",
-    ctaHref: "/start",
-  },
-  {
-    key: "diagnostic",
-    name: "Diagnostic",
-    price: "$400",
-    priceCadence: "one-time",
-    oneLine:
-      "A 60–90 minute call with our experts and a 6–8 page written assessment of whether — and how — your asset can be tokenized.",
-    forWhom:
-      "Owners ready to spend a small fraction of legal fees ($5K–$50K elsewhere) to get a clear, written go / no-go.",
-    includes: [
-      "60–90 min working session with the advisory team",
-      "6–8 page written diagnostic — structure options, jurisdiction routing, indicative timeline and cost",
-      "Pre-call checklist (deck, deed, financials, prior valuations)",
-      "Written follow-up with recommended next steps",
-      "15-minute money-back guarantee if the call doesn't deliver useful clarity",
-    ],
-    excludes: [
-      "No legal opinion (we route to a jurisdictional partner if needed)",
-      "No execution or listing — that's the Mandate",
-    ],
-    ctaLabel: "Book a Diagnostic",
-    ctaHref: "/diagnostic",
-    ctaDisabled: true,
-    emphasis: true,
-  },
-  {
-    key: "promotion",
-    name: "Promotion Boost",
-    price: "$200",
-    priceCadence: "one-time, post-Diagnostic",
-    oneLine:
-      "A marketing add-on for owners who want their tokenized asset to land cleanly with the right audience.",
-    forWhom: "Owners who've done the Diagnostic and want help reaching qualified investors.",
-    includes: [
-      "Listing copy — written for the asset, not against a template",
-      "One published article on the Demonopol publishing channel",
-      "One announcement to the Demonopol community",
-      "One newsletter slot",
-      "One press-pitch attempt to a sector publication",
-    ],
-    excludes: [
-      "No paid ad spend",
-      "No KOL push (deferred — see press strategy)",
-      "No guaranteed coverage",
-    ],
-    ctaLabel: "Available after Diagnostic",
-    ctaHref: "/start",
-    ctaDisabled: true,
-  },
-  {
-    key: "mandate",
-    name: "Mandate",
-    price: "Custom",
-    priceCadence: "scoped per asset",
-    oneLine:
-      "Full structuring and execution: legal routing, compliance, distribution to qualified investors.",
-    forWhom: "Owners with a clear go from the Diagnostic, ready to execute.",
-    includes: [
-      "Jurisdiction selection and legal partner routing",
-      "Structuring and compliance setup (KYC/AML)",
-      "Investor-ready documentation",
-      "Distribution to the relevant investor pool",
-      "Project management through close",
-    ],
-    excludes: [
-      "Not a fixed-fee product — scoped after the Diagnostic",
-      "No guarantees on placement or price discovery",
-    ],
-    ctaLabel: "Discuss after Diagnostic",
-    ctaHref: "/diagnostic",
-    ctaDisabled: true,
-  },
-  {
-    key: "express",
-    name: "Express",
-    price: "{{TBD: Express price}}",
-    priceCadence: "fast-track",
-    oneLine:
-      "A condensed Mandate for owners with a hard deadline and a clean documentation pack.",
-    forWhom:
-      "Owners with a deal already shaped — closing pressure, jurisdictional clock, or an investor circle ready to commit.",
-    includes: [
-      "Same Mandate scope, compressed timeline",
-      "Priority access to the advisory team",
-      "Daily status during the active window",
-    ],
-    excludes: [
-      "Not a way to skip the Diagnostic — feasibility is still gated",
-      "Capacity-limited — not always available",
-    ],
-    ctaLabel: "Discuss after Diagnostic",
-    ctaHref: "/diagnostic",
-    ctaDisabled: true,
-  },
+const TIER_META: TierMeta[] = [
+  { key: "selfCheck", ctaHref: "/start" },
+  { key: "diagnostic", ctaHref: "/diagnostic", ctaDisabled: true, emphasis: true },
+  { key: "promotion", ctaHref: "/start", ctaDisabled: true },
+  { key: "mandate", ctaHref: "/diagnostic", ctaDisabled: true },
+  { key: "express", ctaHref: "/diagnostic", ctaDisabled: true, tbd: "{{TBD: Express price}}" },
 ];
 
 export default async function ServicesPage({
@@ -160,16 +47,28 @@ export default async function ServicesPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations("services");
+
+  // Build tier data from translations for JSON-LD schema
+  const schemaItems = TIER_META.map((meta) => ({
+    name: t(`tiers.${meta.key}.name`),
+    description: t(`tiers.${meta.key}.oneLine`),
+    price: meta.tbd ?? t(`tiers.${meta.key}.price`),
+  }));
+
+  const comparisonRows = [
+    { key: "written", values: [true, true, false, true, true] },
+    { key: "live",    values: [false, true, false, true, true] },
+    { key: "pricing", values: [true, true, false, true, true] },
+    { key: "marketing", values: [false, false, true, true, true] },
+    { key: "legal",   values: [false, false, false, true, true] },
+    { key: "distribution", values: [false, false, false, true, true] },
+    { key: "moneyBack", values: [false, true, false, false, false] },
+  ] as const;
 
   return (
     <>
-      <ServiceListSchema
-        items={TIERS.map((t) => ({
-          name: t.name,
-          description: t.oneLine,
-          price: t.price,
-        }))}
-      />
+      <ServiceListSchema items={schemaItems} />
       <BreadcrumbsSchema
         items={[
           { name: "Home", href: "/" },
@@ -179,22 +78,20 @@ export default async function ServicesPage({
       <section className="border-b border-border/60">
         <div className="container max-w-4xl py-20 md:py-28">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            Services
+            {t("eyebrow")}
           </p>
           <h1 className="mt-4 text-balance font-display text-4xl font-semibold leading-tight tracking-tight md:text-5xl lg:text-6xl">
-            Five priced steps. Transparent at every tier.
+            {t("headline")}
           </h1>
           <p className="mt-6 max-w-2xl text-pretty text-lg text-muted-foreground md:text-xl">
-            We sell the whole ladder, but most owners only need the first two
-            rungs to make a decision. Pricing is published. Scope is published.
-            What you don&apos;t get is also published.
+            {t("subhead")}
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
               href="/start"
               className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
             >
-              Start with the Self-Check
+              {t("cta")}
               <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
             </Link>
           </div>
@@ -204,9 +101,31 @@ export default async function ServicesPage({
       <section className="border-b border-border/60 bg-muted/40">
         <div className="container max-w-6xl py-16 md:py-20">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {TIERS.map((tier) => (
-              <TierCard key={tier.key} tier={tier} />
-            ))}
+            {TIER_META.map((meta) => {
+              const includes = t.raw(`tiers.${meta.key}.includes`) as string[];
+              const excludes = t.raw(`tiers.${meta.key}.excludes`) as string[];
+              return (
+                <TierCard
+                  key={meta.key}
+                  name={t(`tiers.${meta.key}.name`)}
+                  price={meta.tbd ?? t(`tiers.${meta.key}.price`)}
+                  priceCadence={
+                    meta.key !== "selfCheck"
+                      ? t(`tiers.${meta.key}.priceCadence`)
+                      : undefined
+                  }
+                  oneLine={t(`tiers.${meta.key}.oneLine`)}
+                  forWhom={t(`tiers.${meta.key}.forWhom`)}
+                  forLabel={t("tierCard.for")}
+                  includes={includes}
+                  excludes={excludes}
+                  ctaLabel={t(`tiers.${meta.key}.ctaLabel`)}
+                  ctaHref={meta.ctaHref}
+                  ctaDisabled={meta.ctaDisabled}
+                  emphasis={meta.emphasis}
+                />
+              );
+            })}
           </div>
         </div>
       </section>
@@ -214,42 +133,38 @@ export default async function ServicesPage({
       <section className="border-b border-border/60">
         <div className="container max-w-5xl py-16 md:py-20">
           <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
-            How the tiers compare
+            {t("comparison.headline")}
           </h2>
           <p className="mt-3 max-w-2xl text-muted-foreground">
-            Each tier is a self-contained product. You don&apos;t need to buy
-            the next one — most owners stop after the Diagnostic.
+            {t("comparison.subhead")}
           </p>
           <div className="mt-8 overflow-x-auto">
             <table className="w-full min-w-[640px] border-collapse text-sm">
               <thead>
                 <tr className="border-b border-border">
                   <th className="px-4 py-3 text-left font-medium text-muted-foreground">
-                    What you get
+                    {t("comparison.header")}
                   </th>
-                  {TIERS.map((t) => (
-                    <th
-                      key={t.key}
-                      className="px-4 py-3 text-left font-medium"
-                    >
-                      {t.name}
+                  {TIER_META.map((meta) => (
+                    <th key={meta.key} className="px-4 py-3 text-left font-medium">
+                      {t(`tiers.${meta.key}.name`)}
                     </th>
                   ))}
                 </tr>
               </thead>
               <tbody>
-                <ComparisonRow label="Written assessment" values={[true, true, false, true, true]} />
-                <ComparisonRow label="Live working session" values={[false, true, false, true, true]} />
-                <ComparisonRow label="Indicative pricing" values={[true, true, false, true, true]} />
-                <ComparisonRow label="Marketing assets" values={[false, false, true, true, true]} />
-                <ComparisonRow label="Legal partner routing" values={[false, false, false, true, true]} />
-                <ComparisonRow label="Distribution to investors" values={[false, false, false, true, true]} />
-                <ComparisonRow label="Money-back guarantee" values={[false, true, false, false, false]} />
+                {comparisonRows.map((row) => (
+                  <ComparisonRow
+                    key={row.key}
+                    label={t(`comparison.rows.${row.key}`)}
+                    values={[...row.values]}
+                  />
+                ))}
                 <tr className="border-b border-border/50">
-                  <td className="px-4 py-3 font-medium">Price</td>
-                  {TIERS.map((t) => (
-                    <td key={t.key} className="px-4 py-3 font-mono text-xs">
-                      {t.price}
+                  <td className="px-4 py-3 font-medium">{t("comparison.rows.price")}</td>
+                  {TIER_META.map((meta) => (
+                    <td key={meta.key} className="px-4 py-3 font-mono text-xs">
+                      {meta.tbd ?? t(`tiers.${meta.key}.price`)}
                     </td>
                   ))}
                 </tr>
@@ -263,30 +178,27 @@ export default async function ServicesPage({
         <div className="container max-w-3xl py-20 md:py-24">
           <div className="rounded-xl border border-border bg-elevated p-8 md:p-12">
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-              The honest path
+              {t("honestPath.eyebrow")}
             </p>
             <h2 className="mt-4 font-display text-2xl font-semibold tracking-tight md:text-3xl">
-              Start free. Decide with a written assessment in your hand.
+              {t("honestPath.headline")}
             </h2>
             <p className="mt-4 text-muted-foreground">
-              The Self-Check costs nothing. If we can help, the Diagnostic gives
-              you a written go / no-go for $400 — refundable in the first 15
-              minutes if the call doesn&apos;t deliver useful clarity. Anything
-              beyond that is a deliberate decision, never the default.
+              {t("honestPath.body")}
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/start"
                 className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
               >
-                Start the Self-Check
+                {t("honestPath.start")}
                 <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
               </Link>
               <Link
                 href="/about"
                 className="inline-flex items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-sm font-medium transition-colors hover:border-primary/40"
               >
-                Who we are
+                {t("honestPath.whoWeAre")}
               </Link>
             </div>
           </div>
@@ -296,79 +208,99 @@ export default async function ServicesPage({
   );
 }
 
-function TierCard({ tier }: { tier: Tier }) {
+function TierCard({
+  name,
+  price,
+  priceCadence,
+  oneLine,
+  forWhom,
+  forLabel,
+  includes,
+  excludes,
+  ctaLabel,
+  ctaHref,
+  ctaDisabled,
+  emphasis,
+}: {
+  name: string;
+  price: string;
+  priceCadence?: string;
+  oneLine: string;
+  forWhom: string;
+  forLabel: string;
+  includes: string[];
+  excludes: string[];
+  ctaLabel: string;
+  ctaHref: "/start" | "/diagnostic" | "/about";
+  ctaDisabled?: boolean;
+  emphasis?: boolean;
+}) {
   return (
     <article
       className={cn(
         "flex h-full flex-col rounded-xl border bg-elevated p-6 transition-colors",
-        tier.emphasis ? "border-primary/40 shadow-sm" : "border-border",
+        emphasis ? "border-primary/40 shadow-sm" : "border-border",
       )}
     >
       <header className="space-y-3">
         <p className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">
-          {tier.name}
+          {name}
         </p>
         <div className="flex items-baseline gap-2">
           <span className="font-display text-3xl font-semibold tracking-tight">
-            {tier.price}
+            {price}
           </span>
-          {tier.priceCadence ? (
-            <span className="text-xs text-muted-foreground">{tier.priceCadence}</span>
+          {priceCadence ? (
+            <span className="text-xs text-muted-foreground">{priceCadence}</span>
           ) : null}
         </div>
-        <p className="text-sm text-foreground/90">{tier.oneLine}</p>
+        <p className="text-sm text-foreground/90">{oneLine}</p>
       </header>
 
       <p className="mt-6 text-xs uppercase tracking-wide text-muted-foreground">
-        For
+        {forLabel}
       </p>
-      <p className="mt-1 text-sm">{tier.forWhom}</p>
+      <p className="mt-1 text-sm">{forWhom}</p>
 
       <ul className="mt-6 space-y-2 text-sm">
-        {tier.includes.map((item) => (
+        {includes.map((item) => (
           <li key={item} className="flex items-start gap-2">
-            <Check
-              className="mt-0.5 h-4 w-4 flex-none text-primary"
-              aria-hidden="true"
-            />
+            <Check className="mt-0.5 h-4 w-4 flex-none text-primary" aria-hidden="true" />
             <span>{item}</span>
           </li>
         ))}
       </ul>
 
       <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-        {tier.excludes.map((item) => (
+        {excludes.map((item) => (
           <li key={item} className="flex items-start gap-2">
-            <Minus
-              className="mt-0.5 h-4 w-4 flex-none text-muted-foreground/60"
-              aria-hidden="true"
-            />
+            <Minus className="mt-0.5 h-4 w-4 flex-none text-muted-foreground/60" aria-hidden="true" />
             <span>{item}</span>
           </li>
         ))}
       </ul>
 
       <div className="mt-auto pt-6">
-        {tier.ctaDisabled ? (
+        {ctaDisabled ? (
           <button
             type="button"
             disabled
             aria-disabled="true"
             className="inline-flex w-full items-center justify-center rounded-md border border-border bg-background px-4 py-2.5 text-sm font-medium opacity-60"
           >
-            {tier.ctaLabel}
+            {ctaLabel}
           </button>
         ) : (
           <Link
-            href={tier.ctaHref}
+            href={ctaHref}
             className={cn(
               "inline-flex w-full items-center justify-center rounded-md px-4 py-2.5 text-sm font-medium transition-opacity",
-              tier.emphasis
+              emphasis
                 ? "bg-primary text-primary-foreground hover:opacity-90"
                 : "border border-border bg-background hover:border-primary/40",
             )}
           >
-            {tier.ctaLabel}
+            {ctaLabel}
           </Link>
         )}
       </div>
@@ -376,13 +308,7 @@ function TierCard({ tier }: { tier: Tier }) {
   );
 }
 
-function ComparisonRow({
-  label,
-  values,
-}: {
-  label: string;
-  values: boolean[];
-}) {
+function ComparisonRow({ label, values }: { label: string; values: boolean[] }) {
   return (
     <tr className="border-b border-border/50">
       <td className="px-4 py-3 font-medium">{label}</td>

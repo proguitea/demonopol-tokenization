@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 
 import { BreadcrumbsSchema } from "@/components/seo/StructuredData";
@@ -49,6 +49,9 @@ export default async function AboutPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations("about");
+
+  const markets = t.raw("reach.markets") as string[];
 
   return (
     <>
@@ -61,17 +64,13 @@ export default async function AboutPage({
       <section className="border-b border-border/60">
         <div className="container max-w-3xl py-20 md:py-28">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            About
+            {t("eyebrow")}
           </p>
           <h1 className="mt-4 text-balance font-display text-4xl font-semibold leading-tight tracking-tight md:text-5xl lg:text-6xl">
-            International real-estate practice, applied to a newer rail.
+            {t("headline")}
           </h1>
           <p className="mt-6 text-pretty text-lg text-muted-foreground md:text-xl">
-            Demonopol is operated by an advisory team drawn from international
-            real-estate brokering. Tokenization is a newer mechanism — we treat
-            it with the same discipline we apply to private real-estate
-            transactions: documented, jurisdictionally aware, honest about what
-            it is and what it isn&apos;t.
+            {t("subhead")}
           </p>
         </div>
       </section>
@@ -81,27 +80,15 @@ export default async function AboutPage({
           <div className="grid gap-12 md:grid-cols-[1fr_2fr]">
             <div>
               <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                How we&apos;re built
+                {t("howBuilt.eyebrow")}
               </p>
               <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight md:text-3xl">
-                Operating side. Advisory side.
+                {t("howBuilt.headline")}
               </h2>
             </div>
             <div className="space-y-6 text-base text-muted-foreground">
-              <p>
-                The operating team — the people who answer your email, run your
-                Diagnostic call, and structure your transaction — speaks in a
-                single corporate voice. We don&apos;t put individual operator
-                names on the front page because the work is collective and the
-                relationship is with the firm.
-              </p>
-              <p>
-                The advisory side is named. The advisors below lend their
-                credentials and judgment, and you can verify their track
-                records on LinkedIn. They&apos;re consulted on structure,
-                jurisdiction, and the kinds of decisions where international
-                real-estate experience is the difference.
-              </p>
+              <p>{t("howBuilt.operating")}</p>
+              <p>{t("howBuilt.advisory")}</p>
             </div>
           </div>
         </div>
@@ -110,18 +97,22 @@ export default async function AboutPage({
       <section className="border-b border-border/60">
         <div className="container max-w-5xl py-16 md:py-20">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            Advisors
+            {t("advisors.eyebrow")}
           </p>
           <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight md:text-3xl">
-            Drawn from international real-estate practice.
+            {t("advisors.headline")}
           </h2>
           <p className="mt-3 max-w-2xl text-muted-foreground">
-            Verifiable on LinkedIn. No aggregate metrics, no transaction
-            volume. The credibility is in the names and the firms.
+            {t("advisors.subhead")}
           </p>
           <div className="mt-10 grid gap-6 md:grid-cols-2">
             {ADVISORS.map((advisor) => (
-              <AdvisorCard key={advisor.name} advisor={advisor} />
+              <AdvisorCard
+                key={advisor.name}
+                advisor={advisor}
+                priorFirmLabel={t("advisors.priorFirm")}
+                linkedinLabel={t("advisors.linkedin")}
+              />
             ))}
           </div>
         </div>
@@ -130,26 +121,16 @@ export default async function AboutPage({
       <section className="border-b border-border/60 bg-muted/40">
         <div className="container max-w-5xl py-16 md:py-20">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            Reach
+            {t("reach.eyebrow")}
           </p>
           <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight md:text-3xl">
-            Worldwide, with depth in seven markets.
+            {t("reach.headline")}
           </h2>
           <p className="mt-3 max-w-2xl text-muted-foreground">
-            We accept assets worldwide. Where we have local legal-partner
-            relationships, we route faster.
+            {t("reach.subhead")}
           </p>
           <ul className="mt-8 grid gap-3 text-sm sm:grid-cols-2 md:grid-cols-4">
-            {[
-              "Spain (luxury)",
-              "Morocco",
-              "Thailand",
-              "Hong Kong",
-              "Switzerland",
-              "Vietnam",
-              "United States",
-              "Other — by jurisdiction",
-            ].map((label) => (
+            {markets.map((label) => (
               <li
                 key={label}
                 className="rounded-md border border-border bg-background px-4 py-3 font-mono text-xs uppercase tracking-wide"
@@ -166,15 +147,13 @@ export default async function AboutPage({
           <div className="grid gap-10 md:grid-cols-2">
             <div className="rounded-xl border border-border bg-elevated p-8">
               <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                Ecosystem
+                {t("ecosystem.eyebrow")}
               </p>
               <h3 className="mt-3 font-display text-xl font-semibold tracking-tight">
-                Sister site
+                {t("ecosystem.headline")}
               </h3>
               <p className="mt-3 text-sm text-muted-foreground">
-                Demonopol&apos;s broader work runs at demonopol.com. This site
-                is the Tokenization-as-a-Service entry point for issuers and
-                owners.
+                {t("ecosystem.body")}
               </p>
               <a
                 href="https://demonopol.com"
@@ -182,20 +161,20 @@ export default async function AboutPage({
                 rel="noopener noreferrer"
                 className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
               >
-                Visit demonopol.com
+                {t("ecosystem.cta")}
                 <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
               </a>
             </div>
             <div className="rounded-xl border border-border bg-elevated p-8">
               <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                Contact
+                {t("contact.eyebrow")}
               </p>
               <h3 className="mt-3 font-display text-xl font-semibold tracking-tight">
-                How to reach us
+                {t("contact.headline")}
               </h3>
               <dl className="mt-5 space-y-3 text-sm">
                 <div>
-                  <dt className="text-muted-foreground">General &amp; intake</dt>
+                  <dt className="text-muted-foreground">{t("contact.general")}</dt>
                   <dd>
                     <a
                       href="mailto:tokenize@demonopol.com"
@@ -206,7 +185,7 @@ export default async function AboutPage({
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-muted-foreground">Legal &amp; payments</dt>
+                  <dt className="text-muted-foreground">{t("contact.legalPayments")}</dt>
                   <dd>
                     <a
                       href="mailto:legal@demonopol.com"
@@ -217,7 +196,7 @@ export default async function AboutPage({
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-muted-foreground">Operating entity</dt>
+                  <dt className="text-muted-foreground">{t("contact.entity")}</dt>
                   <dd className="font-mono text-xs">
                     Demonopol LLC · Co. No. 4008 LLC · P.O. Box 2897, Kingstown,
                     St. Vincent &amp; the Grenadines
@@ -229,21 +208,20 @@ export default async function AboutPage({
 
           <div className="mt-12 rounded-xl border border-border bg-elevated p-8 md:p-12">
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-              First step
+              {t("cta.eyebrow")}
             </p>
             <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight md:text-3xl">
-              The Self-Check is free, structured, and fast.
+              {t("cta.headline")}
             </h2>
             <p className="mt-4 max-w-2xl text-muted-foreground">
-              Five minutes. No credit card. We come back with a written
-              assessment and the recommended next step.
+              {t("cta.body")}
             </p>
             <div className="mt-6">
               <Link
                 href="/start"
                 className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
               >
-                Start the Self-Check
+                {t("cta.start")}
                 <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
               </Link>
             </div>
@@ -254,7 +232,15 @@ export default async function AboutPage({
   );
 }
 
-function AdvisorCard({ advisor }: { advisor: Advisor }) {
+function AdvisorCard({
+  advisor,
+  priorFirmLabel,
+  linkedinLabel,
+}: {
+  advisor: Advisor;
+  priorFirmLabel: string;
+  linkedinLabel: string;
+}) {
   const linkedinHref = advisor.linkedin?.startsWith("{{TBD")
     ? undefined
     : advisor.linkedin;
@@ -266,7 +252,7 @@ function AdvisorCard({ advisor }: { advisor: Advisor }) {
       </h3>
       <p className="mt-1 text-sm text-muted-foreground">{advisor.region}</p>
       <p className="mt-4 font-mono text-xs uppercase tracking-wide text-muted-foreground">
-        Prior firm
+        {priorFirmLabel}
       </p>
       <p className="text-sm font-medium">{advisor.priorFirm}</p>
       <div className="mt-5">
@@ -277,7 +263,7 @@ function AdvisorCard({ advisor }: { advisor: Advisor }) {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
           >
-            LinkedIn
+            {linkedinLabel}
             <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
           </a>
         ) : (

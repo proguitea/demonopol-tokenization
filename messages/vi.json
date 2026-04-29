@@ -17,7 +17,103 @@
     "subhead": "Cấu trúc, phân phối toàn cầu và quy trình tư vấn minh bạch — không cần báo giá hàng triệu đô.",
     "ctaPrimary": "Bắt đầu Tự đánh giá",
     "ctaSecondary": "Đặt lịch Đánh giá",
-    "status": "Đang xây dựng · Sắp ra mắt chính thức"
+    "status": "Đang xây dựng · Sắp ra mắt chính thức",
+    "statusBar": "Tự đánh giá miễn phí · Đánh giá $400 · Hoàn tiền trong 15 phút",
+    "services": {
+      "eyebrow": "Dịch vụ",
+      "headline": "Năm bước có giá. Phần lớn chủ sở hữu chỉ cần hai bước đầu.",
+      "seeAll": "Xem cả năm bước",
+      "cards": {
+        "selfCheck": {
+          "eyebrow": "Miễn phí",
+          "title": "Tự đánh giá",
+          "body": "Bộ câu hỏi có cấu trúc 5 phút. Chúng tôi phản hồi bằng đánh giá mức độ phù hợp và bước tiếp theo được khuyến nghị.",
+          "cta": "Bắt đầu Tự đánh giá"
+        },
+        "diagnostic": {
+          "eyebrow": "$400 · một lần",
+          "title": "Đánh giá",
+          "body": "Phiên làm việc 60–90 phút và báo cáo có / không bằng văn bản 6–8 trang. Hoàn tiền trong 15 phút đầu.",
+          "cta": "Xem nội dung chi tiết"
+        },
+        "mandate": {
+          "eyebrow": "Theo yêu cầu",
+          "title": "Uỷ thác & Express",
+          "body": "Cấu trúc hoàn chỉnh, định tuyến thẩm quyền và phân phối đến nhà đầu tư đủ tiêu chuẩn. Phạm vi xác định sau Đánh giá.",
+          "cta": "So sánh cả năm cấp độ"
+        }
+      }
+    },
+    "howItWorks": {
+      "eyebrow": "Cách thức hoạt động",
+      "headline": "Bốn bước. Không có gì xảy ra trừ khi bạn quyết định.",
+      "subhead": "Mỗi bước là một sản phẩm độc lập với sản phẩm bàn giao riêng. Phần lớn chủ sở hữu dừng lại ở bước hai với đánh giá bằng văn bản trong tay.",
+      "steps": {
+        "selfCheck": {
+          "label": "Tự đánh giá",
+          "body": "Năm phút. Miễn phí. Thu thập có cấu trúc về tài sản, quyền sở hữu, thẩm quyền và mục tiêu của bạn."
+        },
+        "diagnostic": {
+          "label": "Đánh giá",
+          "body": "$400. Một phiên làm việc và báo cáo bằng văn bản — khả thi, phương án cấu trúc, định tuyến thẩm quyền, chi phí ước tính."
+        },
+        "structuring": {
+          "label": "Cấu trúc",
+          "body": "Cam kết uỷ thác: định tuyến đối tác pháp lý, thiết lập tuân thủ, tài liệu sẵn sàng cho nhà đầu tư. Phạm vi theo từng tài sản."
+        },
+        "distribution": {
+          "label": "Phân phối",
+          "body": "Phân phối đến pool nhà đầu tư phù hợp. Phạm vi toàn cầu, với chiều sâu ở bảy thẩm quyền đối tác pháp lý."
+        }
+      }
+    },
+    "trust": {
+      "moneyBack": {
+        "eyebrow": "Đảm bảo hoàn tiền",
+        "title": "15 phút, không cần giải thích.",
+        "body": "Nếu cuộc gọi Đánh giá không mang lại sự rõ ràng hữu ích, chúng tôi hoàn lại toàn bộ $400. Cam kết áp dụng trong cuộc gọi, không nằm trong điều khoản nhỏ."
+      },
+      "written": {
+        "eyebrow": "Tài liệu bàn giao bằng văn bản",
+        "title": "6–8 trang. Cùng cấu trúc mỗi lần.",
+        "body": "Tính khả thi, phương án cấu trúc, định tuyến thẩm quyền, timeline, chi phí ước tính, mức độ phù hợp với pool nhà đầu tư. Tài liệu bạn có thể giao cho cố vấn pháp lý."
+      },
+      "advisory": {
+        "eyebrow": "Đội ngũ cố vấn",
+        "title": "Từ thực tiễn bất động sản quốc tế.",
+        "body": "Cố vấn được nêu tên với công ty cũ có thể xác minh trên LinkedIn — Luc Villeneuve (cựu Century 21) và Costa (cựu Group1Vest). Cơ chế tokenization mới hơn; kỷ luật vận hành thì không.",
+        "cta": "Gặp gỡ đội ngũ"
+      }
+    },
+    "insights": {
+      "eyebrow": "Bài phân tích",
+      "headline": "Ghi chú thực tế từ công việc.",
+      "seeAll": "Xem tất cả",
+      "previews": {
+        "first": {
+          "tag": "Primer · Tháng 5/2026",
+          "title": "Thanh khoản cho bất động sản tư nhân mà không cần bán",
+          "one": "Điều chủ sở hữu thực sự muốn nói khi hỏi về tokenization, và ba thứ thay đổi khi bạn ngừng coi đó là một giao dịch bán."
+        },
+        "second": {
+          "tag": "Rủi ro · Tháng 6/2026",
+          "title": "Phân mảnh bất động sản: lợi ích thực, rủi ro thực",
+          "one": "Danh sách mà không ai công bố. Những gì thực sự đi sai, những gì bị phóng đại, và cách đọc điều khoản mẫu."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Bước đầu tiên",
+      "headline": "Năm phút. Không cần thẻ tín dụng. Đánh giá bằng văn bản trong tay.",
+      "body": "Tự đánh giá là khởi đầu của cuộc trò chuyện. Dù câu trả lời là \"có, đây là cách thực hiện\" hay \"chưa, đây là điều cần thay đổi\" — bạn rời đi với thứ gì đó bằng văn bản.",
+      "start": "Bắt đầu Tự đánh giá",
+      "compare": "So sánh cả năm cấp độ",
+      "features": {
+        "intake": "Thu thập có cấu trúc miễn phí",
+        "outcome": "Đánh giá kết quả bằng văn bản",
+        "next": "Bước tiếp theo được khuyến nghị"
+      }
+    }
   },
   "footer": {
     "brand": "Demonopol — Tokenization-as-a-Service",
@@ -44,5 +140,359 @@
     "title": "Không tìm thấy trang",
     "body": "Trang bạn đang tìm không có ở đây. Có thể trang đã được chuyển hoặc chưa tồn tại trên trang này.",
     "cta": "Về trang chủ"
+  },
+  "services": {
+    "eyebrow": "Dịch vụ",
+    "headline": "Năm bước có giá. Minh bạch ở mọi cấp độ.",
+    "subhead": "Chúng tôi cung cấp toàn bộ lộ trình, nhưng phần lớn chủ sở hữu chỉ cần hai bước đầu để đưa ra quyết định. Bảng giá được công bố. Phạm vi được công bố. Những gì bạn không nhận được cũng được công bố.",
+    "cta": "Bắt đầu bằng Tự đánh giá",
+    "tierCard": {
+      "for": "Dành cho"
+    },
+    "comparison": {
+      "headline": "So sánh các cấp độ",
+      "subhead": "Mỗi cấp độ là một sản phẩm độc lập. Bạn không cần mua cấp tiếp theo — phần lớn chủ sở hữu dừng sau Đánh giá.",
+      "header": "Những gì bạn nhận được",
+      "rows": {
+        "written": "Đánh giá bằng văn bản",
+        "live": "Phiên làm việc trực tiếp",
+        "pricing": "Định giá ước tính",
+        "marketing": "Tài liệu marketing",
+        "legal": "Định tuyến đối tác pháp lý",
+        "distribution": "Phân phối đến nhà đầu tư",
+        "moneyBack": "Đảm bảo hoàn tiền",
+        "price": "Giá"
+      }
+    },
+    "honestPath": {
+      "eyebrow": "Con đường trung thực",
+      "headline": "Bắt đầu miễn phí. Quyết định với đánh giá bằng văn bản trong tay.",
+      "body": "Tự đánh giá không tốn gì. Nếu chúng tôi có thể giúp được, Đánh giá cho bạn kết luận bằng văn bản với $400 — hoàn tiền trong 15 phút đầu nếu cuộc gọi không mang lại sự rõ ràng hữu ích. Mọi thứ tiếp theo là quyết định có chủ ý, không bao giờ là mặc định.",
+      "start": "Bắt đầu Tự đánh giá",
+      "whoWeAre": "Chúng tôi là ai"
+    },
+    "tiers": {
+      "selfCheck": {
+        "name": "Tự đánh giá",
+        "price": "Miễn phí",
+        "oneLine": "Bộ câu hỏi có cấu trúc 5 phút. Chúng tôi phản hồi bằng đánh giá mức độ phù hợp bằng văn bản.",
+        "forWhom": "Chủ sở hữu muốn tìm hiểu xem tokenization có phải lựa chọn nghiêm túc cho tài sản của họ không.",
+        "includes": [
+          "Bộ câu hỏi có cấu trúc mười câu",
+          "Đánh giá mức độ phù hợp bằng văn bản trong 1–2 ngày làm việc",
+          "Dải giá ước tính cho Đánh giá đầy đủ",
+          "Bước tiếp theo được khuyến nghị"
+        ],
+        "excludes": [
+          "Không có khuyến nghị pháp lý, thuế hay tài chính",
+          "Không có cấu trúc, giới thiệu hay niêm yết"
+        ],
+        "ctaLabel": "Bắt đầu Tự đánh giá"
+      },
+      "diagnostic": {
+        "name": "Đánh giá",
+        "price": "$400",
+        "priceCadence": "một lần",
+        "oneLine": "Cuộc gọi 60–90 phút với chuyên gia và đánh giá bằng văn bản 6–8 trang về việc tài sản của bạn có thể được tokenize hay không — và bằng cách nào.",
+        "forWhom": "Chủ sở hữu sẵn sàng bỏ ra một phần nhỏ phí pháp lý ($5K–$50K ở nơi khác) để có kết luận rõ ràng bằng văn bản.",
+        "includes": [
+          "Phiên làm việc 60–90 phút với đội ngũ cố vấn",
+          "Chẩn đoán bằng văn bản 6–8 trang — phương án cấu trúc, định tuyến thẩm quyền, timeline và chi phí ước tính",
+          "Danh sách kiểm tra trước cuộc gọi (tài liệu tóm tắt, giấy tờ sở hữu, tài chính, định giá trước đây)",
+          "Theo dõi bằng văn bản với các bước tiếp theo được khuyến nghị",
+          "Đảm bảo hoàn tiền 15 phút nếu cuộc gọi không mang lại sự rõ ràng hữu ích"
+        ],
+        "excludes": [
+          "Không có ý kiến pháp lý (chúng tôi định tuyến đến đối tác thẩm quyền nếu cần)",
+          "Không có thực thi hay niêm yết — đó là vai trò của Uỷ thác"
+        ],
+        "ctaLabel": "Đặt lịch Đánh giá"
+      },
+      "promotion": {
+        "name": "Tăng cường quảng bá",
+        "price": "$200",
+        "priceCadence": "một lần, sau Đánh giá",
+        "oneLine": "Dịch vụ bổ sung marketing cho chủ sở hữu muốn tài sản được tokenize tiếp cận đúng đối tượng.",
+        "forWhom": "Chủ sở hữu đã thực hiện Đánh giá và muốn tiếp cận nhà đầu tư đủ tiêu chuẩn.",
+        "includes": [
+          "Nội dung niêm yết — viết riêng cho tài sản, không theo mẫu",
+          "Một bài viết được đăng trên kênh xuất bản Demonopol",
+          "Một thông báo đến cộng đồng Demonopol",
+          "Một slot trong newsletter",
+          "Một lần thử pitch báo chí đến một ấn phẩm ngành"
+        ],
+        "excludes": [
+          "Không có chi phí quảng cáo trả phí",
+          "Không có push KOL (tạm hoãn — xem chiến lược báo chí)",
+          "Không đảm bảo đưa tin"
+        ],
+        "ctaLabel": "Khả dụng sau Đánh giá"
+      },
+      "mandate": {
+        "name": "Uỷ thác",
+        "price": "Theo yêu cầu",
+        "priceCadence": "phạm vi theo tài sản",
+        "oneLine": "Cấu trúc và thực thi đầy đủ: định tuyến pháp lý, tuân thủ, phân phối đến nhà đầu tư đủ tiêu chuẩn.",
+        "forWhom": "Chủ sở hữu đã nhận được kết quả từ Đánh giá và sẵn sàng thực thi.",
+        "includes": [
+          "Lựa chọn thẩm quyền và định tuyến đối tác pháp lý",
+          "Thiết lập cấu trúc và tuân thủ (KYC/AML)",
+          "Tài liệu sẵn sàng cho nhà đầu tư",
+          "Phân phối đến pool nhà đầu tư phù hợp",
+          "Quản lý dự án đến khi đóng"
+        ],
+        "excludes": [
+          "Không phải sản phẩm cố định giá — phạm vi xác định sau Đánh giá",
+          "Không đảm bảo về phân bổ hay khám phá giá"
+        ],
+        "ctaLabel": "Thảo luận sau Đánh giá"
+      },
+      "express": {
+        "name": "Express",
+        "priceCadence": "fast-track",
+        "oneLine": "Uỷ thác thu gọn cho chủ sở hữu có thời hạn cứng và bộ tài liệu đầy đủ.",
+        "forWhom": "Chủ sở hữu có giao dịch đã được định hình — áp lực đóng, đồng hồ thẩm quyền, hoặc nhóm nhà đầu tư sẵn sàng cam kết.",
+        "includes": [
+          "Phạm vi Uỷ thác tương tự, timeline thu gọn",
+          "Ưu tiên tiếp cận đội ngũ cố vấn",
+          "Cập nhật hàng ngày trong cửa sổ hoạt động"
+        ],
+        "excludes": [
+          "Không phải cách bỏ qua Đánh giá — tính khả thi vẫn được kiểm soát",
+          "Giới hạn năng lực — không phải lúc nào cũng có sẵn"
+        ],
+        "ctaLabel": "Thảo luận sau Đánh giá"
+      }
+    }
+  },
+  "diagnostic": {
+    "eyebrow": "Đánh giá",
+    "headline": "$400. Một phiên làm việc. Kết luận bằng văn bản.",
+    "subhead": "Cuộc gọi 60–90 phút với đội ngũ cố vấn và đánh giá bằng văn bản 6–8 trang về việc tài sản của bạn có thể được tokenize hay không — và bằng cách nào. Bạn rời đi với một tài liệu, không phải một lời \"có thể\".",
+    "selfCheckFirst": "Thử Tự đánh giá miễn phí trước",
+    "stripeNote": "Thanh toán qua Stripe Checkout. Biên lai do Demonopol LLC phát hành. Đảm bảo hoàn tiền 15 phút áp dụng trong cuộc gọi, không nằm trong điều khoản nhỏ.",
+    "tiles": {
+      "moneyBack": {
+        "eyebrow": "Đảm bảo hoàn tiền",
+        "title": "15 phút. Không cần giải thích.",
+        "body": "Nếu cuộc gọi không mang lại sự rõ ràng, chúng tôi kết thúc và hoàn lại toàn bộ $400. Cam kết áp dụng trong cuộc gọi, không nằm trong điều khoản nhỏ."
+      },
+      "written": {
+        "eyebrow": "Tài liệu bàn giao bằng văn bản",
+        "title": "Đánh giá 6–8 trang.",
+        "body": "Không phải bản ghi âm. Không phải slide. Tài liệu bạn có thể trình cho cố vấn pháp lý, đồng chủ sở hữu hoặc đầu mối quan hệ nhà đầu tư."
+      },
+      "timeline": {
+        "eyebrow": "Timeline",
+        "title": "Báo cáo trong một tuần.",
+        "body": "Cuộc gọi trong 7–10 ngày sau thanh toán, đánh giá bằng văn bản trong 5 ngày làm việc sau cuộc gọi."
+      }
+    },
+    "report": {
+      "eyebrow": "Những gì bạn nhận được",
+      "headline": "Bên trong chẩn đoán bằng văn bản",
+      "subhead": "Tám phần. Cùng cấu trúc cho mọi tài sản, để bạn có thể so sánh báo cáo về biệt thự Tây Ban Nha với báo cáo về văn phòng Bangkok theo từng phần.",
+      "sections": [
+        "Tóm tắt tài sản — những gì chúng tôi nhận và xác minh",
+        "Kết luận khả thi — đồng ý, đồng ý có điều kiện, hoặc từ chối, kèm lý do",
+        "Phương án cấu trúc — các khung pháp lý thực tế cho tài sản của bạn",
+        "Định tuyến thẩm quyền — nơi thực hiện công việc và lý do tại sao",
+        "Timeline ước tính — các giai đoạn, trở ngại, điểm quyết định",
+        "Chi phí ước tính — pháp lý, cấu trúc, phân phối",
+        "Mức độ phù hợp với pool nhà đầu tư — ai sẽ có thể đăng ký và ở mức vé nào",
+        "Các bước tiếp theo được khuyến nghị — những gì chúng tôi sẽ làm tiếp theo và những gì bạn có thể tự thực hiện"
+      ]
+    },
+    "checklist": {
+      "eyebrow": "Trước cuộc gọi",
+      "headline": "Danh sách kiểm tra trước cuộc gọi",
+      "subhead": "Mang theo những gì bạn có. Các tài liệu thiếu không huỷ cuộc gọi — chúng xác định những gì chúng tôi có thể xác minh và mức độ chắc chắn của kết luận.",
+      "items": [
+        "Tài liệu tóm tắt hoặc mô tả tài sản (định dạng bất kỳ)",
+        "Giấy chứng nhận sở hữu hoặc tài liệu tương đương",
+        "Tài chính gần nhất hoặc bảng thu nhập thuê, nếu tài sản tạo thu nhập",
+        "Định giá trước đây hoặc ý kiến giá trị gần đây từ môi giới, nếu có"
+      ]
+    },
+    "faq": {
+      "eyebrow": "Câu hỏi thường gặp",
+      "headline": "Câu trả lời trung thực",
+      "items": [
+        {
+          "q": "Nếu bạn kết luận tài sản của tôi không phù hợp thì sao?",
+          "a": "Bạn nhận được cùng đánh giá bằng văn bản — giải thích rõ ràng lý do từ chối và điều gì sẽ thay đổi kết luận. $400 mua sự rõ ràng, không phải một kết quả cụ thể."
+        },
+        {
+          "q": "Đảm bảo hoàn tiền hoạt động như thế nào?",
+          "a": "Nếu, mười lăm phút sau khi bắt đầu cuộc gọi, bạn không tin rằng phiên làm việc sẽ mang lại sự rõ ràng hữu ích, chúng tôi kết thúc cuộc gọi và hoàn lại toàn bộ $400. Không cần giấy tờ, không rào cản."
+        },
+        {
+          "q": "Tôi có phải làm Tự đánh giá trước không?",
+          "a": "Không, nhưng sẽ hữu ích hơn nếu làm. Tự đánh giá miễn phí và cung cấp cho cả hai phía bộ thu thập có cấu trúc mà Đánh giá dựa trên. Nếu tài sản của bạn ở ranh giới, làm trước sẽ tiết kiệm thời gian trao đổi trong cuộc gọi. Nếu bạn đã biết mình muốn gì, thanh toán trực tiếp là hoàn toàn ổn."
+        },
+        {
+          "q": "Ai sẽ điều hành cuộc gọi?",
+          "a": "Các thành viên đội ngũ cố vấn và một nhà phân tích từ phía vận hành. Chúng tôi không đặt tên từng người vận hành trên trang chính vì công việc mang tính tập thể — nhưng bạn sẽ gặp những người tham gia cuộc gọi."
+        },
+        {
+          "q": "Đánh giá có phải là tư vấn pháp lý không?",
+          "a": "Không. Đây là đánh giá thương mại và cấu trúc. Khi cần ý kiến pháp lý cụ thể cho một thẩm quyền, chúng tôi định tuyến bạn đến đối tác tại thị trường liên quan — đó là một cam kết riêng."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Sẵn sàng",
+      "headline": "Thanh toán, đặt lịch, nhận kết luận bằng văn bản.",
+      "body": "Thanh toán chỉ mất một phút. Sau thanh toán bạn sẽ được chuyển thẳng đến link đặt lịch để chọn slot trong 7–10 ngày tới. Đảm bảo hoàn tiền vô điều kiện trong mười lăm phút đầu của cuộc gọi.",
+      "compare": "So sánh cả năm cấp độ"
+    }
+  },
+  "about": {
+    "eyebrow": "Giới thiệu",
+    "headline": "Thực tiễn bất động sản quốc tế, áp dụng vào cơ chế mới hơn.",
+    "subhead": "Demonopol được vận hành bởi đội ngũ cố vấn từ lĩnh vực môi giới bất động sản quốc tế. Tokenization là cơ chế mới hơn — chúng tôi tiếp cận với kỷ luật tương tự áp dụng cho giao dịch bất động sản tư nhân: có tài liệu, hiểu rõ thẩm quyền, trung thực về bản chất và giới hạn.",
+    "howBuilt": {
+      "eyebrow": "Cấu trúc của chúng tôi",
+      "headline": "Phía vận hành. Phía cố vấn.",
+      "operating": "Đội ngũ vận hành — những người trả lời email của bạn, điều hành cuộc gọi Đánh giá và cấu trúc giao dịch — phát ngôn bằng một giọng corporate duy nhất. Chúng tôi không đặt tên từng người vận hành trên trang chính vì công việc mang tính tập thể và mối quan hệ là với công ty.",
+      "advisory": "Phía cố vấn được nêu tên. Các cố vấn dưới đây đóng góp chứng chỉ và nhận định, và bạn có thể xác minh hồ sơ của họ trên LinkedIn. Họ được tham vấn về cấu trúc, thẩm quyền và các quyết định mà kinh nghiệm bất động sản quốc tế tạo ra sự khác biệt."
+    },
+    "advisors": {
+      "eyebrow": "Cố vấn",
+      "headline": "Từ thực tiễn bất động sản quốc tế.",
+      "subhead": "Có thể xác minh trên LinkedIn. Không có số liệu tổng hợp, không có khối lượng giao dịch. Uy tín nằm ở tên và công ty.",
+      "priorFirm": "Công ty cũ",
+      "linkedin": "LinkedIn"
+    },
+    "reach": {
+      "eyebrow": "Phạm vi",
+      "headline": "Toàn cầu, với chiều sâu ở bảy thị trường.",
+      "subhead": "Chúng tôi chấp nhận tài sản từ khắp nơi trên thế giới. Nơi chúng tôi có quan hệ đối tác pháp lý địa phương, chúng tôi xử lý nhanh hơn.",
+      "markets": [
+        "Tây Ban Nha (hạng sang)",
+        "Ma Rốc",
+        "Thái Lan",
+        "Hồng Kông",
+        "Thuỵ Sĩ",
+        "Việt Nam",
+        "Hoa Kỳ",
+        "Khác — theo thẩm quyền"
+      ]
+    },
+    "ecosystem": {
+      "eyebrow": "Hệ sinh thái",
+      "headline": "Trang web đối tác",
+      "body": "Công việc rộng hơn của Demonopol có tại demonopol.com. Trang web này là điểm vào Tokenization-as-a-Service cho nhà phát hành và chủ sở hữu.",
+      "cta": "Truy cập demonopol.com"
+    },
+    "contact": {
+      "eyebrow": "Liên hệ",
+      "headline": "Cách liên hệ với chúng tôi",
+      "general": "Chung & thu thập",
+      "legalPayments": "Pháp lý & thanh toán",
+      "entity": "Thực thể vận hành"
+    },
+    "cta": {
+      "eyebrow": "Bước đầu tiên",
+      "headline": "Tự đánh giá miễn phí, có cấu trúc và nhanh chóng.",
+      "body": "Năm phút. Không cần thẻ tín dụng. Chúng tôi phản hồi bằng đánh giá bằng văn bản và bước tiếp theo được khuyến nghị.",
+      "start": "Bắt đầu Tự đánh giá"
+    }
+  },
+  "insights": {
+    "eyebrow": "Bài phân tích",
+    "headline": "Ghi chú thực tế về thanh khoản toàn cầu cho bất động sản tư nhân.",
+    "subhead": "Chúng tôi công bố những gì học được từ công việc thực tế — theo loại tài sản, theo thẩm quyền và về các quyết định cấu trúc âm thầm quyết định liệu giao dịch có đóng được hay không. Không có nhận định vội vàng, không có tổng hợp.",
+    "queue": {
+      "headline": "Đang chờ xuất bản",
+      "timing": "Đợt đầu tiên ra mắt tháng 5–6"
+    },
+    "newsletter": {
+      "eyebrow": "Bản tin",
+      "headline": "Nhận mỗi bài Insights vào hộp thư của bạn.",
+      "body": "Tối đa hai email mỗi tháng. Không có quảng cáo, không có tóm tắt tái chế — cùng nội dung đăng tải ở đây. Gửi email đến tokenize@demonopol.com với tiêu đề \"Newsletter signup\" và chúng tôi sẽ thêm bạn vào danh sách. (Form đăng ký đúng nghĩa sẽ có khi bài đầu tiên xuất bản.)",
+      "signupSubject": "Newsletter%20signup",
+      "cta": "Hoặc bắt đầu Tự đánh giá"
+    },
+    "articleStatus": {
+      "drafting": "Đang biên soạn",
+      "scheduled": "Đã lên lịch",
+      "published": "Đã xuất bản"
+    },
+    "articles": {
+      "liquidityWithoutSelling": {
+        "title": "Thanh khoản cho bất động sản tư nhân mà không cần bán: Primer 2026",
+        "oneLine": "Điều chủ sở hữu thực sự muốn nói khi hỏi về tokenization, và ba thứ thay đổi khi bạn ngừng coi đó là một giao dịch bán."
+      },
+      "whatStructuringCosts": {
+        "title": "Chi phí thực sự của việc cấu trúc bất động sản tư nhân cho nhà đầu tư toàn cầu",
+        "oneLine": "Những con số rõ ràng. Từ đâu có con số phí pháp lý $5K–$50K, và bạn có thể làm gì với ít hơn khi đã có Đánh giá trong tay."
+      },
+      "spainLuxuryFractional": {
+        "title": "Thị trường bất động sản hạng sang Tây Ban Nha: con đường pháp lý cho sở hữu nước ngoài phân mảnh",
+        "oneLine": "Những gì thực sự được phép, những gì chỉ được phép về lý thuyết, và các cấu trúc chúng tôi thấy vượt qua ngưỡng ở Madrid."
+      },
+      "realBenefitsRealRisks": {
+        "title": "Phân mảnh bất động sản: lợi ích thực, rủi ro thực",
+        "oneLine": "Danh sách mà không ai công bố. Những gì thực sự đi sai, những gì bị phóng đại, và cách đọc điều khoản mẫu."
+      }
+    }
+  },
+  "legal": {
+    "eyebrow": "Pháp lý",
+    "headline": "Điều khoản, quyền riêng tư và tiết lộ rủi ro.",
+    "intro": "Ba tài liệu. Chúng tôi công bố chúng trên cùng một trang để bạn có thể đọc cùng nhau. Mỗi phần dưới đây là nội dung tạm thời trong khi cố vấn pháp lý hoàn thiện văn bản ràng buộc — các phiên bản chính thức sẽ có trước Đánh giá trả phí đầu tiên.",
+    "placeholder": "Nội dung tạm thời trước khi ra mắt",
+    "nav": {
+      "terms": "Điều khoản dịch vụ",
+      "privacy": "Quyền riêng tư",
+      "risk": "Tiết lộ rủi ro"
+    },
+    "contact": "Câu hỏi về bất kỳ tài liệu nào trong ba tài liệu:",
+    "terms": {
+      "section": "Phần 1",
+      "headline": "Điều khoản dịch vụ",
+      "note": "Văn bản được luật sư xem xét đang chờ. Các điểm dưới đây tóm tắt ý định của chúng tôi để bạn biết những gì mong đợi khi phiên bản ràng buộc được công bố.",
+      "bullets": [
+        "Thực thể vận hành là Demonopol LLC, đăng ký tại St. Vincent và Grenadines (Số công ty 4008 LLC).",
+        "Tự đánh giá được cung cấp miễn phí, không có nghĩa vụ từ cả hai phía.",
+        "Đánh giá là dịch vụ một lần có phí cố định ($400 USD) được bảo đảm bởi cam kết hoàn tiền 15 phút.",
+        "Các cam kết Uỷ thác và Express được xác định phạm vi theo từng tài sản theo thỏa thuận bằng văn bản riêng.",
+        "Chúng tôi không phải là công ty luật, nhà môi giới-đại lý hay cố vấn đầu tư đã đăng ký ở bất kỳ thẩm quyền nào.",
+        "Tokenization, khi được theo đuổi, được thực hiện thông qua các đối tác độc lập và vẫn tuân theo luật pháp của thẩm quyền liên quan."
+      ]
+    },
+    "privacy": {
+      "section": "Phần 2",
+      "headline": "Chính sách quyền riêng tư",
+      "note": "Văn bản được luật sư xem xét đang chờ. Các điểm dưới đây tóm tắt cách chúng tôi dự định xử lý dữ liệu cá nhân.",
+      "bullets": [
+        "Chúng tôi chỉ thu thập thông tin bạn cung cấp qua Tự đánh giá, thu thập thông tin Đánh giá và trao đổi trực tiếp.",
+        "Siêu dữ liệu gửi: timestamp, IP đã hash (một chiều, có salt — chúng tôi không thể đảo ngược về IP của bạn), chuỗi user-agent và URL tham chiếu.",
+        "Chúng tôi không bán dữ liệu. Chúng tôi không chia sẻ dữ liệu với bên thứ ba ngoại trừ các công cụ vận hành cần thiết để chạy dịch vụ (email, thanh toán, lên lịch).",
+        "Chúng tôi không chạy theo dõi dựa trên cookie hay script quảng cáo của bên thứ ba.",
+        "Bạn có thể yêu cầu xóa hồ sơ của mình bất cứ lúc nào bằng cách gửi email đến legal@demonopol.com — chúng tôi tuân thủ trong vòng mười ngày làm việc.",
+        "Dữ liệu được xử lý ở Liên minh châu Âu (Vercel, nhà cung cấp email của chúng tôi). Chuyển giao xuyên biên giới chỉ xảy ra khi cần thiết để vận hành dịch vụ."
+      ]
+    },
+    "risk": {
+      "section": "Phần 3",
+      "headline": "Tiết lộ rủi ro",
+      "note": "Tokenization bất động sản tư nhân là cơ chế mới hơn. Chúng tôi nói thẳng điều đó. Các điểm dưới đây là những rủi ro chúng tôi nêu ra trong mỗi Đánh giá — văn bản ràng buộc sẽ ít nhất trung thực như vậy.",
+      "bullets": [
+        "Rủi ro pháp lý — cách xử lý pháp lý của bất động sản được tokenize đang phát triển theo từng thẩm quyền. Những gì được phép hôm nay có thể không được phép vào ngày mai, và ngược lại.",
+        "Rủi ro thanh khoản — thị trường thứ cấp cho các lợi ích bất động sản phân mảnh mỏng và thường theo từng nền tảng. Thanh khoản được cải thiện so với bán đơn lẻ, không được đảm bảo.",
+        "Rủi ro vận hành — thực thi phụ thuộc vào nhà cung cấp bên thứ ba về pháp lý, lưu ký và phân phối. Chúng tôi nêu tên họ trong Đánh giá của bạn để bạn có thể tự thẩm định.",
+        "Rủi ro định giá — định giá bất động sản tư nhân mang tính chủ quan. Tokenization không tạo ra giá thị trường liên tục như cổ phiếu niêm yết.",
+        "Rủi ro thuế — cách xử lý khác nhau theo thẩm quyền, loại tài sản và loại nhà đầu tư. Chúng tôi định tuyến đến đối tác thuế — chúng tôi không cung cấp ý kiến thuế.",
+        "Rủi ro tập trung — phân mảnh phân tán quyền sở hữu nhưng không đa dạng hóa tài sản cơ bản. Rủi ro của tài sản vẫn là rủi ro của tài sản.",
+        "Chúng tôi không hứa hẹn kết quả. Chúng tôi hứa hẹn quy trình, tài liệu bàn giao bằng văn bản và đánh giá trung thực về tính khả thi."
+      ]
+    }
+  },
+  "start": {
+    "eyebrow": "Tự đánh giá",
+    "headline": "Đánh giá miễn phí tài sản của bạn.",
+    "subhead": "Khoảng năm phút. Không cần thẻ tín dụng. Gửi và chúng tôi sẽ phản hồi bằng đánh giá mức độ phù hợp bằng văn bản, dải giá ước tính cho Đánh giá đầy đủ và bước tiếp theo ngay lập tức. Bản nháp của bạn được lưu cục bộ khi bạn điền."
   }
 }
