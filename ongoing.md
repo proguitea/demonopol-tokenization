@@ -131,16 +131,10 @@ In rough priority order. None of these are blocking launch on their own.
 
 ### Aesthetics & content (in scope of the current phase)
 
-7. **Per-page hreflang on home (`/`)** — currently inherits the layout
-   default. Use `localeAlternates("/")` from
-   [`src/lib/seo/alternates.ts`](./src/lib/seo/alternates.ts).
-8. **Origin / philosophy paragraph on /about** — the page lacks a
-   "why we exist" beat. Should read corporate, no founder names per Q-002.
-9. **/insights structure** — add asset-class and jurisdiction filters
-   (visual only for V1, no functional filtering).
-10. **Footer polish** — current footer is functional but plain. Could
-    add a small newsletter capture (mailto-based for V1) and a
-    jurisdiction-reach chip rail.
+7. ~~**Per-page hreflang on home (`/`)**~~ — **DONE (2026-04-29, commit 23127b7).** `metadata` export with `localeAlternates("/")` added to `src/app/[locale]/page.tsx`.
+8. ~~**Origin / philosophy paragraph on /about**~~ — **DONE (2026-04-29, commit 23127b7).** "Why we exist" section inserted between hero and howBuilt. Corporate voice, no founder names. Translated FR/VI/TH.
+9. ~~**/insights structure — visual filters**~~ — **DONE (2026-04-29, commit 23127b7).** Category chip rail (All/Primer/Jurisdiction/Asset class/Risk) above the article grid. Display-only for V1, "All" aria-current. Translated FR/VI/TH.
+10. ~~**Footer polish**~~ — **DONE (2026-04-29, commit 23127b7).** Jurisdiction reach chip rail added above the footer grid; mailto-based newsletter CTA card added alongside the brand copy. Both fully translated.
 11. ~~**Translation depth**~~ — **DONE (2026-04-29, commit f3d32b0).**
     All page-body strings extracted into message files. FR is full quality.
     VI/TH are agent-quality, flagged for native review (Q-017). The
