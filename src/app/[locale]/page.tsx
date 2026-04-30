@@ -35,6 +35,7 @@ function HomeContent() {
   return (
     <>
       <Hero t={t} />
+      <StatsStrip t={t} />
       <ServiceLadder t={t} />
       <HowItWorks t={t} />
       <TrustStrip t={t} />
@@ -54,35 +55,42 @@ function Hero({ t }: { t: HomeT }) {
         <div className="animate-aurora absolute -right-48 -top-32 h-[560px] w-[560px] rounded-full bg-accent/[0.12] blur-[110px]" />
         <div className="animate-aurora-reverse absolute -bottom-20 -left-32 h-[400px] w-[400px] rounded-full bg-primary/[0.08] blur-[90px]" />
       </div>
-      <div className="container py-24 md:py-32 lg:py-40">
-        <div className="max-w-3xl animate-fade-in space-y-8">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            {t("eyebrow")}
-          </p>
-          <h1 className="text-balance font-display text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
-            {t("headline")}
-          </h1>
-          <p className="text-pretty max-w-prose text-lg text-muted-foreground md:text-xl">
-            {t("subhead")}
-          </p>
-          <div className="flex flex-col gap-3 pt-4 sm:flex-row">
-            <Link
-              href="/start"
-              className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 font-medium text-primary-foreground transition-opacity hover:opacity-90"
-            >
-              {t("ctaPrimary")}
-              <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
-            </Link>
-            <Link
-              href="/diagnostic"
-              className="inline-flex items-center justify-center rounded-md border border-border bg-elevated px-6 py-3 font-medium text-foreground transition-colors hover:border-primary/40"
-            >
-              {t("ctaSecondary")}
-            </Link>
+      <div className="container py-20 md:py-28 lg:py-32">
+        <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
+          {/* ── Text column ── */}
+          <div className="animate-fade-in space-y-8 lg:flex-1">
+            <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
+              {t("eyebrow")}
+            </p>
+            <h1 className="text-balance font-display text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
+              {t("headline")}
+            </h1>
+            <p className="text-pretty max-w-prose text-lg text-muted-foreground md:text-xl">
+              {t("subhead")}
+            </p>
+            <div className="flex flex-col gap-3 pt-4 sm:flex-row">
+              <Link
+                href="/start"
+                className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 font-medium text-primary-foreground transition-opacity hover:opacity-90"
+              >
+                {t("ctaPrimary")}
+                <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
+              </Link>
+              <Link
+                href="/diagnostic"
+                className="inline-flex items-center justify-center rounded-md border border-border bg-elevated px-6 py-3 font-medium text-foreground transition-colors hover:border-primary/40"
+              >
+                {t("ctaSecondary")}
+              </Link>
+            </div>
+            <p className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">
+              {t("statusBar")}
+            </p>
           </div>
-          <p className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">
-            {t("statusBar")}
-          </p>
+          {/* ── Visual column — hidden on mobile to keep fold clean ── */}
+          <div className="hidden shrink-0 lg:block">
+            <PropertySplitVisual />
+          </div>
         </div>
       </div>
     </section>
@@ -378,5 +386,120 @@ function FinalCta({ t }: { t: HomeT }) {
         </div>
       </div>
     </section>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   Stats strip — four conversion anchors below the hero
+──────────────────────────────────────────────────────────────────────────── */
+function StatsStrip({ t }: { t: HomeT }) {
+  return (
+    <section className="border-b border-border/60">
+      <div className="container max-w-6xl">
+        <dl className="grid grid-cols-2 gap-px bg-border/40 md:grid-cols-4">
+          {(["free", "diagnostic", "written", "guarantee"] as const).map((key) => (
+            <div key={key} className="bg-background px-6 py-8">
+              <dt className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
+                {t(`stats.${key}.label`)}
+              </dt>
+              <dd className="mt-1 font-display text-3xl font-semibold tracking-tight">
+                {t(`stats.${key}.value`)}
+              </dd>
+              <p className="mt-2 text-sm text-muted-foreground">
+                {t(`stats.${key}.sub`)}
+              </p>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   Property → tokens SVG — decorative hero visual (lg+ only, aria-hidden)
+   Shows the core concept: one property fractionalised into many tokens.
+──────────────────────────────────────────────────────────────────────────── */
+function PropertySplitVisual() {
+  const winCols = [44, 98, 152, 206] as const;
+  const tokCols = [28, 88, 148, 208] as const;
+  const tokRows = [0, 1, 2] as const;
+  const tokOpacity = [
+    "fill-accent/15",
+    "fill-accent/20",
+    "fill-accent/25",
+  ] as const;
+
+  return (
+    <div aria-hidden="true" className="pointer-events-none w-[288px] select-none">
+      <svg
+        viewBox="0 0 288 284"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-full animate-float drop-shadow-sm"
+        role="presentation"
+      >
+        {/* ── Property block ─────────────────────────────────── */}
+        <rect
+          x="24" y="16" width="240" height="108" rx="12"
+          className="fill-primary/10 stroke-primary/20"
+          strokeWidth="1.5"
+        />
+        {/* Window row 0 */}
+        {winCols.map((x) => (
+          <rect key={`w0-${x}`} x={x} y="30" width="36" height="22" rx="5"
+            className="fill-primary/30" />
+        ))}
+        {/* Window row 1 */}
+        {winCols.map((x) => (
+          <rect key={`w1-${x}`} x={x} y="60" width="36" height="22" rx="5"
+            className="fill-primary/20" />
+        ))}
+        {/* Door */}
+        <rect x="118" y="88" width="52" height="36" rx="6"
+          className="fill-primary/40" />
+
+        {/* "1 ASSET" label */}
+        <text
+          x="144" y="140" textAnchor="middle"
+          fontSize="8" letterSpacing="1.5"
+          className="fill-muted-foreground/50"
+          style={{ fontFamily: "ui-monospace, monospace" }}
+        >
+          1 ASSET
+        </text>
+
+        {/* Connector dashes + arrow */}
+        <line
+          x1="144" y1="148" x2="144" y2="174"
+          className="stroke-border" strokeWidth="1.5" strokeDasharray="5 4"
+        />
+        <path
+          d="M138 172 L144 182 L150 172"
+          className="stroke-border" strokeWidth="1.5" strokeLinejoin="round"
+        />
+
+        {/* ── Token grid 4 × 3 ───────────────────────────────── */}
+        {tokRows.flatMap((row) =>
+          tokCols.map((x) => (
+            <rect
+              key={`t-${x}-${row}`}
+              x={x} y={190 + row * 28} width="52" height="20" rx="7"
+              className={tokOpacity[row]}
+            />
+          ))
+        )}
+
+        {/* "FRACTIONAL TOKENS" label */}
+        <text
+          x="144" y="278" textAnchor="middle"
+          fontSize="8" letterSpacing="1.5"
+          className="fill-muted-foreground/50"
+          style={{ fontFamily: "ui-monospace, monospace" }}
+        >
+          FRACTIONAL TOKENS
+        </text>
+      </svg>
+    </div>
   );
 }

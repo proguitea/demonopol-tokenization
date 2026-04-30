@@ -116,6 +116,28 @@
         "outcome": "Written outcome assessment",
         "next": "Recommended next step"
       }
+    },
+    "stats": {
+      "free": {
+        "value": "Free",
+        "label": "Self-Check",
+        "sub": "No card · 5 minutes"
+      },
+      "diagnostic": {
+        "value": "$400",
+        "label": "Diagnostic",
+        "sub": "Flat fee · fully scoped"
+      },
+      "written": {
+        "value": "Written",
+        "label": "Deliverable",
+        "sub": "Every engagement, same structure"
+      },
+      "guarantee": {
+        "value": "15 min",
+        "label": "Guarantee",
+        "sub": "Into the call · full refund"
+      }
     }
   },
   "footer": {

@@ -116,11 +116,21 @@
   animation: aurora-drift-reverse 16s ease-in-out infinite;
 }
 
+/* ── Float animation (SVG visual, hero) ─────────────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-12px); }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
 /* Honour reduced-motion preference */
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-in,
   .animate-aurora,
-  .animate-aurora-reverse {
+  .animate-aurora-reverse,
+  .animate-float {
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;

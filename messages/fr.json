@@ -116,6 +116,28 @@
         "outcome": "Évaluation écrite de l'issue",
         "next": "Prochaine étape recommandée"
       }
+    },
+    "stats": {
+      "free": {
+        "value": "Gratuit",
+        "label": "Auto-évaluation",
+        "sub": "Sans carte · 5 minutes"
+      },
+      "diagnostic": {
+        "value": "400 $",
+        "label": "Diagnostic",
+        "sub": "Forfait · périmètre défini"
+      },
+      "written": {
+        "value": "Écrit",
+        "label": "Livrable",
+        "sub": "Chaque mission, même structure"
+      },
+      "guarantee": {
+        "value": "15 min",
+        "label": "Garantie",
+        "sub": "Dès l'appel · remboursement total"
+      }
     }
   },
   "footer": {

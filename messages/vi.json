@@ -116,6 +116,28 @@
         "outcome": "Đánh giá kết quả bằng văn bản",
         "next": "Bước tiếp theo được khuyến nghị"
       }
+    },
+    "stats": {
+      "free": {
+        "value": "Miễn phí",
+        "label": "Tự đánh giá",
+        "sub": "Không cần thẻ · 5 phút"
+      },
+      "diagnostic": {
+        "value": "$400",
+        "label": "Diagnostic",
+        "sub": "Phí cố định · phạm vi đầy đủ"
+      },
+      "written": {
+        "value": "[[VI: Written]]",
+        "label": "[[VI: Deliverable]]",
+        "sub": "[[VI: Every engagement, same structure]]"
+      },
+      "guarantee": {
+        "value": "15 phút",
+        "label": "Bảo đảm",
+        "sub": "Hoàn tiền toàn bộ khi gọi"
+      }
     }
   },
   "footer": {

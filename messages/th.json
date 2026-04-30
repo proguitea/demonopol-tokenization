@@ -116,6 +116,28 @@
         "outcome": "การประเมินผลลัพธ์เป็นลายลักษณ์อักษร",
         "next": "ขั้นตอนถัดไปที่แนะนำ"
       }
+    },
+    "stats": {
+      "free": {
+        "value": "ฟรี",
+        "label": "ประเมินตนเอง",
+        "sub": "ไม่ต้องใช้บัตร · 5 นาที"
+      },
+      "diagnostic": {
+        "value": "$400",
+        "label": "Diagnostic",
+        "sub": "ค่าธรรมเนียมคงที่ · ขอบเขตครบถ้วน"
+      },
+      "written": {
+        "value": "[[TH: Written]]",
+        "label": "[[TH: Deliverable]]",
+        "sub": "[[TH: Every engagement, same structure]]"
+      },
+      "guarantee": {
+        "value": "15 นาที",
+        "label": "การรับประกัน",
+        "sub": "คืนเงินเต็มจำนวนระหว่างการโทร"
+      }
     }
   },
   "footer": {
