@@ -155,6 +155,25 @@ In rough priority order. None of these are blocking launch on their own.
     aspect-ratio placeholder boxes + mailto press CTA. Ready to drop in
     real logos when coverage arrives.
 
+### UI/UX Pro Max audit fixes (2026-04-30, commit e6b236e)
+
+Applied after a live browser audit using the `ui-ux-pro-max` skill
+(installed from github.com/nextlevelbuilder/ui-ux-pro-max-skill):
+
+- **Mobile navigation** — new `MobileMenu.tsx` client component: 44px
+  hamburger button (md:hidden), full-page dialog overlay with all nav
+  links, Escape-key + scroll-lock, sr-only "opens in new tab" on
+  external links.
+- **Header CTA touch target** — `py-2` (36px) → `py-3` (44px) to meet
+  the 44×44pt Apple HIG minimum.
+- **Header external link SR text** — added sr-only "(opens in new tab)"
+  to the `demonopol.com` nav link in the desktop header.
+- **prefers-reduced-motion** — `globals.css` guard disables
+  `animate-fade-in` for users who prefer reduced motion.
+- **OG edge runtime** — inlined `export const runtime = "edge"` in
+  each per-route `opengraph-image.tsx` (was re-exported and invisible
+  to Next.js static analysis).
+
 ### Functionality (deferred, founder must agree before re-opening)
 
 15. **Custom payment-confirmation Resend email** to the founder when a
