@@ -4,6 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { LocaleSwitcher } from "./LocaleSwitcher";
 import { Logo } from "./Logo";
+import { MobileMenu } from "./MobileMenu";
 import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
@@ -39,6 +40,7 @@ export function Header() {
           >
             {t("backToDemonopol")}
             <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
+            <span className="sr-only"> (opens in new tab)</span>
           </a>
         </nav>
 
@@ -47,10 +49,11 @@ export function Header() {
           <ThemeToggle />
           <Link
             href="/start"
-            className="hidden rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 sm:inline-flex"
+            className="hidden rounded-md bg-primary px-4 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 sm:inline-flex"
           >
             {t("ctaStart")}
           </Link>
+          <MobileMenu />
         </div>
       </div>
     </header>

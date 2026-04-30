@@ -9,7 +9,10 @@
     "insights": "Analyses",
     "about": "À propos",
     "backToDemonopol": "demonopol.com",
-    "ctaStart": "Lancer l'auto-évaluation"
+    "ctaStart": "Lancer l'auto-évaluation",
+    "openMenu": "Ouvrir le menu de navigation",
+    "closeMenu": "Fermer le menu de navigation",
+    "mobileNavLabel": "Navigation du site"
   },
   "home": {
     "eyebrow": "Demonopol — Tokenization-as-a-Service",

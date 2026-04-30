@@ -1,7 +1,9 @@
 import { ImageResponse } from "next/og";
-import { ogTemplate, runtime, size, contentType } from "@/lib/og/template";
+import { ogTemplate } from "@/lib/og/template";
 
-export { runtime, size, contentType };
+export const runtime     = "edge";
+export const size        = { width: 1200, height: 630 };
+export const contentType = "image/png";
 export const alt = "Demonopol Insights — Working notes from the practice";
 
 export default function OG() {

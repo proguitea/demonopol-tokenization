@@ -9,7 +9,10 @@
     "insights": "Bài phân tích",
     "about": "Giới thiệu",
     "backToDemonopol": "demonopol.com",
-    "ctaStart": "Bắt đầu Tự đánh giá"
+    "ctaStart": "Bắt đầu Tự đánh giá",
+    "openMenu": "[[VI: Open navigation menu]]",
+    "closeMenu": "[[VI: Close navigation menu]]",
+    "mobileNavLabel": "[[VI: Site navigation]]"
   },
   "home": {
     "eyebrow": "Demonopol — Tokenization-as-a-Service",
