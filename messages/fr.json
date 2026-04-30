@@ -163,7 +163,8 @@
     "subhead": "Nous proposons l'ensemble de l'échelle, mais la plupart des propriétaires n'ont besoin que des deux premiers échelons pour prendre une décision. Tarification publiée. Périmètre publié. Ce que vous n'obtenez pas est aussi publié.",
     "cta": "Commencer par l'auto-évaluation",
     "tierCard": {
-      "for": "Pour"
+      "for": "Pour",
+      "recommended": "Recommandé"
     },
     "comparison": {
       "headline": "Comparaison des niveaux",
@@ -287,6 +288,12 @@
     "subhead": "Un appel de 60 à 90 minutes avec notre équipe de conseil et une évaluation écrite de 6 à 8 pages pour savoir si — et comment — votre actif peut être tokenisé. Vous repartez avec un document, pas un vague « peut-être ».",
     "selfCheckFirst": "Essayez d'abord l'auto-évaluation gratuite",
     "stripeNote": "Paiement via Stripe Checkout. Reçu émis par Demonopol LLC. La garantie de remboursement de 15 minutes s'applique lors de l'appel, pas dans les petits caractères.",
+    "payButton": {
+      "cta": "Payer 400 $ — Réserver le Diagnostic",
+      "fallback": "Réserver par email",
+      "loading": "Redirection vers Stripe…",
+      "error": "Échec du paiement. Écrivez à legal@demonopol.com."
+    },
     "tiles": {
       "moneyBack": {
         "eyebrow": "Garantie de remboursement",

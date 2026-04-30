@@ -98,9 +98,29 @@
   }
 }
 
-/* Honour reduced-motion preference — disable the hero fade-in */
+/* ── Aurora gradient blobs ──────────────────────────────────────────── */
+@keyframes aurora-drift {
+  0%,100% { transform: translate(0, 0) scale(1); opacity: 0.55; }
+  33%      { transform: translate(40px, -30px) scale(1.06); opacity: 0.7; }
+  66%      { transform: translate(-25px, 25px) scale(0.94); opacity: 0.5; }
+}
+@keyframes aurora-drift-reverse {
+  0%,100% { transform: translate(0, 0) scale(1); opacity: 0.4; }
+  33%      { transform: translate(-35px, 20px) scale(1.04); opacity: 0.55; }
+  66%      { transform: translate(20px, -30px) scale(0.97); opacity: 0.35; }
+}
+.animate-aurora {
+  animation: aurora-drift 12s ease-in-out infinite;
+}
+.animate-aurora-reverse {
+  animation: aurora-drift-reverse 16s ease-in-out infinite;
+}
+
+/* Honour reduced-motion preference */
 @media (prefers-reduced-motion: reduce) {
-  .animate-fade-in {
+  .animate-fade-in,
+  .animate-aurora,
+  .animate-aurora-reverse {
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;

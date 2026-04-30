@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { useLocale } from "next-intl";
-import { ArrowRight, Loader2 } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
+import { ArrowRight, Loader2, Mail } from "lucide-react";
 
 import { createDiagnosticCheckout } from "@/app/[locale]/diagnostic/actions";
 
@@ -17,6 +17,7 @@ export function PayButton({
   variant?: "primary" | "ghost";
 }) {
   const locale = useLocale();
+  const t = useTranslations("diagnostic");
   const [pending, startTransition] = useTransition();
   const [error, setError] = useState<string | null>(null);
 
@@ -28,8 +29,8 @@ export function PayButton({
   if (!stripeConfigured) {
     return (
       <a href={FALLBACK_HREF} className={baseClasses}>
-        Email us to book the Diagnostic
-        <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
+        <Mail className="mr-2 h-4 w-4" aria-hidden="true" />
+        {t("payButton.fallback")}
       </a>
     );
   }
@@ -41,9 +42,7 @@ export function PayButton({
       if (result.ok) {
         window.location.assign(result.url);
       } else {
-        setError(
-          "Couldn't start the checkout. Please try again, or email legal@demonopol.com.",
-        );
+        setError(t("payButton.error"));
       }
     });
   }
@@ -60,11 +59,11 @@ export function PayButton({
         {pending ? (
           <>
             <Loader2 className="mr-2 h-4 w-4 animate-spin" aria-hidden="true" />
-            Redirecting to Stripe…
+            {t("payButton.loading")}
           </>
         ) : (
           <>
-            Pay $400 — Book the Diagnostic
+            {t("payButton.cta")}
             <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
           </>
         )}

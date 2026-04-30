@@ -27,7 +27,7 @@ export function Header() {
             <Link
               key={item.key}
               href={item.href}
-              className="rounded-md px-3 py-2 text-sm font-medium text-foreground/80 transition-colors hover:text-foreground"
+              className="whitespace-nowrap rounded-md px-3 py-2 text-sm font-medium text-foreground/80 transition-colors hover:text-foreground"
             >
               {t(item.key)}
             </Link>

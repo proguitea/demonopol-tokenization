@@ -49,6 +49,11 @@ type HomeT = ReturnType<typeof useTranslations<"home">>;
 function Hero({ t }: { t: HomeT }) {
   return (
     <section className="relative overflow-hidden border-b border-border/60">
+      {/* Decorative aurora blobs — aria-hidden, reduced-motion safe */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="animate-aurora absolute -right-48 -top-32 h-[560px] w-[560px] rounded-full bg-accent/[0.12] blur-[110px]" />
+        <div className="animate-aurora-reverse absolute -bottom-20 -left-32 h-[400px] w-[400px] rounded-full bg-primary/[0.08] blur-[90px]" />
+      </div>
       <div className="container py-24 md:py-32 lg:py-40">
         <div className="max-w-3xl animate-fade-in space-y-8">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
@@ -182,27 +187,34 @@ function HowItWorks({ t }: { t: HomeT }) {
           {t("howItWorks.subhead")}
         </p>
 
-        <ol className="mt-12 grid gap-5 md:grid-cols-4">
-          {steps.map((step, i) => (
-            <li
-              key={step.key}
-              className="rounded-xl border border-border bg-elevated p-6"
-            >
-              <div className="flex items-center gap-3">
-                <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-muted font-mono text-xs">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <step.icon className="h-5 w-5 text-primary" aria-hidden="true" />
-              </div>
-              <h3 className="mt-4 font-display text-lg font-semibold tracking-tight">
-                {t(`howItWorks.steps.${step.key}.label`)}
-              </h3>
-              <p className="mt-2 text-sm text-muted-foreground">
-                {t(`howItWorks.steps.${step.key}.body`)}
-              </p>
-            </li>
-          ))}
-        </ol>
+        <div className="relative mt-12">
+          {/* Decorative connector line between step badges — md+ only */}
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-x-[12.5%] top-4 hidden h-px bg-gradient-to-r from-transparent via-border/70 to-transparent md:block"
+          />
+          <ol className="grid gap-5 md:grid-cols-4">
+            {steps.map((step, i) => (
+              <li
+                key={step.key}
+                className="rounded-xl border border-border bg-elevated p-6"
+              >
+                <div className="flex items-center gap-3">
+                  <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-muted font-mono text-xs">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <step.icon className="h-5 w-5 text-primary" aria-hidden="true" />
+                </div>
+                <h3 className="mt-4 font-display text-lg font-semibold tracking-tight">
+                  {t(`howItWorks.steps.${step.key}.label`)}
+                </h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  {t(`howItWorks.steps.${step.key}.body`)}
+                </p>
+              </li>
+            ))}
+          </ol>
+        </div>
       </div>
     </section>
   );

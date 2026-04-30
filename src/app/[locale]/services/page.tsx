@@ -117,6 +117,7 @@ export default async function ServicesPage({
                   oneLine={t(`tiers.${meta.key}.oneLine`)}
                   forWhom={t(`tiers.${meta.key}.forWhom`)}
                   forLabel={t("tierCard.for")}
+                  recommendedLabel={meta.emphasis ? t("tierCard.recommended") : undefined}
                   includes={includes}
                   excludes={excludes}
                   ctaLabel={t(`tiers.${meta.key}.ctaLabel`)}
@@ -215,6 +216,7 @@ function TierCard({
   oneLine,
   forWhom,
   forLabel,
+  recommendedLabel,
   includes,
   excludes,
   ctaLabel,
@@ -228,6 +230,7 @@ function TierCard({
   oneLine: string;
   forWhom: string;
   forLabel: string;
+  recommendedLabel?: string;
   includes: string[];
   excludes: string[];
   ctaLabel: string;
@@ -243,6 +246,11 @@ function TierCard({
       )}
     >
       <header className="space-y-3">
+        {recommendedLabel ? (
+          <div className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wide text-primary">
+            {recommendedLabel}
+          </div>
+        ) : null}
         <h3 className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">
           {name}
         </h3>

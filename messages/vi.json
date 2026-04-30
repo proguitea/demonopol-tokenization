@@ -163,7 +163,8 @@
     "subhead": "Chúng tôi cung cấp toàn bộ lộ trình, nhưng phần lớn chủ sở hữu chỉ cần hai bước đầu để đưa ra quyết định. Bảng giá được công bố. Phạm vi được công bố. Những gì bạn không nhận được cũng được công bố.",
     "cta": "Bắt đầu bằng Tự đánh giá",
     "tierCard": {
-      "for": "Dành cho"
+      "for": "Dành cho",
+      "recommended": "Được đề xuất"
     },
     "comparison": {
       "headline": "So sánh các cấp độ",
@@ -287,6 +288,12 @@
     "subhead": "Cuộc gọi 60–90 phút với đội ngũ cố vấn và đánh giá bằng văn bản 6–8 trang về việc tài sản của bạn có thể được tokenize hay không — và bằng cách nào. Bạn rời đi với một tài liệu, không phải một lời \"có thể\".",
     "selfCheckFirst": "Thử Tự đánh giá miễn phí trước",
     "stripeNote": "Thanh toán qua Stripe Checkout. Biên lai do Demonopol LLC phát hành. Đảm bảo hoàn tiền 15 phút áp dụng trong cuộc gọi, không nằm trong điều khoản nhỏ.",
+    "payButton": {
+      "cta": "[[VI: Pay $400 — Book the Diagnostic]]",
+      "fallback": "[[VI: Book via email]]",
+      "loading": "[[VI: Redirecting to Stripe…]]",
+      "error": "[[VI: Couldn't start checkout. Email legal@demonopol.com.]]"
+    },
     "tiles": {
       "moneyBack": {
         "eyebrow": "Đảm bảo hoàn tiền",

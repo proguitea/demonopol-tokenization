@@ -163,7 +163,8 @@
     "subhead": "We sell the whole ladder, but most owners only need the first two rungs to make a decision. Pricing is published. Scope is published. What you don't get is also published.",
     "cta": "Start with the Self-Check",
     "tierCard": {
-      "for": "For"
+      "for": "For",
+      "recommended": "Recommended"
     },
     "comparison": {
       "headline": "How the tiers compare",
@@ -287,6 +288,12 @@
     "subhead": "A 60–90 minute call with our advisory team and a 6–8 page written assessment of whether — and how — your asset can be tokenized. You walk away with a document, not a verbal \"maybe.\"",
     "selfCheckFirst": "Try the free Self-Check first",
     "stripeNote": "Stripe Checkout. Receipt issued by Demonopol LLC. The 15-minute money-back guarantee lives on the call, not in the fine print.",
+    "payButton": {
+      "cta": "Pay $400 — Book the Diagnostic",
+      "fallback": "Book via email",
+      "loading": "Redirecting to Stripe…",
+      "error": "Couldn't start checkout. Email legal@demonopol.com."
+    },
     "tiles": {
       "moneyBack": {
         "eyebrow": "Money-back guarantee",
