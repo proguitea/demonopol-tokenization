@@ -140,14 +140,20 @@ In rough priority order. None of these are blocking launch on their own.
     VI/TH are agent-quality, flagged for native review (Q-017). The
     `i18n/request.ts` `Messages` type was extended to support `string[]`
     values (needed for tier includes/excludes, FAQ items, etc.).
-12. **Per-route OG image variants** — different headlines per page (e.g.
-    "$400 Diagnostic" on /diagnostic, "Five priced tiers" on /services).
-    The base [`opengraph-image.tsx`](./src/app/opengraph-image.tsx) can
-    be templated with searchParams or duplicated per route.
-13. **Accessibility audit** — run axe on each page, fix any criticals.
-    Visible focus rings, alt text on images, heading hierarchy.
-14. **Press / "as seen in" placeholder section** — even if blank,
-    structure for future logos.
+12. ~~**Per-route OG image variants**~~ — **DONE (2026-04-30, commit 5eed369).**
+    Shared template at `src/lib/og/template.tsx`. Route-level
+    `opengraph-image.tsx` files live under `[locale]/diagnostic`,
+    `[locale]/services`, `[locale]/about`, `[locale]/insights`. Each
+    card has its own eyebrow badge, headline, subhead, and footer strip.
+13. ~~**Accessibility audit**~~ — **DONE (2026-04-30, commit c15bfb7).**
+    TierCard name `<p>` → `<h3>`, comparison row labels `<td>` →
+    `<th scope="row">`, FAQ `+` toggle `aria-hidden`, sr-only
+    "(opens in new tab)" on all `target="_blank"` anchors. Global
+    `:focus-visible` ring already in `globals.css` — no change needed.
+14. ~~**Press / "as seen in" placeholder section**~~ — **DONE (2026-04-30, commit 2efc597).**
+    "Coverage" section on /about between advisors and reach. Four dashed
+    aspect-ratio placeholder boxes + mailto press CTA. Ready to drop in
+    real logos when coverage arrives.
 
 ### Functionality (deferred, founder must agree before re-opening)
 
