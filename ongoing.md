@@ -174,6 +174,26 @@ Applied after a live browser audit using the `ui-ux-pro-max` skill
   each per-route `opengraph-image.tsx` (was re-exported and invisible
   to Next.js static analysis).
 
+### Visual polish + i18n completion (2026-05-01, commit 5c05c85)
+
+- **Aurora hero blobs** — two absolute, heavily-blurred `div` elements
+  in the Hero section animate with CSS keyframes (`aurora-drift`,
+  `aurora-drift-reverse`). `aria-hidden`, `pointer-events-none`, and
+  a `prefers-reduced-motion` guard make them fully safe.
+- **Tier "Recommended" badge** — `TierCard` now accepts a
+  `recommendedLabel?: string` prop. The Diagnostic card renders a
+  primary-tinted pill above the tier name. Translated in all four
+  locales.
+- **HowItWorks step connector** — a gradient `h-px` line sits inside a
+  `relative` wrapper behind the four step cards at md+ breakpoint,
+  visually linking the step badges. Fully decorative / `aria-hidden`.
+- **PayButton i18n** — `PayButton.tsx` now uses `useTranslations("diagnostic")`
+  for all strings. Fallback (no Stripe) shows a `Mail` icon + short
+  translated label instead of a long hardcoded EN sentence.
+- **Header nav wrapping** — `whitespace-nowrap` on nav links prevents
+  "À propos" (and any long translated nav label) from breaking to a
+  second line.
+
 ### Functionality (deferred, founder must agree before re-opening)
 
 15. **Custom payment-confirmation Resend email** to the founder when a
