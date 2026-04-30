@@ -382,6 +382,14 @@
       "priorFirm": "บริษัทก่อนหน้า",
       "linkedin": "LinkedIn"
     },
+    "press": {
+      "eyebrow": "[[TH: Coverage]]",
+      "headline": "[[TH: In the conversation.]]",
+      "subhead": "[[TH: Press coverage and analyst mentions to follow as the service scales. For enquiries, reach us directly.]]",
+      "contactLabel": "[[TH: Press enquiries]]",
+      "placeholderLabel": "[[TH: Upcoming]]",
+      "placeholders": ["—", "—", "—", "—"]
+    },
     "reach": {
       "eyebrow": "การเข้าถึง",
       "headline": "ทั่วโลก พร้อมความลึกในเจ็ดตลาด",

@@ -382,6 +382,14 @@
       "priorFirm": "Prior firm",
       "linkedin": "LinkedIn"
     },
+    "press": {
+      "eyebrow": "Coverage",
+      "headline": "In the conversation.",
+      "subhead": "Press coverage and analyst mentions to follow as the service scales. For enquiries, reach us directly.",
+      "contactLabel": "Press enquiries",
+      "placeholderLabel": "Upcoming",
+      "placeholders": ["—", "—", "—", "—"]
+    },
     "reach": {
       "eyebrow": "Reach",
       "headline": "Worldwide, with depth in seven markets.",

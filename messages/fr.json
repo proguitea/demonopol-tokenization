@@ -382,6 +382,14 @@
       "priorFirm": "Cabinet précédent",
       "linkedin": "LinkedIn"
     },
+    "press": {
+      "eyebrow": "Couverture",
+      "headline": "Dans la conversation.",
+      "subhead": "Couverture presse et mentions analytiques à venir au fil du développement du service. Pour toute demande, écrivez-nous directement.",
+      "contactLabel": "Demandes presse",
+      "placeholderLabel": "À venir",
+      "placeholders": ["—", "—", "—", "—"]
+    },
     "reach": {
       "eyebrow": "Portée",
       "headline": "Mondial, avec une expertise sur sept marchés.",

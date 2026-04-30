@@ -132,6 +132,46 @@ export default async function AboutPage({
         </div>
       </section>
 
+      {/* ── Press / Coverage placeholder ──────────────────────────────── */}
+      <section className="border-b border-border/60">
+        <div className="container max-w-5xl py-16 md:py-20">
+          <div className="flex flex-col gap-8 md:flex-row md:items-start md:gap-16">
+            <div className="md:w-64 shrink-0">
+              <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                {t("press.eyebrow")}
+              </p>
+              <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight md:text-3xl">
+                {t("press.headline")}
+              </h2>
+              <p className="mt-3 text-sm text-muted-foreground">
+                {t("press.subhead")}
+              </p>
+              <a
+                href="mailto:tokenize@demonopol.com?subject=Press enquiry"
+                className="mt-5 inline-flex items-center gap-1.5 rounded-md border border-border bg-muted px-3 py-2 font-mono text-[10px] uppercase tracking-wide text-foreground transition-colors hover:border-primary/40 hover:text-primary"
+              >
+                {t("press.contactLabel")}
+              </a>
+            </div>
+
+            {/* Logo placeholder grid */}
+            <div className="grid flex-1 grid-cols-2 gap-4 sm:grid-cols-4">
+              {(t.raw("press.placeholders") as string[]).map((_, i) => (
+                <div
+                  key={i}
+                  className="flex aspect-[5/2] items-center justify-center rounded-lg border border-dashed border-border/60 bg-muted/30"
+                  aria-hidden="true"
+                >
+                  <span className="font-mono text-xs text-muted-foreground/40">
+                    {t("press.placeholderLabel")}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="border-b border-border/60 bg-muted/40">
         <div className="container max-w-5xl py-16 md:py-20">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">

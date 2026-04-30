@@ -382,6 +382,14 @@
       "priorFirm": "Công ty cũ",
       "linkedin": "LinkedIn"
     },
+    "press": {
+      "eyebrow": "[[VI: Coverage]]",
+      "headline": "[[VI: In the conversation.]]",
+      "subhead": "[[VI: Press coverage and analyst mentions to follow as the service scales. For enquiries, reach us directly.]]",
+      "contactLabel": "[[VI: Press enquiries]]",
+      "placeholderLabel": "[[VI: Upcoming]]",
+      "placeholders": ["—", "—", "—", "—"]
+    },
     "reach": {
       "eyebrow": "Phạm vi",
       "headline": "Toàn cầu, với chiều sâu ở bảy thị trường.",
