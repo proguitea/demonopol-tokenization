@@ -174,6 +174,30 @@ Applied after a live browser audit using the `ui-ux-pro-max` skill
   each per-route `opengraph-image.tsx` (was re-exported and invisible
   to Next.js static analysis).
 
+### Smart graphics + conversion visuals (2026-05-01, commit f816618)
+
+- **Property → Tokens SVG** — inline SVG in the hero (lg+ only, `aria-hidden`).
+  Shows one asset block splitting into a 4×3 token grid using brand colors
+  (primary green block, brass/gold tokens). Floats via `animate-float`
+  (CSS keyframe, `prefers-reduced-motion` safe). Fully theme-aware via
+  Tailwind `fill-primary/20`, `fill-accent/20` etc.
+- **Hero two-column layout** — on lg+ the hero is now `flex-row`: text
+  (flex-1) on the left, the SVG visual (w-[288px]) on the right. Mobile
+  stays single-column (visual is `hidden lg:block`).
+- **Stats conversion strip** — four-cell `<dl>` directly below the hero:
+  Free · $400 · Written · 15 min (Self-Check · Diagnostic · Deliverable ·
+  Guarantee). `gap-px bg-border/40` hairline grid pattern. Addresses the
+  four main purchase objections in one glance.
+- **`animate-float` keyframe** added to `globals.css`; reduced-motion guard
+  extended to cover it.
+- **messages (en/fr/vi/th):** `home.stats.{free,diagnostic,written,guarantee}`
+  with `value`, `label`, `sub` keys. FR is full quality; VI/TH are
+  translated (vi: Miễn phí, Bảo đảm; th: ฟรี, การรับประกัน).
+- **`FOR_MARKETING.md`** created — plain-English handoff for copywriters,
+  translators, and marketing/PR. Covers brand assets, placeholder content
+  (TBD items), translation status, article briefs, stats copy to confirm,
+  and Vercel env vars still needed.
+
 ### Visual polish + i18n completion (2026-05-01, commit 5c05c85)
 
 - **Aurora hero blobs** — two absolute, heavily-blurred `div` elements
