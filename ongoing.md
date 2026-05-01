@@ -274,6 +274,19 @@ Stuff that surprises if you don't know it:
 
 ---
 
+## Git / PR workflow note
+
+This worktree (`claude/eager-fermi-61e40e`) pushed all commits directly to
+`origin/main` via `git push origin HEAD:main`. This means no divergent branch
+exists for a traditional PR — all work is already live. **Future sessions
+should push to `origin HEAD:claude/<worktree-name>` and only merge to main
+via a PR** to preserve review history.
+
+The full diff for this session is visible at:
+https://github.com/proguitea/demonopol-tokenization/compare/e58525a...6fae1f1
+
+---
+
 ## Resume instructions for the next session
 
 If you're a fresh agent: read these in order before doing anything.
