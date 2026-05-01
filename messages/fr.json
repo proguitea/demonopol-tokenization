@@ -9,7 +9,7 @@
     "insights": "Analyses",
     "about": "À propos",
     "backToDemonopol": "demonopol.com",
-    "ctaStart": "Lancer l'auto-évaluation",
+    "ctaStart": "Auto-évaluation",
     "openMenu": "Ouvrir le menu de navigation",
     "closeMenu": "Fermer le menu de navigation",
     "mobileNavLabel": "Navigation du site"
@@ -288,6 +288,7 @@
       },
       "express": {
         "name": "Express",
+        "price": "Sur devis",
         "priceCadence": "fast-track",
         "oneLine": "Un Mandat condensé pour les propriétaires ayant une échéance ferme et un dossier de documentation en ordre.",
         "forWhom": "Propriétaires avec un deal déjà structuré — pression de clôture, délai juridictionnel ou cercle d'investisseurs prêt à s'engager.",

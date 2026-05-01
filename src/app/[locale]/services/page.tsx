@@ -28,8 +28,6 @@ type TierMeta = {
   ctaHref: "/start" | "/diagnostic" | "/about";
   ctaDisabled?: boolean;
   emphasis?: boolean;
-  /** Price shown as TBD placeholder (express only) */
-  tbd?: string;
 };
 
 const TIER_META: TierMeta[] = [
@@ -37,7 +35,7 @@ const TIER_META: TierMeta[] = [
   { key: "diagnostic", ctaHref: "/diagnostic", ctaDisabled: true, emphasis: true },
   { key: "promotion", ctaHref: "/start", ctaDisabled: true },
   { key: "mandate", ctaHref: "/diagnostic", ctaDisabled: true },
-  { key: "express", ctaHref: "/diagnostic", ctaDisabled: true, tbd: "{{TBD: Express price}}" },
+  { key: "express", ctaHref: "/diagnostic", ctaDisabled: true },
 ];
 
 export default async function ServicesPage({
@@ -53,7 +51,7 @@ export default async function ServicesPage({
   const schemaItems = TIER_META.map((meta) => ({
     name: t(`tiers.${meta.key}.name`),
     description: t(`tiers.${meta.key}.oneLine`),
-    price: meta.tbd ?? t(`tiers.${meta.key}.price`),
+    price: t(`tiers.${meta.key}.price`),
   }));
 
   const comparisonRows = [
@@ -108,7 +106,7 @@ export default async function ServicesPage({
                 <TierCard
                   key={meta.key}
                   name={t(`tiers.${meta.key}.name`)}
-                  price={meta.tbd ?? t(`tiers.${meta.key}.price`)}
+                  price={t(`tiers.${meta.key}.price`)}
                   priceCadence={
                     meta.key !== "selfCheck"
                       ? t(`tiers.${meta.key}.priceCadence`)
@@ -165,7 +163,7 @@ export default async function ServicesPage({
                   <th scope="row" className="px-4 py-3 text-left font-medium">{t("comparison.rows.price")}</th>
                   {TIER_META.map((meta) => (
                     <td key={meta.key} className="px-4 py-3 font-mono text-xs">
-                      {meta.tbd ?? t(`tiers.${meta.key}.price`)}
+                      {t(`tiers.${meta.key}.price`)}
                     </td>
                   ))}
                 </tr>
@@ -294,7 +292,7 @@ function TierCard({
             type="button"
             disabled
             aria-disabled="true"
-            className="inline-flex w-full items-center justify-center rounded-md border border-border bg-background px-4 py-2.5 text-sm font-medium opacity-60"
+            className="inline-flex w-full items-center justify-center rounded-md border border-border/50 bg-transparent px-4 py-2 text-sm text-muted-foreground/60 cursor-not-allowed"
           >
             {ctaLabel}
           </button>
@@ -302,7 +300,7 @@ function TierCard({
           <Link
             href={ctaHref}
             className={cn(
-              "inline-flex w-full items-center justify-center rounded-md px-4 py-2.5 text-sm font-medium transition-opacity",
+              "inline-flex w-full items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-opacity",
               emphasis
                 ? "bg-primary text-primary-foreground hover:opacity-90"
                 : "border border-border bg-background hover:border-primary/40",

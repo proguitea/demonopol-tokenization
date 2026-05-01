@@ -288,6 +288,7 @@
       },
       "express": {
         "name": "Express",
+        "price": "Custom",
         "priceCadence": "fast-track",
         "oneLine": "A condensed Mandate for owners with a hard deadline and a clean documentation pack.",
         "forWhom": "Owners with a deal already shaped — closing pressure, jurisdictional clock, or an investor circle ready to commit.",

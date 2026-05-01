@@ -9,7 +9,7 @@
     "insights": "Bài phân tích",
     "about": "Giới thiệu",
     "backToDemonopol": "demonopol.com",
-    "ctaStart": "Bắt đầu Tự đánh giá",
+    "ctaStart": "Tự đánh giá",
     "openMenu": "[[VI: Open navigation menu]]",
     "closeMenu": "[[VI: Close navigation menu]]",
     "mobileNavLabel": "[[VI: Site navigation]]"
@@ -288,6 +288,7 @@
       },
       "express": {
         "name": "Express",
+        "price": "Theo yêu cầu",
         "priceCadence": "fast-track",
         "oneLine": "Uỷ thác thu gọn cho chủ sở hữu có thời hạn cứng và bộ tài liệu đầy đủ.",
         "forWhom": "Chủ sở hữu có giao dịch đã được định hình — áp lực đóng, đồng hồ thẩm quyền, hoặc nhóm nhà đầu tư sẵn sàng cam kết.",
